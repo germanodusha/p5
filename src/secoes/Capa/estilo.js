@@ -15,3 +15,13 @@ ${(props) => props.temSpan
     : 'justify-content: space-around;'
 }
 `;
+
+export const Livro = styled.img`
+height: 70vh;
+position: absolute;
+top: 20vh;
+left: 30vw;
+width: auto;
+margin: auto !important;
+
+`;

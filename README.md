@@ -10,17 +10,27 @@
 22/12
 - Subir repo para o Github do Germano
 - Esqueleto do site
-- [x] Organizar seções e componentes seguindo o layout
-- [ ] Estruturar base de dados dos textos em duas línguas
-- [ ] Adicionar conteúdo de cada seção
+  - [x] Organizar seções e componentes seguindo o layout
+  - [ ] Estruturar base de dados dos textos em duas línguas
+  - [ ] Adicionar conteúdo de cada seção
+      - [x] Menu
+      - [x] Capa
+      - [x] Chamada
+      - [ ] Livro
+      - [ ] Indice
+      - [ ] Artigos
+      - [ ] PopUpAudiodescrição
+      - [ ] PopUpCreditos
+      - [ ] PopUpDownload
+      - [ ] PopUpLivro
 - [ ] Desenvolver interações básicas das pop ups
 
 - Estilização inicial (cores, fontes, posicionamento)
-- [x] Importar fontes
-- [x] Declarar cores
-- [ ] Aplicar fontes nos lugares correspondentes
-- [ ] Aplicar cores
-- [ ] Posicionar elementos
+  - [x] Importar fontes
+  - [x] Declarar cores
+  - [ ] Aplicar fontes nos lugares correspondentes
+  - [ ] Aplicar cores
+  - [ ] Posicionar elementos
 
 24/12
 - Aprofundamento da estilização
