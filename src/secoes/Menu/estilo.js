@@ -12,6 +12,7 @@ flex-direction: row;
 justify-content: space-around;
 position: fixed;
 top: 5vh;
+position: absolute;
 `;
 
 export const NavCentral = styled.nav`
@@ -24,5 +25,6 @@ flex-direction: row;
 justify-content: center;
 
 gap: 1vw;
+z-index: 10;
 `;
 

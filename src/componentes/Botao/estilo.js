@@ -16,6 +16,8 @@ export const EstiloBotao = styled.button`
     border: 2px solid var(--preto);
     border-radius: 5vh;
 
+    z-index: 30;
+
     ${(props) => { 
         if (props.pos) {
             let estilo = 'position: fixed;';

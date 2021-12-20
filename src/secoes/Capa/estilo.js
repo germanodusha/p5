@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const ConteinerCapa = styled.section`
+background: var(--laranja);
+z-index: 20;
+height: 100vh;
+position: relative;
+`;
+
 export const Titulo = styled.h1`
 font-family: 'ES Build';
 font-size: 10em;
@@ -23,5 +30,4 @@ top: 20vh;
 left: 30vw;
 width: auto;
 margin: auto !important;
-
 `;
