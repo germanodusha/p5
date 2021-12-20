@@ -1,11 +1,18 @@
 import React from 'react';
-import {  } from './estilo';
-
+import Botao from '../../componentes/Botao';
 
 function Menu() {
   
   return (
-    <>Menu</>
+    <>
+    <Botao>
+      Textinho
+    </Botao>
+
+    <Botao>
+      Botão com texto longo
+    </Botao>
+    </>
   );
 }
 

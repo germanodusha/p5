@@ -1,11 +1,13 @@
 import React from 'react';
-import {  } from './estilo';
+import { EstiloBotao } from './estilo';
 
 
-function Botao() {
+function Botao({children}) {
   
   return (
-    <>Botao</>
+    <EstiloBotao>
+      {children}
+    </EstiloBotao>
   );
 }
 
