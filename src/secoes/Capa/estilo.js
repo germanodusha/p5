@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Titulo = styled.h1`
 font-family: 'ES Build';
 font-size: 10em;
+font-weight: normal;
 line-height: 1;
 padding: 0;
 margin: 0;
