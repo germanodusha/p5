@@ -1,19 +1,20 @@
 import React from 'react';
 import Botao from '../../componentes/Botao';
+import { Conteiner, NavCentral } from './estilo';
 
 function Menu() {
   
   return (
-    <>
-    <Botao>
+    <Conteiner>
+    <Botao pos={{x: 'esquerda', y: 'superior'}}>
       Download Livro
     </Botao>
 
-    <Botao>
+    <Botao pos={{x: 'esquerda', y: 'inferior'}}>
       Galeria Periscópio
     </Botao>
 
-    <div>
+    <NavCentral>
       <Botao>
         Livro
       </Botao> 
@@ -23,15 +24,16 @@ function Menu() {
       <Botao>
         Info
       </Botao>
-    </div>
-    <Botao>
+    </NavCentral>
+
+    <Botao pos={{x: 'direita', y: 'inferior'}}>
       EN/PT
     </Botao>
 
-    <Botao>
+    <Botao pos={{x: 'direita', y: 'superior'}}>
       Audiodescrição
     </Botao>
-    </>
+    </Conteiner>
   );
 }
 

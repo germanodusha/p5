@@ -2,10 +2,10 @@ import React from 'react';
 import { EstiloBotao } from './estilo';
 
 
-function Botao({children}) {
+function Botao({pos, children}) {
   
   return (
-    <EstiloBotao>
+    <EstiloBotao pos={pos}>
       {children}
     </EstiloBotao>
   );
