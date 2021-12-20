@@ -10,16 +10,17 @@
 22/12
 - Subir repo para o Github do Germano
 - Esqueleto do site
-  [x] Organizar seções e componentes seguindo o layout
-  [ ] Estruturar base de dados dos textos em duas línguas
-  [ ] Adicionar conteúdo de cada seção
-  [ ] Desenvolver interações básicas das pop ups
+- [x] Organizar seções e componentes seguindo o layout
+- [ ] Estruturar base de dados dos textos em duas línguas
+- [ ] Adicionar conteúdo de cada seção
+- [ ] Desenvolver interações básicas das pop ups
+
 - Estilização inicial (cores, fontes, posicionamento)
-  [ ] Importar fontes
-  [ ] Declarar cores
-  [ ] Aplicar fontes nos lugares correspondentes
-  [ ] Aplicar cores
-  [ ] Posicionar elementos
+- [x] Importar fontes
+- [x] Declarar cores
+- [ ] Aplicar fontes nos lugares correspondentes
+- [ ] Aplicar cores
+- [ ] Posicionar elementos
 
 24/12
 - Aprofundamento da estilização
