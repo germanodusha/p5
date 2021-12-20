@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const EstiloBotao = styled.button`
     width: max-content;
     height: max-content;
-    padding: 7px 10px;
+    padding: 5px 10px;
     margin: 0;
     box-sizing: border-box;
     

@@ -6,11 +6,30 @@ function Menu() {
   return (
     <>
     <Botao>
-      Textinho
+      Download Livro
     </Botao>
 
     <Botao>
-      Botão com texto longo
+      Galeria Periscópio
+    </Botao>
+
+    <div>
+      <Botao>
+        Livro
+      </Botao> 
+      <Botao>
+        Artigos
+      </Botao> 
+      <Botao>
+        Info
+      </Botao>
+    </div>
+    <Botao>
+      EN/PT
+    </Botao>
+
+    <Botao>
+      Audiodescrição
     </Botao>
     </>
   );
