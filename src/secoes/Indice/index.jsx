@@ -3,8 +3,8 @@ import { Epigrafe, Ensaios, Exposicoes, Conteiner } from './estilo';
 import database from '../../database'
 
 function Indice() {
-const ensaio = database.ptbr.index.artigo;
-const exposicoes = database.ptbr.index.ensaios.itens;
+const ensaios = database.ptbr.index.ensaios.itens;
+const exposicoes = database.ptbr.index.exposicoes.itens;
 
 console.log(exposicoes)
   return (
@@ -12,10 +12,10 @@ console.log(exposicoes)
     <Epigrafe>{database.ptbr.principal.epigrafe}
 </Epigrafe>
 <Ensaios>
-  {ensaio.ampliandoVisao}
-  {ensaio.transcreverMundo}
-  {ensaio.artePensamento}
-  {ensaio.apenasComeco}
+{ensaios.map((ensaio) => ( <><p>{ensaio.titulo}</p>
+<p>{ensaio.autoria}</p></>
+))}
+
 </Ensaios>
 <Exposicoes>
 {exposicoes.map((exposicao) => ( <><p>{exposicao.titulo}</p>

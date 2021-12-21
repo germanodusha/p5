@@ -1,4 +1,4 @@
-const database = [{
+const database = {
     ptbr:{
         principal:{
             epigrafe: '“Digo: o real não está na saída nem na chegada: ele se dispõe para a gente é no meio da travessia.” João Guimarães Rosa, Grande Sertão: Veredas',
@@ -453,6 +453,6 @@ const database = [{
         }
     }
 
-}]
+}
 
 export default database;

@@ -3,8 +3,8 @@ import { Texto } from './estilo';
 import database from '../../database'
 
 function Chamada() {
+  console.log(database)
   const fraseChamada = database.ptbr.principal.fraseChamada;
-  console.log(database.ptbr.principal)
   return (
     <Texto>
       {fraseChamada}
