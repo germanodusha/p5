@@ -1,11 +1,14 @@
 import React from 'react';
-import {  } from './estilo';
+import { Foto, ConteinerFoto } from './estilo';
+import FotoFundo from '../../imagens/placeholder.jpg'
 
 
 function Livro() {
   
   return (
-    <>Livro</>
+    <ConteinerFoto>
+      <Foto src={FotoFundo}/>
+    </ConteinerFoto>
   );
 }
 
