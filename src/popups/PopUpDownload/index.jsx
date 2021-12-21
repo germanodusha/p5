@@ -5,8 +5,9 @@ import {  } from './estilo';
 function PopUpDownload() {
   
   return (
-    <>PopUpDownload
-  </>
+    <div style={{position: 'fixed', top: '50vh', left:'30vw', zIndex:1000, backgroundColor: 'red'}}>
+      PopUpDownload
+  </div>
   );
 }
 

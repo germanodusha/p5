@@ -7,30 +7,22 @@ import {
   Indice,
   Artigos
 } from './secoes';
-import {
-  PopUpLivro,
-  PopUpCreditos,
-  PopUpAudiodescricao,
-  PopUpDownload
-} from './popups'
+
 import EstiloGlobal from './EstiloGlobal';
+import { AcessoGlobal } from './AcessoGlobal';
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-
-      <Menu />
-      <Capa />
-      <Chamada />
-      <Livro />
-      <Indice />
-      <Artigos />
-
-      <PopUpLivro />
-      <PopUpCreditos />
-      <PopUpAudiodescricao />
-      <PopUpDownload />
+      <AcessoGlobal>
+        <Menu />
+        <Capa />
+        <Chamada />
+        <Livro />
+        <Indice />
+        <Artigos />
+      </AcessoGlobal>
     </>
   );
 }
