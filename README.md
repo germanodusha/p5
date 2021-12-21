@@ -11,19 +11,19 @@
 - Subir repo para o Github do Germano
 - Esqueleto do site
   - [x] Organizar seções e componentes seguindo o layout
-  - [ ] Estruturar base de dados dos textos em duas línguas
-  - [ ] Adicionar conteúdo de cada seção
+  - [x] Estruturar base de dados dos textos em duas línguas
+  - [ ] **Adicionar conteúdo de cada seção - Jai**
       - [x] Menu
       - [x] Capa
       - [x] Chamada
       - [ ] Livro
-      - [ ] Indice
+      - [x] Indice
       - [ ] Artigos
-      - [ ] PopUpAudiodescrição
+      - [ ] **PopUpAudiodescrição - Grego**
       - [ ] PopUpCreditos
-      - [ ] PopUpDownload
+      - [ ] **PopUpDownload - Grego**
       - [ ] PopUpLivro
-- [ ] Desenvolver interações básicas das pop ups
+- [ ] **Desenvolver interações básicas das pop ups - Mar**
 
 - Estilização inicial (cores, fontes, posicionamento)
   - [x] Importar fontes
