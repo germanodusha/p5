@@ -13,16 +13,27 @@
   - [x] Organizar seções e componentes seguindo o layout
   - [x] Estruturar base de dados dos textos em duas línguas
   - [ ] **Adicionar conteúdo de cada seção - Jai**
+      - [ ] Menu
+      - [ ] Capa
+      - [x] Chamada
+      - [x] Livro
+      - [ ] Indice
+      - [ ] Artigos
+      - [ ] PopUpAudiodescrição
+      - [ ] PopUpCreditos
+      - [ ] PopUpDownload
+      - [x] PopUpLivro
+  - [ ] Estruturar base de cada seção
       - [x] Menu
       - [x] Capa
       - [x] Chamada
-      - [ ] Livro
-      - [x] Indice
+      - [x] Livro
+      - [ ] **Indice - Mar**
       - [ ] Artigos
       - [ ] **PopUpAudiodescrição - Grego**
       - [ ] PopUpCreditos
       - [ ] **PopUpDownload - Grego**
-      - [ ] **PopUpLivro - Mar**
+      - [x] PopUpLivro
 - [x] Desenvolver interações básicas das pop ups
 
 - Estilização inicial (cores, fontes, posicionamento)
