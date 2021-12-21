@@ -1,8 +1,6 @@
-const dataBase = [{
+const database = [{
     ptbr:{
         principal:{
-            titulo: 'P5 PERISCOPIO 5 ANOS',
-            data: '2015-2020',
             epigrafe: '“Digo: o real não está na saída nem na chegada: ele se dispõe para a gente é no meio da travessia.” João Guimarães Rosa, Grande Sertão: Veredas',
             fraseChamada: 'Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral no 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.',
             artistasECuradores: 'Alice Ricci, Amilcar de Castro, Ana Linnemann, Andrea Brown, Andréa Brown, Andrea Gomes, Avilmar Maia, Beatriz de Almeida Magalhães, Binho Barreto, Bruno Faria, Bruno Palazzo, Camila Lacerda, Cristina Marigo, Daniel Bilac, Daniel de Paula, Daniel Steegmann Mangrané, Daniela Moser, Deyson Gilbert, Éder Oliveira, Eduardo Hargreaves, Ernesto Neto, Erre Erre, Fábio Baroli, Fábio Tremonte, Fabíola Moulin, Fabíola Tasca, Felipe Scovino, Flávia Péret, Flávio Cerqueira, Francisco Lara Rezende, Frederico Morais, Germano Dushá, Gisele Camargo, Guto Lacaz, Hélio Menezes, Henrique Detomi, Iara Marques, Iberê Camargo, Ina Gouveia, Ivens Machado, Janaina Wagner, José Lara, Juliana Gontijo, Júlio Martins, Katia Canton, Lais Myrrha, Laura Berbert, Letícia Grandinetti, Lorenzato, Luana Vitra, Lucas Dupin, Lucas ­Kröeff­, Lucas Simões, Marc Davi, ­Marcel­ Diogo, Marcela Novaes, Marcelo Drummond, Márcia Guimarães, Márcio Diegues, Marco Maria Zanin, Marco Sem S, Marcone Moreira, Marconi Drummond, Maria Palmeiro, Maria Thereza Alves, Marina Câmara, Maurício Meirelles, Mauro Restiffe, Nydia Negromonte, Patrícia Leite, Paula Borghi, Paula Huven, Paula Sampaio, Paulo Baptista, Pedro Motta, Rachel Cecília de Oliveira, Rafael RG, Randolpho Lamonier, Renata De Bonis, Ricardo Carioba, Rodrigo Albert, Rodrigo Braga, Rodrigo Cass, Selma Parreira, Sérgio Martins, TRAPLEV, Umberto Costa Barros, Victor Galvão, Wilson Baptista, Wilson Lázaro.'
@@ -456,3 +454,5 @@ const dataBase = [{
     }
 
 }]
+
+export default database;

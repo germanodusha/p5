@@ -4,7 +4,7 @@ import database from '../../database'
 
 function Indice() {
 const ensaio = database.ptbr.index.artigo;
-const exposicoes = database.ptbr.index.exposicoes.itens;
+const exposicoes = database.ptbr.index.ensaios.itens;
 
 console.log(exposicoes)
   return (

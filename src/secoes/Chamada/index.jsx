@@ -1,11 +1,15 @@
 import React from 'react';
 import { Texto } from './estilo';
-
+import database from '../../database'
 
 function Chamada() {
-  
+  const fraseChamada = database.ptbr.principal.fraseChamada;
+  console.log(database.ptbr.principal)
   return (
-    <Texto>Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral no 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.</Texto>
+    <Texto>
+      {fraseChamada}
+      
+    </Texto>
   );
 }
 
