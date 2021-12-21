@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-indent */
-/* eslint-disable indent */
-
 import React, {
     createContext, useReducer, useContext, useEffect,
 } from 'react';

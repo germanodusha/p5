@@ -9,47 +9,56 @@ import {
 } from '../../popups';
 
 function Menu() {
-  const [abrirAudiodesc, setAbrirAudiodesc] = useState(false);
+  const [abrirAudiodescricao, setAbrirAudiodescricao] = useState(false);
   const [abrirCreditos, setAbrirCreditos] = useState(false);
   const [abrirDownload, setAbrirDownload] = useState(false);
   const [abrirLivro, setAbrirLivro] = useState(false);
+
+  const toggle = (item) => {
+    eval(`setAbrir${item}(!abrir${item})`);
+    if (item !== 'Livro' && abrirLivro) setAbrirLivro(false);
+    if (item !== 'Creditos' && abrirCreditos) setAbrirCreditos(false);
+    if (item !== 'Audiodesc' && abrirAudiodescricao) setAbrirAudiodescricao(false);
+    if (item !== 'Download' && abrirDownload) setAbrirDownload(false);
+  }
   
   return (
     <Conteiner>
       <p>Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral no 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.</p>
 
-      <Botao pos={{x: 'esquerda', y: 'superior'}}>
+      <Botao pos={{ x: 'esquerda', y: 'superior' }} fClick={(e) => {e.preventDefault(); toggle('Download');}}>
         Download Livro
       </Botao>
 
-      <Botao pos={{x: 'esquerda', y: 'inferior'}}>
+      <Botao pos={{x: 'esquerda', y: 'inferior'}} >
         Galeria Periscópio
       </Botao>
 
       <NavCentral>
-        <Botao>
+        <Botao fClick={(e) => { e.preventDefault(); toggle('Livro');}}>
           Livro
         </Botao> 
         <Botao>
           Artigos
         </Botao> 
-        <Botao>
+        <Botao fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
           Info
         </Botao>
       </NavCentral>
 
-      <Botao pos={{x: 'direita', y: 'inferior'}}>
+      <Botao pos={{x: 'direita', y: 'inferior'}} >
         EN/PT
       </Botao>
 
-      <Botao pos={{x: 'direita', y: 'superior'}}>
+      <Botao pos={{x: 'direita', y: 'superior'}} fClick={(e) => { e.preventDefault(); toggle('Audiodescricao');}}>
         Audiodescrição
       </Botao>
 
-      <PopUpLivro />
-      <PopUpCreditos />
-      <PopUpAudiodescricao />
-      <PopUpDownload />  
+      {abrirLivro && <PopUpLivro />}
+      {abrirCreditos && <PopUpCreditos />}
+      {abrirAudiodescricao && <PopUpAudiodescricao />}
+      {abrirDownload && <PopUpDownload />}
+     
     </Conteiner>
   );
 }

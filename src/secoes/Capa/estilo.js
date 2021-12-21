@@ -17,10 +17,10 @@ margin: 0;
 display: flex;
 flex-direction: row;
 width: 100%;
-${(props) => props.temSpan 
-    ? 'justify-content: space-between;'
-    : 'justify-content: space-around;'
-}
+${(props) => props.temSpan
+        ? 'justify-content: space-between;'
+        : 'justify-content: space-around;'
+    }
 `;
 
 export const Livro = styled.img`

@@ -5,7 +5,8 @@ import {  } from './estilo';
 function PopUpAudiodescricao() {
   
   return (
-    <>PopUpAudiodescricao</>
+    <div style={{position: 'fixed', top: '50vh', left:'30vw', zIndex:1000, backgroundColor: 'red'}}>
+      PopUpAudiodescricao</div>
   );
 }
 

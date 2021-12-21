@@ -1,4 +1,4 @@
-const dataBase = [{
+const database = [{
     ptBr: {
         principal: {
             titulo: 'P5 PERISCOPIO 5 ANOS',
@@ -456,3 +456,5 @@ const dataBase = [{
     }
 
 }]
+
+export default database;
