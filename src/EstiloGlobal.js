@@ -43,7 +43,17 @@ body {
   padding: 0;
   width: 100%;
 }
-
+.centerColumn{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centerRow{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 `;
 
 export default EstiloGlobal;
