@@ -3,14 +3,19 @@ import styled from 'styled-components';
 export const Conteiner = styled.div`
 width:70vw;
 height:70vh;
-background-color: var(--laranja);
+
+vertical-align: middle;
 margin:0 auto;
+position: relative;
+transform: translateY(-39%); 
+margin-left:2%;
 
 `
 export const Content = styled.div`
 width:100%;
 height:100%;
 border-radius:3rem;
+background-color: var(--laranja);
 border:1px solid var(--preto);
 
 div{

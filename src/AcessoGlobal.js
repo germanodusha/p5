@@ -1,48 +1,44 @@
-// /* eslint-disable react/jsx-indent */
-// /* eslint-disable indent */
+import React, {
+    createContext, useReducer, useContext, useEffect,
+} from 'react';
+import database from './database';
 
-// import React, {
-//     createContext, useReducer, useContext, useEffect,
-// } from 'react';
-// import database from './db';
-// import databaseEn from './db-en';
+/* estado inicial */
+const estadoInicial = {
+    ptBr: true,
+    db: database.ptBr,
+};
 
-// /* estado inicial */
-// const estadoInicial = {
-//     ptBr: true,
-//     db: database,
-// };
+/* contexto do estado + valor inicial */
+const contextoGlobal = createContext(estadoInicial);
+/* contexto do dispatcher -- função para modificar o estado */
+const dispatchGlobal = createContext(undefined);
 
-// /* contexto do estado + valor inicial */
-// const contextoGlobal = createContext(estadoInicial);
-// /* contexto do dispatcher -- função para modificar o estado */
-// const dispatchGlobal = createContext(undefined);
+export const AcessoGlobal = ({ children }) => {
+    const [global, mudarGlobal] = useReducer(
+        (estado, novoValor) => ({ ...estado, ...novoValor }),
+        estadoInicial,
+    );
 
-// export const AcessoGlobal = ({ children }) => {
-//     const [global, mudarGlobal] = useReducer(
-//         (estado, novoValor) => ({ ...estado, ...novoValor }),
-//         estadoInicial,
-//     );
+    useEffect(() => {
+        const thisDb = global.ptBr ? database.ptBr : database.en;
+        mudarGlobal({ db: thisDb });
+        console.log('atualizou state');
+    }, [global.ptBr]);
 
-//     useEffect(() => {
-//         const thisDb = global.ptBr ? database : databaseEn;
-//         mudarGlobal({ db: thisDb });
-//         console.log('atualizou state');
-//     }, [global.ptBr]);
+    return (
+        <contextoGlobal.Provider value={global}>
+            <dispatchGlobal.Provider value={mudarGlobal}>
+                {children}
+            </dispatchGlobal.Provider>
+        </contextoGlobal.Provider>
+    );
+};
 
-//     return (
-//         <contextoGlobal.Provider value={global}>
-//             <dispatchGlobal.Provider value={mudarGlobal}>
-//                 {children}
-//             </dispatchGlobal.Provider>
-//         </contextoGlobal.Provider>
-//     );
-// };
-
-// export const useGlobal = () => [
-//     useContext(contextoGlobal),
-//     useContext(dispatchGlobal),
-// ];
+export const useGlobal = () => [
+    useContext(contextoGlobal),
+    useContext(dispatchGlobal),
+];
 
 
 /*
