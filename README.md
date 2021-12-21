@@ -22,8 +22,8 @@
       - [ ] **PopUpAudiodescrição - Grego**
       - [ ] PopUpCreditos
       - [ ] **PopUpDownload - Grego**
-      - [ ] PopUpLivro
-- [ ] **Desenvolver interações básicas das pop ups - Mar**
+      - [ ] **PopUpLivro - Mar**
+- [x] Desenvolver interações básicas das pop ups
 
 - Estilização inicial (cores, fontes, posicionamento)
   - [x] Importar fontes
