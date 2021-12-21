@@ -1,13 +1,14 @@
 import React from 'react';
 import { Foto, ConteinerFoto } from './estilo';
-import FotoFundo from '../../imagens/placeholder.jpg'
+import { Foto1 } from '../../imagens/livro'
+import { AcessoPopUps, usePopUps } from '../../AcessoPopUps';
 
-
-function Livro() {
+  function Livro({ fClick }) {
+  const [abrirPopUps, setAbrirPopUps] = usePopUps();
   
   return (
     <ConteinerFoto>
-      <Foto src={FotoFundo}/>
+      <Foto src={Foto1} onClick={fClick}/>
     </ConteinerFoto>
   );
 }

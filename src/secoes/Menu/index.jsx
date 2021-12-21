@@ -54,7 +54,7 @@ function Menu() {
         Audiodescrição
       </Botao>
 
-      {abrirLivro && <PopUpLivro />}
+      {abrirLivro && <PopUpLivro fClick={() => {toggle('Livro')}} />}
       {abrirCreditos && <PopUpCreditos />}
       {abrirAudiodescricao && <PopUpAudiodescricao />}
       {abrirDownload && <PopUpDownload />}
