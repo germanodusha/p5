@@ -4,13 +4,12 @@
 import React, {
     createContext, useReducer, useContext, useEffect,
 } from 'react';
-import database from './db';
-import databaseEn from './db-en';
+import database from './database';
 
 /* estado inicial */
 const estadoInicial = {
     ptBr: true,
-    db: database,
+    db: database.ptBr,
 };
 
 /* contexto do estado + valor inicial */
@@ -25,7 +24,7 @@ export const AcessoGlobal = ({ children }) => {
     );
 
     useEffect(() => {
-        const thisDb = global.ptBr ? database : databaseEn;
+        const thisDb = global.ptBr ? database.ptBr : database.en;
         mudarGlobal({ db: thisDb });
         console.log('atualizou state');
     }, [global.ptBr]);

@@ -9,7 +9,7 @@ import {
 } from './secoes';
 
 import EstiloGlobal from './EstiloGlobal';
-import AcessoGlobal from './AcessoGlobal';
+import { AcessoGlobal } from './AcessoGlobal';
 
 function App() {
   return (
