@@ -42,7 +42,17 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.centerColumn{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centerRow{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 `;
 
 export default EstiloGlobal;
