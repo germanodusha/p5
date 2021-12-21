@@ -1,5 +1,5 @@
 import React from "react";
-import { Conteiner, Content, Download, Text } from "./estilo";
+import { Conteiner, Content, Download, Text } from "../PopUpDownload/estilo.js";
 
 function PopUpAudiodescricao() {
   return (
