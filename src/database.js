@@ -1,6 +1,8 @@
 const database = {
     ptbr:{
+        
         principal:{
+            titulo:'Arquivo',
             epigrafe: '“Digo: o real não está na saída nem na chegada: ele se dispõe para a gente é no meio da travessia.” João Guimarães Rosa, Grande Sertão: Veredas',
             fraseChamada: 'Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral no 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.',
             artistasECuradores: 'Alice Ricci, Amilcar de Castro, Ana Linnemann, Andrea Brown, Andréa Brown, Andrea Gomes, Avilmar Maia, Beatriz de Almeida Magalhães, Binho Barreto, Bruno Faria, Bruno Palazzo, Camila Lacerda, Cristina Marigo, Daniel Bilac, Daniel de Paula, Daniel Steegmann Mangrané, Daniela Moser, Deyson Gilbert, Éder Oliveira, Eduardo Hargreaves, Ernesto Neto, Erre Erre, Fábio Baroli, Fábio Tremonte, Fabíola Moulin, Fabíola Tasca, Felipe Scovino, Flávia Péret, Flávio Cerqueira, Francisco Lara Rezende, Frederico Morais, Germano Dushá, Gisele Camargo, Guto Lacaz, Hélio Menezes, Henrique Detomi, Iara Marques, Iberê Camargo, Ina Gouveia, Ivens Machado, Janaina Wagner, José Lara, Juliana Gontijo, Júlio Martins, Katia Canton, Lais Myrrha, Laura Berbert, Letícia Grandinetti, Lorenzato, Luana Vitra, Lucas Dupin, Lucas ­Kröeff­, Lucas Simões, Marc Davi, ­Marcel­ Diogo, Marcela Novaes, Marcelo Drummond, Márcia Guimarães, Márcio Diegues, Marco Maria Zanin, Marco Sem S, Marcone Moreira, Marconi Drummond, Maria Palmeiro, Maria Thereza Alves, Marina Câmara, Maurício Meirelles, Mauro Restiffe, Nydia Negromonte, Patrícia Leite, Paula Borghi, Paula Huven, Paula Sampaio, Paulo Baptista, Pedro Motta, Rachel Cecília de Oliveira, Rafael RG, Randolpho Lamonier, Renata De Bonis, Ricardo Carioba, Rodrigo Albert, Rodrigo Braga, Rodrigo Cass, Selma Parreira, Sérgio Martins, TRAPLEV, Umberto Costa Barros, Victor Galvão, Wilson Baptista, Wilson Lázaro.'
@@ -251,20 +253,34 @@ const database = {
             }],
             notaFinal: 'Este livro foi composto utilizando as fontes ES Build, Interval e Inter; e impresso em papel Couchê Brilho 150 grs, Eurobulk 135 grs e Color Plus 80 grs pela Rona Editora, em dezembro de 2021.',
         },
+        botoes:{
+            download: 'DOWNLOAD',
+            epub: 'EPUB',
+            pdf: 'PDF',
+            downloadLivro: 'Download Livro',
+            galeriaPeriscopio: 'Galeria Periscópio',
+            livro: 'Livro',
+            artigos: 'Artigos',
+            info: 'Info',
+            audioDescricao: 'Audiodescrição'
+        },
+        popups:{
+            audioDescricao:'texto da popup audio Descricao',
+            creditos:'texto da popup creditos',
+            download:'texto da popup download',
+        },
     
     },
     en: {
         principal: {
-            titulo: '',
-            data: '',
             epigrafe: '',
             fraseChamada: '',
             artistasECuradores: ''
         },
         index: {
-            titulo: 'About Periscopio',
+            titulo: '',
             ensaios: {
-                titulo: 'Essays',
+                titulo: '',
                 itens: [{
                     titulo: 'Ampliando a visão',
                     autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitr'
@@ -399,10 +415,7 @@ const database = {
                 },
                 ],
             },
-            sobrePeriscopio: `Fundada em Belo Horizonte, em 2015, pelos sócios Alexandre Romanini, Altivo Duarte e Rodrigo Mitre, a Galeria Periscópio traz em seu nome a reverência ao instrumento óptico que permite enxergar por cima de um obstáculo. Orientada pela premissa da arte como vetor de expansão da visão, a galeria tem como objetivo colaborar com o panorama contemporâneo por meio de ações que deslocam o olhar e fazem ver além das barreiras impostas pelo cotidiano.
-            Com um programa pautado pelo vigor da invenção estética e engajado às urgências correntes, a Periscópio apresenta mostras coletivas e exposições individuais privilegiando a pluralidade de ideias, de meios e formas, a fim de criar situações instigantes, fomentando o pensamento crítico e o debate produtivo. De jovens artistas ainda nos primeiros impulsos de suas trajetórias a nomes consolidados e importantes agentes de décadas passadas, a galeria trabalha para dar vazão ao que ainda nos é desconhecido, bem como para propor novas abordagens e leituras para o que já se encontra diante dos olhos.
-            Como ativadora da cena da cultura local e ponto de articulação entre os atores e o público de todo o país, a Periscópio busca contribuir para o desenvolvimento de um imaginário social diverso e efervescente, com a firme crença na prática artística como chave de transformação positiva do indivíduo e da sociedade.
-            `,
+            sobrePeriscopio: ``,
             fichaTecnica: [{
                 titulo: 'A project by:',
                 autoria: 'Galeria Periscópio'
@@ -477,7 +490,7 @@ const database = {
                 titulo: 'Impressão:',
                 autoria: 'Rona Editora'
             }],
-            notaFinal: 'Este livro foi composto utilizando as fontes ES Build, Interval e Inter; e impresso em papel Couchê Brilho 150 grs, Eurobulk 135 grs e Color Plus 80 grs pela Rona Editora, em dezembro de 2021.',
+            notaFinal: '',
         }
     }
 

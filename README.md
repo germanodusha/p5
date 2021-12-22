@@ -12,16 +12,16 @@
 - Esqueleto do site
   - [x] Organizar seções e componentes seguindo o layout
   - [x] Estruturar base de dados dos textos em duas línguas
-  - [ ] **Adicionar conteúdo de cada seção - Jai**
-      - [ ] Menu
-      - [ ] Capa
+  - [x] **Adicionar conteúdo de cada seção - Jai**
+      - [x] Menu
+      - [x] Capa
       - [x] Chamada
       - [x] Livro
-      - [ ] Indice
-      - [ ] Artigos
-      - [ ] PopUpAudiodescrição
-      - [ ] PopUpCreditos
-      - [ ] PopUpDownload
+      - [x] Indice
+      - [x] Artigos
+      - [x] PopUpAudiodescrição
+      - [x] PopUpCreditos
+      - [x] PopUpDownload
       - [x] PopUpLivro
   - [ ] Estruturar base de cada seção
       - [x] Menu

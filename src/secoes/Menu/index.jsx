@@ -7,6 +7,7 @@ import {
   PopUpAudiodescricao,
   PopUpDownload
 } from '../../popups';
+import database from '../../database';
 
 function Menu() {
   const [abrirAudiodescricao, setAbrirAudiodescricao] = useState(false);
@@ -24,25 +25,25 @@ function Menu() {
   
   return (
     <Conteiner>
-      <p>Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral no 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.</p>
+      <p>{database.ptbr.principal.fraseChamada}</p>
 
       <Botao pos={{ x: 'esquerda', y: 'superior' }} fClick={(e) => {e.preventDefault(); toggle('Download');}}>
-        Download Livro
+        {database.ptbr.botoes.downloadLivro}
       </Botao>
 
       <Botao pos={{x: 'esquerda', y: 'inferior'}} >
-        Galeria Periscópio
+        {database.ptbr.botoes.galeriaPeriscopio}
       </Botao>
 
       <NavCentral>
         <Botao fClick={(e) => { e.preventDefault(); toggle('Livro');}}>
-          Livro
+          {database.ptbr.botoes.livro}
         </Botao> 
         <Botao>
-          Artigos
+          {database.ptbr.botoes.artigos}
         </Botao> 
         <Botao fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
-          Info
+          {database.ptbr.botoes.info}
         </Botao>
       </NavCentral>
 
@@ -51,7 +52,7 @@ function Menu() {
       </Botao>
 
       <Botao pos={{x: 'direita', y: 'superior'}} fClick={(e) => { e.preventDefault(); toggle('Audiodescricao');}}>
-        Audiodescrição
+        {database.ptbr.botoes.audioDescricao}
       </Botao>
 
       {abrirLivro && <PopUpLivro fClick={() => {toggle('Livro')}} />}
