@@ -55,7 +55,7 @@ function Menu() {
       </Botao>
 
       {abrirLivro && <PopUpLivro fClick={() => {toggle('Livro')}} />}
-      {abrirCreditos && <PopUpCreditos />}
+      {abrirCreditos && <PopUpCreditos fClick={() => {toggle('Creditos')}}/> }
       {abrirAudiodescricao && <PopUpAudiodescricao />}
       {abrirDownload && <PopUpDownload />}
      

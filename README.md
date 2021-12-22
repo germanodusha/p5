@@ -19,9 +19,9 @@
       - [x] Livro
       - [ ] Indice
       - [ ] Artigos
-      - [ ] PopUpAudiodescrição
+      - [x] PopUpAudiodescrição
       - [ ] PopUpCreditos
-      - [ ] PopUpDownload
+      - [x] PopUpDownload
       - [x] PopUpLivro
   - [ ] Estruturar base de cada seção
       - [x] Menu
