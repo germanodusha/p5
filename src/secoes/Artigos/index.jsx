@@ -3,9 +3,11 @@ import {  } from './estilo';
 import database from '../../database'
 
 function Artigos() {
-  
+  const artigos = database.ptbr.artigos;
   return (
-    <>Artigos</>
+    <>
+    {artigos.map((artigo) =>(<>{artigo}</>))}
+    </>
   );
 }
 
