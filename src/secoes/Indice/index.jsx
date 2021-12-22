@@ -23,7 +23,7 @@ const ensaios = database.ptbr.index.ensaios.itens;
         <div>
           {ensaios.map((ensaio) => (
             <ItemIndice key={ensaio.titulo.replace(' ','-')}>
-              <p class="underline">{ensaio.titulo}</p>
+              <p className="underline">{ensaio.titulo}</p>
               <p>{ensaio.autoria}</p>
             </ItemIndice>
         ))}
@@ -36,7 +36,7 @@ const ensaios = database.ptbr.index.ensaios.itens;
         <div>
           {exposicoes.map((exposicao) => (
             <ItemIndice key={exposicao.titulo.replace(' ', '-')}>
-              <p class="underline">{exposicao.titulo}</p>
+              <p className="underline">{exposicao.titulo}</p>
               <p>{exposicao.autoria}</p>
             </ItemIndice>
         ))}

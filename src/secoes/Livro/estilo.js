@@ -12,11 +12,11 @@ background-color:var(--branco);
     height: auto;
 }
 
-.esquerda
 `;
 
 export const Foto = styled.img`
 width:100vw;
 height:100vh;
 object-fit:cover;
+cursor:pointer;
 `;

@@ -79,10 +79,6 @@ const database = {
                     autoria: 'Éder Oliveira'
                 },
                 {
-                    titulo: 'Daquilo que é próprio',
-                    autoria: 'Marcelo Drummond'
-                },
-                {
                     titulo: 'Todos por Um',
                     autoria: 'Curadoria Wilson Lázaro'
                 },
@@ -319,10 +315,6 @@ const database = {
                 {
                     titulo: 'Você é a seta',
                     autoria: 'Éder Oliveira'
-                },
-                {
-                    titulo: 'Daquilo que é próprio',
-                    autoria: 'Marcelo Drummond'
                 },
                 {
                     titulo: 'Todos por Um',
