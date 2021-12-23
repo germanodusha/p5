@@ -1,6 +1,6 @@
 import React from "react";
 import { Conteiner, Content, Download, Text } from "../PopUpDownload/estilo.js";
-
+import database from '../../database'
 function PopUpAudiodescricao() {
   return (
     <Conteiner
@@ -8,15 +8,10 @@ function PopUpAudiodescricao() {
     >
       <Content className="centerColumn">
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          {database.ptbr.popups.audioDescricao}
         </Text>
 
-        <Download style={{marginTop:'-8%', marginBottom:'6%'}}>DOWNLOAD</Download>
+        <Download style={{marginTop:'-8%', marginBottom:'6%'}}>{database.ptbr.botoes.download}</Download>
       </Content>
     </Conteiner>
   );

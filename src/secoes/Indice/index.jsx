@@ -5,8 +5,6 @@ import database from '../../database'
 function Indice() {
 const ensaios = database.ptbr.index.ensaios.itens;
 const exposicoes = database.ptbr.index.exposicoes.itens;
-
-console.log(exposicoes)
   return (
     <Conteiner>
     <Epigrafe>{database.ptbr.principal.epigrafe}

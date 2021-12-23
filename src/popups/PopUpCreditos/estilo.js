@@ -35,11 +35,12 @@ export const Content = styled.div`
 width:100%;
 height:100%;
 .navegacao{
+  width:20%;
   display:flex;
   position:fixed;
   gap:10%;
   bottom:6%;
-  right:33%;
+  right:25%;
 }
 .bola1{
 top:15%;

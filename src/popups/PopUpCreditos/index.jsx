@@ -16,7 +16,6 @@ import { dblClick } from "@testing-library/user-event/dist/click";
 
 function PopUpCreditos({ fClick }) {
   const fichaTecnica = database.ptbr.index.fichaTecnica;
-  const agradecimentos = database.ptbr.index.agradecimentos;
   const artistasECuradores = database.ptbr.principal.artistasECuradores;
   const db = database.ptbr.index.sobrePeriscopio;
   const [estado,setEstado] = useState(true);
@@ -26,17 +25,18 @@ function PopUpCreditos({ fClick }) {
     
     <Conteiner>
       <Content className="centerRow">
-        {estado ? (<> <CaixaTexto className="startRow" >
-          <Info id="artistasECuradores">
-           <p>{artistasECuradores}</p>
-          </Info>   
-        </CaixaTexto>
+        {estado ? (<> 
         <Info id="agradecimentos" className="startRow">
           <h3>Sobre o Periscópio</h3>
           <p>{db}</p>
-        </Info></>):(<><CaixaTexto className="startRow" >
+        </Info>
+        <CaixaTexto className="startRow" >
+          <Info id="artistasECuradores">
+           <p>{artistasECuradores}</p>
+          </Info>   
+        </CaixaTexto></>):(<><CaixaTexto className="startRow" >
           <Info>
-            {fichaTecnica.parte1.map((e, i) => (
+            {fichaTecnica.parte1.map((e) => (
               <>
                 <span>{e.titulo}</span>
                 <span>{e.autoria}</span>
@@ -44,7 +44,7 @@ function PopUpCreditos({ fClick }) {
             ))}
           </Info>
           
-          <Info>{fichaTecnica.parte2.map((e, i) => (
+          <Info>{fichaTecnica.parte2.slice(0,7).map((e) => (
             
              <> <span>{e.titulo}</span>
               <span>{e.autoria}</span></>
@@ -52,13 +52,18 @@ function PopUpCreditos({ fClick }) {
           ))}</Info>
           
         </CaixaTexto>
-        <Info id="agradecimentos" className="startRow">
-          <h3>{agradecimentos.titulo}</h3>
-          <p>{agradecimentos.autoria}</p>
-        </Info></>)}
+        
+          <Info id="agradecimentos" className="startRow">
+          <h3>{fichaTecnica.parte2[7].titulo}</h3>
+          <p>{fichaTecnica.parte2[7].autoria}</p>
+          <span>{fichaTecnica.parte2[8].titulo}</span>
+          <p>{fichaTecnica.parte2[8].autoria}</p>
+          <p>{fichaTecnica.notaFinal}</p> 
+        </Info>
+        </>)}
         <div className="navegacao">
           <Ancora onClick={()=>{setEstado(true)}} ativo={estado}>Sobre/Artistas</Ancora>
-          <Ancora onClick={()=>{setEstado(false)}} ativo={!estado}>Créditos</Ancora>
+          <Ancora onClick={()=>{setEstado(false)}} ativo={!estado}>Ficha Técnica</Ancora>
         </div>
         <Bolinha className="bola1" />
         <Bolinha className="bola2" />
