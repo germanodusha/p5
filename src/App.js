@@ -10,20 +10,24 @@ import {
 
 import EstiloGlobal from './EstiloGlobal';
 import { AcessoGlobal } from './AcessoGlobal';
+import { AcessoPopUps } from './AcessoPopUps';
 import HashLinkObserver from 'react-hash-link';
 
 function App() {
   return (
     <>
       <EstiloGlobal />
+      <HashLinkObserver smoothScroll={true} />
       <AcessoGlobal>
-        <HashLinkObserver smoothScroll={true} />
-        <Menu />
-        <Capa />
-        <Chamada />
-        <Livro />
-        <Indice />
-        <Artigos />
+        <AcessoPopUps>
+
+          <Menu />
+          <Capa />
+          <Chamada />
+          <Livro />
+          <Indice />
+          <Artigos />
+        </AcessoPopUps>
       </AcessoGlobal>
     </>
   );

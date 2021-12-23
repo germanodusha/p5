@@ -8,16 +8,21 @@ import {
   PopUpDownload
 } from '../../popups';
 import database from '../../database';
+import { usePopUps } from '../../AcessoPopUps';
 
 function Menu() {
+  const [popUps, setPopUps] = usePopUps();
+
   const [abrirAudiodescricao, setAbrirAudiodescricao] = useState(false);
   const [abrirCreditos, setAbrirCreditos] = useState(false);
   const [abrirDownload, setAbrirDownload] = useState(false);
   const [abrirLivro, setAbrirLivro] = useState(false);
 
   const toggle = (item) => {
-    eval(`setAbrir${item}(!abrir${item})`);
-    if (item !== 'Livro' && abrirLivro) setAbrirLivro(false);
+    item === "Livro"
+      ? setPopUps({ livro: !popUps.livro })
+      : eval(`setAbrir${item}(!abrir${item})`);
+    if (item !== 'Livro' && popUps.livro) setPopUps({livro: false});
     if (item !== 'Creditos' && abrirCreditos) setAbrirCreditos(false);
     if (item !== 'Audiodesc' && abrirAudiodescricao) setAbrirAudiodescricao(false);
     if (item !== 'Download' && abrirDownload) setAbrirDownload(false);
@@ -55,7 +60,7 @@ function Menu() {
         {database.ptbr.botoes.audioDescricao}
       </Botao>
 
-      {abrirLivro && <PopUpLivro fClick={() => {toggle('Livro')}} />}
+      {popUps.livro && <PopUpLivro fClick={() => {toggle('Livro')}} />}
       {abrirCreditos && <PopUpCreditos fClick={() => {toggle('Creditos')}}/> }
       {abrirAudiodescricao && <PopUpAudiodescricao fClick={() => {toggle('Audiodescricao')}}/>}
       {abrirDownload && <PopUpDownload fClick={() => {toggle('Download')}}/>}

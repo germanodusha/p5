@@ -1,9 +1,12 @@
 import React, {
-    createContext, useReducer, useContext,
+    createContext, useReducer, useContext, useEffect,
 } from 'react';
+import database from './database';
 
 /* estado inicial */
-const estadoInicial = { livro: false };
+const estadoInicial = {
+    livro: false,
+};
 
 /* contexto do estado + valor inicial */
 const contextoPopUps = createContext(estadoInicial);
@@ -11,14 +14,18 @@ const contextoPopUps = createContext(estadoInicial);
 const dispatchPopUps = createContext(undefined);
 
 export const AcessoPopUps = ({ children }) => {
-    const [abrirPopUps, setAbrirPopUps] = useReducer(
+    const [popUps, setPopUps] = useReducer(
         (estado, novoValor) => ({ ...estado, ...novoValor }),
         estadoInicial,
     );
 
+    useEffect(() => {
+        console.log('atualizou popUps');
+    }, [popUps]);
+
     return (
-        <contextoPopUps.Provider value={abrirPopUps}>
-            <dispatchPopUps.Provider value={setAbrirPopUps}>
+        <contextoPopUps.Provider value={popUps}>
+            <dispatchPopUps.Provider value={setPopUps}>
                 {children}
             </dispatchPopUps.Provider>
         </contextoPopUps.Provider>
@@ -29,14 +36,3 @@ export const usePopUps = () => [
     useContext(contextoPopUps),
     useContext(dispatchPopUps),
 ];
-
-
-/*
-    import { useGlobal } from '../../AcessoGlobal';
-
-    function GaleriaFilmes({ categoria }) {
-    // eslint-disable-next-line no-unused-vars
-    const [global, mudarGlobal] = useGlobal();
-
-    const { filmes } = global.db; 
-*/

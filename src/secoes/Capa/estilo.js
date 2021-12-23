@@ -5,6 +5,16 @@ background: var(--laranja);
 z-index: 20;
 height: 100vh;
 position: relative;
+
+`;
+
+export const ConteinerLivro = styled.div`
+position: absolute;
+top: 28vh;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
 `;
 
 export const TituloPrincipal = styled.h1`
@@ -13,6 +23,7 @@ font-size: 10em;
 font-weight: normal;
 line-height: 1;
 position:absolute;
+top: 75vh;
 width: 100%;
 text-align: center;
 bottom: -10vh;
@@ -38,10 +49,10 @@ ${(props) => props.temSpan
 `;
 
 export const Livro = styled.img`
-height: 70vh;
-position: absolute;
-top: 20vh;
-left: 30vw;
+// height: 70%;
+// position: absolute;
+// top: 20vh;
+// left: 30vw;
 width: auto;
-margin: auto !important;
+// margin: auto !important;
 `;
