@@ -7,7 +7,7 @@ import { AcessoPopUps, usePopUps } from '../../AcessoPopUps';
   const [abrirPopUps, setAbrirPopUps] = usePopUps();
   
   return (
-    <ConteinerFoto>
+    <ConteinerFoto id="livro">
       <Foto src={Foto1} onClick={fClick}/>
     </ConteinerFoto>
   );

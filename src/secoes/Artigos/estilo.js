@@ -6,7 +6,8 @@ display: flex;
 flex-direction: row;
 font-family: 'Interval';
 font-size: 1em;
-padding: 15vh 10vw;
+line-height: 1.5;
+padding: 15vh 15vw;
 background-color: var(--branco);
 gap: 5vw;
 position: relative;
@@ -35,17 +36,17 @@ position:relative;
     height: 100%;
     width: 100%;
     top: 0;
-    justify-content:center;
+    justify-content:left;
     align-items:center;
     img{
         height: 100%;
-        width: auto;
+        max-width: 100%;
     }
 }
 `;
 
 export const Artigo = styled.article`
-padding-right: 15vw;
+padding-right: 10vw;
 p{
     padding-bottom: 1em;
 }
