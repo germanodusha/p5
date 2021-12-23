@@ -15,9 +15,9 @@ import database from "../../database";
 import { dblClick } from "@testing-library/user-event/dist/click";
 
 function PopUpCreditos({ fClick }) {
-  const fichaTecnica = database.ptbr.index.fichaTecnica;
+  const fichaTecnica = database.ptbr.info.fichaTecnica;
   const artistasECuradores = database.ptbr.principal.artistasECuradores;
-  const db = database.ptbr.index.sobrePeriscopio;
+  const db = database.ptbr.info.sobrePeriscopio;
   const [estado,setEstado] = useState(true);
 
   console.log(db);
@@ -27,7 +27,7 @@ function PopUpCreditos({ fClick }) {
       <Content className="centerRow">
         {estado ? (<> 
         <Info id="agradecimentos" className="startRow">
-          <h3>Sobre o Periscópio</h3>
+            <h3>{ }</h3>
           <p>{db}</p>
         </Info>
         <CaixaTexto className="startRow" >

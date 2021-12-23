@@ -173,91 +173,95 @@ const database = {
                 },
                 ],
             },
-            sobrePeriscopio: {titulo: 'Sobre Periscópio:',
-            texto:`Fundada em Belo Horizonte, em 2015, pelos sócios Alexandre Romanini, Altivo Duarte e Rodrigo Mitre, a Galeria Periscópio traz em seu nome a reverência ao instrumento óptico que permite enxergar por cima de um obstáculo. Orientada pela premissa da arte como vetor de expansão da visão, a galeria tem como objetivo colaborar com o panorama contemporâneo por meio de ações que deslocam o olhar e fazem ver além das barreiras impostas pelo cotidiano.
+        },
+        info: {
+            sobrePeriscopio: {
+                titulo: 'Sobre a Periscópio:',
+                texto: `Fundada em Belo Horizonte, em 2015, pelos sócios Alexandre Romanini, Altivo Duarte e Rodrigo Mitre, a Galeria Periscópio traz em seu nome a reverência ao instrumento óptico que permite enxergar por cima de um obstáculo. Orientada pela premissa da arte como vetor de expansão da visão, a galeria tem como objetivo colaborar com o panorama contemporâneo por meio de ações que deslocam o olhar e fazem ver além das barreiras impostas pelo cotidiano.
             Com um programa pautado pelo vigor da invenção estética e engajado às urgências correntes, a Periscópio apresenta mostras coletivas e exposições individuais privilegiando a pluralidade de ideias, de meios e formas, a fim de criar situações instigantes, fomentando o pensamento crítico e o debate produtivo. De jovens artistas ainda nos primeiros impulsos de suas trajetórias a nomes consolidados e importantes agentes de décadas passadas, a galeria trabalha para dar vazão ao que ainda nos é desconhecido, bem como para propor novas abordagens e leituras para o que já se encontra diante dos olhos.
             Como ativadora da cena da cultura local e ponto de articulação entre os atores e o público de todo o país, a Periscópio busca contribuir para o desenvolvimento de um imaginário social diverso e efervescente, com a firme crença na prática artística como chave de transformação positiva do indivíduo e da sociedade.
             `},
-      fichaTecnica: {
-        parte1: [
-          {
-            titulo: "Um projeto:",
-            autoria: "Galeria Periscópio",
-          },
-          {
-            titulo: "Realização:",
-            autoria: `Secretária Especial da Cultura
+            fichaTecnica: {
+                parte1: [
+                    {
+                        titulo: "Um projeto:",
+                        autoria: "Galeria Periscópio",
+                    },
+                    {
+                        titulo: "Realização:",
+                        autoria: `Secretária Especial da Cultura
              Ministério do Turismo
              `,
-          },
-          {
-            titulo: "Patrocínio:",
-            autoria: "Agropel; Nova Catalão, Tecar Fiat",
-          },
-          {
-            titulo: "Sócios-proprietários:",
-            autoria: "Alexandre Romanini; Altivo Duarte; Rodrigo Mitre",
-          },
-          {
-            titulo: "Direção",
-            autoria: "Rodrigo Mitre",
-          },
-          {
-            titulo: "Coordenação editorial",
-            autoria: "Fora/Genesys",
-          },
-          {
-            titulo: "Organização e edição: ",
-            autoria: "Germano Dushá",
-          },
-          {
-            titulo: "Coordenação:",
-            autoria: "Fabricia Ramos; Germano Dushá",
-          },
-          {
-            titulo: "Ensaios:",
-            autoria:
-              "Alexandre Romanini, Altivo Duarte e Rodrigo Mitre; Germano Dushá; Libéria Neves e Vicente Camiloti; Raphael Fonseca",
-          },
-        ],
-        parte2:[            
-            {
-                titulo: 'Design gráfico:',
-                autoria: 'Raul Luna'
+                    },
+                    {
+                        titulo: "Patrocínio:",
+                        autoria: "Agropel; Nova Catalão, Tecar Fiat",
+                    },
+                    {
+                        titulo: "Sócios-proprietários:",
+                        autoria: "Alexandre Romanini; Altivo Duarte; Rodrigo Mitre",
+                    },
+                    {
+                        titulo: "Direção",
+                        autoria: "Rodrigo Mitre",
+                    },
+                    {
+                        titulo: "Coordenação editorial",
+                        autoria: "Fora/Genesys",
+                    },
+                    {
+                        titulo: "Organização e edição: ",
+                        autoria: "Germano Dushá",
+                    },
+                    {
+                        titulo: "Coordenação:",
+                        autoria: "Fabricia Ramos; Germano Dushá",
+                    },
+                    {
+                        titulo: "Ensaios:",
+                        autoria:
+                            "Alexandre Romanini, Altivo Duarte e Rodrigo Mitre; Germano Dushá; Libéria Neves e Vicente Camiloti; Raphael Fonseca",
+                    },
+                ],
+                parte2: [
+                    {
+                        titulo: 'Design gráfico:',
+                        autoria: 'Raul Luna'
+                    },
+                    {
+                        titulo: 'Finalização de conteúdo:',
+                        autoria: 'Marcelo Mudou'
+                    },
+                    {
+                        titulo: 'Produção:',
+                        autoria: 'Julia Costa; Bruna Cabeço'
+                    },
+                    {
+                        titulo: 'Tradução:',
+                        autoria: 'Fabricia Ramos; Patricia Porto'
+                    },
+                    {
+                        titulo: 'Preparação de texto (ensaios):',
+                        autoria: 'Sandra Brazil'
+                    },
+                    {
+                        titulo: 'Registros fotográficos:',
+                        autoria: 'Eduardo Eckenfels; Everton Ballardin; Pat Kilgore; Rodrigo Albert'
+                    },
+                    {
+                        titulo: 'Equipe Periscópio Team (2015-2021):',
+                        autoria: 'Alessandra Ferreira; André Victor; Franimar Araújo; Gustavo Germano; Isabela Barros; John Silveira; José Abel Catarina; Julia Costa; Lucas Lima; Rafael Boneco; Vanessa Monteze'
+                    },
+                    {
+                        titulo: 'Agradecimentos:',
+                        autoria: 'Alberto Pezeiro; Alessandra Mitre; Alex Schott; Alexandre Meira; Álvaro Piquet; Augusto Nunes;  Beatriz de Almeida Magalhães; Beatriz Menezes; Breno Schott; Bruno Assumpção; Bruno Bedinelli; Carolina Bortoletto; Cristiana Mitre; Fabiano Galdino; Fabíola Moulin; Felice Filmes; Felipe Scovino; Flávio Reis; Francisco Gracindo; Frederico Morais; Galeria Celma Albuquerque; Galeria Fortes D’Aloia & Gabriel; Galeria Jaqueline Martins; Galeria Mendes Wood DM; Hamilton Mitre; Hallison Moreira; Hélio Lauar; Hélio Menezes; Jarbas Velloso; João Guilherme Dayrell; Joelina Santos; José Élcio Monteze; Júlio Martins; Katia Canton; Leonardo Bortoletto; Libéria Neves; Lucas e Luquinas; Lúcio Chamon; Luiz Flávio; Luiz Rodrigo Cerqueira; Manoel Macedo; Marcelo Drummond; Marcelo Costa; Marconi Drummond; Maria Clara Godoy; Maria de Lourdes Macedo; Maria Eduarda Pacheco; Maria Montero; Maria Regina Costa; Mariana Abrao; Marina Câmara; Mateus Gontijo; Mônica Grandchamp; Nydia Negromonte; Odete Romanini; Paula Borghi; Paulo Baptista; Paulo Caetano; Pedro Mendes; Prof. Dr. Auterives Maciel Jr; Raimundo Jorge Mourão; Raphael Fonseca; Raquel Cecília de Oliveira; Renata Marquez; Renata Montagneri; Renata Romanini; Renato Silva; Samuel Lacerda; Sé Galeria; Sérgio Martins; Sérgio Mattos; Silvia Batista, Talita Meira; Uiara Azevedo; Vanessa Costa; Vicente Camiloti; Victor Galvão; Vinicius Veloso; Virginia Geo; Wagner Nardy; Wilson Lázaro; Wlins Amaranto; Zeca Camargo; Zezé Monteze'
+                    },
+                    {
+                        titulo: 'Impressão:',
+                        autoria: 'Rona Editora'
+                    }],
+                notaFinal: 'Este livro foi composto utilizando as fontes ES Build, Interval e Inter; e impresso em papel Couchê Brilho 150 grs, Eurobulk 135 grs e Color Plus 80 grs pela Rona Editora, em dezembro de 2021.',
             },
-            {
-                titulo: 'Finalização de conteúdo:',
-                autoria: 'Marcelo Mudou'
-            },
-            {
-                titulo: 'Produção:',
-                autoria: 'Julia Costa; Bruna Cabeço'
-            },
-            {
-                titulo: 'Tradução:',
-                autoria: 'Fabricia Ramos; Patricia Porto'
-            },
-            {
-                titulo: 'Preparação de texto (ensaios):',
-                autoria: 'Sandra Brazil'
-            },
-            {
-                titulo: 'Registros fotográficos:',
-                autoria: 'Eduardo Eckenfels; Everton Ballardin; Pat Kilgore; Rodrigo Albert'
-            },
-            {
-                titulo: 'Equipe Periscópio Team (2015-2021):',
-                autoria: 'Alessandra Ferreira; André Victor; Franimar Araújo; Gustavo Germano; Isabela Barros; John Silveira; José Abel Catarina; Julia Costa; Lucas Lima; Rafael Boneco; Vanessa Monteze'
-            },
-            {
-                titulo: 'Agradecimentos:',
-                autoria: 'Alberto Pezeiro; Alessandra Mitre; Alex Schott; Alexandre Meira; Álvaro Piquet; Augusto Nunes;  Beatriz de Almeida Magalhães; Beatriz Menezes; Breno Schott; Bruno Assumpção; Bruno Bedinelli; Carolina Bortoletto; Cristiana Mitre; Fabiano Galdino; Fabíola Moulin; Felice Filmes; Felipe Scovino; Flávio Reis; Francisco Gracindo; Frederico Morais; Galeria Celma Albuquerque; Galeria Fortes D’Aloia & Gabriel; Galeria Jaqueline Martins; Galeria Mendes Wood DM; Hamilton Mitre; Hallison Moreira; Hélio Lauar; Hélio Menezes; Jarbas Velloso; João Guilherme Dayrell; Joelina Santos; José Élcio Monteze; Júlio Martins; Katia Canton; Leonardo Bortoletto; Libéria Neves; Lucas e Luquinas; Lúcio Chamon; Luiz Flávio; Luiz Rodrigo Cerqueira; Manoel Macedo; Marcelo Drummond; Marcelo Costa; Marconi Drummond; Maria Clara Godoy; Maria de Lourdes Macedo; Maria Eduarda Pacheco; Maria Montero; Maria Regina Costa; Mariana Abrao; Marina Câmara; Mateus Gontijo; Mônica Grandchamp; Nydia Negromonte; Odete Romanini; Paula Borghi; Paulo Baptista; Paulo Caetano; Pedro Mendes; Prof. Dr. Auterives Maciel Jr; Raimundo Jorge Mourão; Raphael Fonseca; Raquel Cecília de Oliveira; Renata Marquez; Renata Montagneri; Renata Romanini; Renato Silva; Samuel Lacerda; Sé Galeria; Sérgio Martins; Sérgio Mattos; Silvia Batista, Talita Meira; Uiara Azevedo; Vanessa Costa; Vicente Camiloti; Victor Galvão; Vinicius Veloso; Virginia Geo; Wagner Nardy; Wilson Lázaro; Wlins Amaranto; Zeca Camargo; Zezé Monteze'
-            },
-            {
-                titulo: 'Impressão:',
-                autoria: 'Rona Editora'
-            }],
-            notaFinal: 'Este livro foi composto utilizando as fontes ES Build, Interval e Inter; e impresso em papel Couchê Brilho 150 grs, Eurobulk 135 grs e Color Plus 80 grs pela Rona Editora, em dezembro de 2021.',
         },
         botoes: {
             download: 'DOWNLOAD',
@@ -289,7 +293,7 @@ const database = {
                 itens: [{
                     titulo: 'Expanding visions',
                     autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitr',
-                    texto:`
+                    texto: `
                     <p>A periscope is an optical device that was created at the beginning of the 20th century. Its models and applications have taken many forms over time, but their primary function remains unmistakable: to extend the reach of human vision. When we invited the artist and professor Marcelo Drummond to think with us about a name for the gallery, it was not exactly the objective connotation that at first guided the suggestion of the name. The whole thing happened more spontaneously. In the search for a unique name that could convey the idea of ​​a collective project, Marcelo suddenly asked us: “I think the name of the gallery should be something a little strange indeed… like a periscope!”.</p>
                     <p>Guto Lacaz's homonymous work, presented in 1994 at the exhibition “Arte/cidade 2”, in São Paulo, occurred to him as a reference. The urban intervention of large proportions brought a giant instrument attached to the facade of a building, allowing passersby to see the exhibition on the top floor and, in return, the building's visitor to observe what was happening on the street.</p>
                     <p>At first, the suggestion was met with some resistance, but gradually the provocative force of this unusual name and the possibilities of its semantic charge began to produce positive stimuli. We soon decided to give this name to the project that had been sewing for many years and that, finally, was preparing to gain the world.</p>
@@ -303,7 +307,7 @@ const database = {
                 {
                     titulo: 'Program to transview the world',
                     autoria: 'Germano Dushá',
-                    texto:`
+                    texto: `
                     <p>When I first heard about Periscópio and its gallery program I was taken by a good omen. Its unusual name already denoted that its founders had forfeited the more traditional personal reference in favor of an idea as a symbol of their association. The gallery was about to open in a few months, and the freshness of a new space with an unique layout and a program intended on energizing Belo Horizonte's art system immediately triggered my enthusiasm. Adding to this initial spirit was the building and the location in themselves: its headquarters was a charming listed house, located in an important point in the metropolis and, curiously, on my parents' street – my home when I’m in the city.</p>
                     <p>Through my dear friend and constant partner Lais Myrrha, I soon had the pleasure of meeting Rodrigo, Altivo and Alexandre, creators of Periscópio. The empathy was immediate, with energetic openness channeling a series of life threads into a single situation, quickly turning into familiar and fertile ground for collaborations.</p>
                     <p>We decided to join forces for the exhibition that would inaugurate the gallerie’s arrival in the world: "Domingo", a solo show by Fábio Tremonte. From that point onwards, we carried out some type of project together practically every year, unfolding through uninterrupted exchange. I like to think that I somehow collaborated to start and pave the way for the gallery, in the same way that it has made its mark on my trajectory, weaving a rare web between professional rigor and true affection.</p>
@@ -455,92 +459,94 @@ const database = {
                 },
                 ],
             },
+        },
+        info: {
             sobrePeriscopio: {
-                titulo:'About Periscópio:',
-                texto:`Founded in 2015 by partners Alexandre Romanini, Altivo Duarte and Rodrigo Mitre, in Belo Horizonte, Periscópio Arte Contemporânea brings in its name the reverence for the optical instrument that allows you to see over an obstacle. Guided by the premise of art as a vector for expanding vision, the gallery's objective is to collaborate with the contemporary panorama through actions that shift the gaze and make it possible to see beyond the barriers of everyday life.
+                titulo: 'About Periscópio:',
+                texto: `Founded in 2015 by partners Alexandre Romanini, Altivo Duarte and Rodrigo Mitre, in Belo Horizonte, Periscópio Arte Contemporânea brings in its name the reverence for the optical instrument that allows you to see over an obstacle. Guided by the premise of art as a vector for expanding vision, the gallery's objective is to collaborate with the contemporary panorama through actions that shift the gaze and make it possible to see beyond the barriers of everyday life.
                 With a program guided by the vigor of aesthetic invention and engaged with current urgencies, Periscópio presents group shows and individual exhibitions that privilege the plurality of ideas, means and forms, in order to create exciting situations, fostering critical thinking and productive debates. From young artists still in the first impulses of their trajectories to consolidated names and important agents of past decades, the gallery works to open paths to what is still unknown, as well as to propose new approaches and interpretations for what is already before our eyes.
                 As an activator of the local cultural scene and a point of articulation between actors and audiences across the country, Periscópio seeks to contribute to the development of a diverse and effervescent social imaginary, firm in the belief of artistic practice as a key to positive transformation of the individual and of the society.
-            `},
-            fichaTecnica:{
+                `},
+            fichaTecnica: {
                 parte1: [
-                {
-                titulo: 'A project by:',
-                autoria: 'Galeria Periscópio'
-            },
-            {
-                titulo: 'Produced by:',
-                autoria: `Secretária Especial da Cultura
+                    {
+                        titulo: 'A project by:',
+                        autoria: 'Galeria Periscópio'
+                    },
+                    {
+                        titulo: 'Produced by:',
+                        autoria: `Secretária Especial da Cultura
              Ministério do Turismo
              `
+                    },
+                    {
+                        titulo: 'Sponsorship:',
+                        autoria: 'Agropel; Nova Catalão, Tecar Fiat'
+                    },
+                    {
+                        titulo: 'Partners directors:',
+                        autoria: 'Alexandre Romanini; Altivo Duarte; Rodrigo Mitre'
+                    },
+                    {
+                        titulo: 'Direction',
+                        autoria: 'Rodrigo Mitre'
+                    },
+                    {
+                        titulo: 'Coordenação editorial Editorial coordination:',
+                        autoria: 'Fora/Genesys'
+                    },
+                    {
+                        titulo: 'Conception and edited by: ',
+                        autoria: 'Germano Dushá'
+                    },
+                    {
+                        titulo: 'Coordination:',
+                        autoria: 'Fabricia Ramos; Germano Dushá'
+                    },
+                    {
+                        titulo: 'Essays:',
+                        autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitre; Germano Dushá; Libéria Neves e Vicente Camiloti; Raphael Fonseca'
+                    },],
+                parte2: [
+                    {
+                        titulo: 'Graphic design:',
+                        autoria: 'Raul Luna'
+                    },
+                    {
+                        titulo: 'Editorial post-production:',
+                        autoria: 'Marcelo Mudou'
+                    },
+                    {
+                        titulo: 'Production:',
+                        autoria: 'Julia Costa; Bruna Cabeço'
+                    },
+                    {
+                        titulo: 'Translation:',
+                        autoria: 'Fabricia Ramos; Patricia Porto'
+                    },
+                    {
+                        titulo: 'Copyediting (essays):',
+                        autoria: 'Sandra Brazil'
+                    },
+                    {
+                        titulo: 'Photographic documentation:',
+                        autoria: 'Eduardo Eckenfels; Everton Ballardin; Pat Kilgore; Rodrigo Albert'
+                    },
+                    {
+                        titulo: 'Team (2015-2021):',
+                        autoria: 'Alessandra Ferreira; André Victor; Franimar Araújo; Gustavo Germano; Isabela Barros; John Silveira; José Abel Catarina; Julia Costa; Lucas Lima; Rafael Boneco; Vanessa Monteze'
+                    },
+                    {
+                        titulo: 'Acknowledgments:',
+                        autoria: 'Alberto Pezeiro; Alessandra Mitre; Alex Schott; Alexandre Meira; Álvaro Piquet; Augusto Nunes;  Beatriz de Almeida Magalhães; Beatriz Menezes; Breno Schott; Bruno Assumpção; Bruno Bedinelli; Carolina Bortoletto; Cristiana Mitre; Fabiano Galdino; Fabíola Moulin; Felice Filmes; Felipe Scovino; Flávio Reis; Francisco Gracindo; Frederico Morais; Galeria Celma Albuquerque; Galeria Fortes D’Aloia & Gabriel; Galeria Jaqueline Martins; Galeria Mendes Wood DM; Hamilton Mitre; Hallison Moreira; Hélio Lauar; Hélio Menezes; Jarbas Velloso; João Guilherme Dayrell; Joelina Santos; José Élcio Monteze; Júlio Martins; Katia Canton; Leonardo Bortoletto; Libéria Neves; Lucas e Luquinas; Lúcio Chamon; Luiz Flávio; Luiz Rodrigo Cerqueira; Manoel Macedo; Marcelo Drummond; Marcelo Costa; Marconi Drummond; Maria Clara Godoy; Maria de Lourdes Macedo; Maria Eduarda Pacheco; Maria Montero; Maria Regina Costa; Mariana Abrao; Marina Câmara; Mateus Gontijo; Mônica Grandchamp; Nydia Negromonte; Odete Romanini; Paula Borghi; Paulo Baptista; Paulo Caetano; Pedro Mendes; Prof. Dr. Auterives Maciel Jr; Raimundo Jorge Mourão; Raphael Fonseca; Raquel Cecília de Oliveira; Renata Marquez; Renata Montagneri; Renata Romanini; Renato Silva; Samuel Lacerda; Sé Galeria; Sérgio Martins; Sérgio Mattos; Silvia Batista, Talita Meira; Uiara Azevedo; Vanessa Costa; Vicente Camiloti; Victor Galvão; Vinicius Veloso; Virginia Geo; Wagner Nardy; Wilson Lázaro; Wlins Amaranto; Zeca Camargo; Zezé Monteze'
+                    },
+                    {
+                        titulo: 'Printing:',
+                        autoria: 'Rona Editora'
+                    }],
+                notaFinal: 'This book was composed using ES Build, Interval, and Inter fonts; and printed on Couchê Brilho 150 gsm paper, Eurobulk 135 gsm and Color Plus 80 gsm by Rona Editora, in December 2021.',
             },
-            {
-                titulo: 'Sponsorship:',
-                autoria: 'Agropel; Nova Catalão, Tecar Fiat'
-            },
-            {
-                titulo: 'Partners directors:',
-                autoria: 'Alexandre Romanini; Altivo Duarte; Rodrigo Mitre'
-            },
-            {
-                titulo: 'Direction',
-                autoria: 'Rodrigo Mitre'
-            },
-            {
-                titulo: 'Coordenação editorial Editorial coordination:',
-                autoria: 'Fora/Genesys'
-            },
-            {
-                titulo: 'Conception and edited by: ',
-                autoria: 'Germano Dushá'
-            },
-            {
-                titulo: 'Coordination:',
-                autoria: 'Fabricia Ramos; Germano Dushá'
-            },
-            {
-                titulo: 'Essays:',
-                autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitre; Germano Dushá; Libéria Neves e Vicente Camiloti; Raphael Fonseca'
-            },],
-            parte2:[
-            {
-                titulo: 'Graphic design:',
-                autoria: 'Raul Luna'
-            },
-            {
-                titulo: 'Editorial post-production:',
-                autoria: 'Marcelo Mudou'
-            },
-            {
-                titulo: 'Production:',
-                autoria: 'Julia Costa; Bruna Cabeço'
-            },
-            {
-                titulo: 'Translation:',
-                autoria: 'Fabricia Ramos; Patricia Porto'
-            },
-            {
-                titulo: 'Copyediting (essays):',
-                autoria: 'Sandra Brazil'
-            },
-            {
-                titulo: 'Photographic documentation:',
-                autoria: 'Eduardo Eckenfels; Everton Ballardin; Pat Kilgore; Rodrigo Albert'
-            },
-            {
-                titulo: 'Team (2015-2021):',
-                autoria: 'Alessandra Ferreira; André Victor; Franimar Araújo; Gustavo Germano; Isabela Barros; John Silveira; José Abel Catarina; Julia Costa; Lucas Lima; Rafael Boneco; Vanessa Monteze'
-            },
-            {
-                titulo: 'Acknowledgments:',
-                autoria: 'Alberto Pezeiro; Alessandra Mitre; Alex Schott; Alexandre Meira; Álvaro Piquet; Augusto Nunes;  Beatriz de Almeida Magalhães; Beatriz Menezes; Breno Schott; Bruno Assumpção; Bruno Bedinelli; Carolina Bortoletto; Cristiana Mitre; Fabiano Galdino; Fabíola Moulin; Felice Filmes; Felipe Scovino; Flávio Reis; Francisco Gracindo; Frederico Morais; Galeria Celma Albuquerque; Galeria Fortes D’Aloia & Gabriel; Galeria Jaqueline Martins; Galeria Mendes Wood DM; Hamilton Mitre; Hallison Moreira; Hélio Lauar; Hélio Menezes; Jarbas Velloso; João Guilherme Dayrell; Joelina Santos; José Élcio Monteze; Júlio Martins; Katia Canton; Leonardo Bortoletto; Libéria Neves; Lucas e Luquinas; Lúcio Chamon; Luiz Flávio; Luiz Rodrigo Cerqueira; Manoel Macedo; Marcelo Drummond; Marcelo Costa; Marconi Drummond; Maria Clara Godoy; Maria de Lourdes Macedo; Maria Eduarda Pacheco; Maria Montero; Maria Regina Costa; Mariana Abrao; Marina Câmara; Mateus Gontijo; Mônica Grandchamp; Nydia Negromonte; Odete Romanini; Paula Borghi; Paulo Baptista; Paulo Caetano; Pedro Mendes; Prof. Dr. Auterives Maciel Jr; Raimundo Jorge Mourão; Raphael Fonseca; Raquel Cecília de Oliveira; Renata Marquez; Renata Montagneri; Renata Romanini; Renato Silva; Samuel Lacerda; Sé Galeria; Sérgio Martins; Sérgio Mattos; Silvia Batista, Talita Meira; Uiara Azevedo; Vanessa Costa; Vicente Camiloti; Victor Galvão; Vinicius Veloso; Virginia Geo; Wagner Nardy; Wilson Lázaro; Wlins Amaranto; Zeca Camargo; Zezé Monteze'
-            },
-            {
-                titulo: 'Printing:',
-                autoria: 'Rona Editora'
-            }],
-            notaFinal: 'This book was composed using ES Build, Interval, and Inter fonts; and printed on Couchê Brilho 150 gsm paper, Eurobulk 135 gsm and Color Plus 80 gsm by Rona Editora, in December 2021.',
-        }
-    },
+        },
         botoes: {
             download: 'DOWNLOAD',
             pdf: 'PDF',
@@ -557,6 +563,6 @@ const database = {
         },
     }
 
-}}
+}
 
 export default database;
