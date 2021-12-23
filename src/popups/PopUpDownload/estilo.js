@@ -32,9 +32,11 @@ font-weight:200;
 width:70%;
 height:50%;
 padding-bottom:10%;
+font-family:'Inter';
 `
 export const Download = styled.a`
 font-size:2em;
+font-family:'Inter';
 &:hover,&:focus{
   text-decoration:underline;
   text-underline-position: under;

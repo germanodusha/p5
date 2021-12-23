@@ -61,7 +61,7 @@
   - [ ] Trocar texto do botão "Artigos" por "Ensaios"
   - [ ] Trocar botão "Créditos" por "Ficha Técnica"
 
-- [ ] Aprofundamento da estilização
+- [ ] Aprofundamento da estilização 
   - [ ] Remover hover do texto de `Chamada`
   - [ ] Adicionar botão de fechar (X) às pop ups que não tem
     - [ ] `PopUpDownload`
@@ -73,10 +73,10 @@
     - [ ] `PopUpDownload`
     - [ ] `PopUpAudiodescrição`
   - [ ] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
-  - [ ] Colocar 'cursor: pointer' em todos os elementos clicáveis
-    - [ ] Botões
-    - [ ] Âncoras
-    - [ ] Imagem `Livro`
+  - [x] Colocar 'cursor: pointer' em todos os elementos clicáveis
+    - [x] Botões
+    - [x] Âncoras
+    - [x] Imagem `Livro`
   - [ ] **`Artigos` - Mar**
     - [ ] **Aumentar espaçamento entre as linhas no menu**
     - [ ] **Alinhar marcador à esquerda dos itens do menu**

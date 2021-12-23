@@ -9,8 +9,7 @@ function PopUpDownload() {
       <Content className="centerColumn">
         <Text>{database.ptbr.index.popups.download}</Text>
         <div>
-          <Download>{database.ptbr.index.botoes.pdf}</Download>
-          <Download>{database.ptbr.index.botoes.epub}</Download>
+          <Download>{database.ptbr.index.botoes.pdf}</Download>      
         </div>
       </Content>
     </Conteiner>
