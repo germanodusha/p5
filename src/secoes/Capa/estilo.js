@@ -5,6 +5,16 @@ background: var(--laranja);
 z-index: 20;
 height: 100vh;
 position: relative;
+
+`;
+
+export const ConteinerLivro = styled.div`
+position: absolute;
+top: 28vh;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
 `;
 
 export const TituloPrincipal = styled.h1`
@@ -39,10 +49,10 @@ ${(props) => props.temSpan
 `;
 
 export const Livro = styled.img`
-height: 70vh;
-position: absolute;
-top: 20vh;
-left: 30vw;
+// height: 70%;
+// position: absolute;
+// top: 20vh;
+// left: 30vw;
 width: auto;
-margin: auto !important;
+// margin: auto !important;
 `;
