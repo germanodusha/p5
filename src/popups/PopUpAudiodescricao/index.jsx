@@ -1,7 +1,8 @@
 import React from "react";
-import { Conteiner, Content, Download, Text } from "../PopUpDownload/estilo.js";
+import { Conteiner, Content, Download, Text, Fechar } from "../PopUpDownload/estilo.js";
 import database from '../../database'
-function PopUpAudiodescricao() {
+import fechar from "../../imagens/icones/x_preto.svg"
+function PopUpAudiodescricao({fClick}) {
   return (
     <Conteiner
       style={{ position: "fixed", top: "40vh", left: "12vw", zIndex: 1000 }}
@@ -12,6 +13,8 @@ function PopUpAudiodescricao() {
         </Text>
 
         <Download style={{marginTop:'-8%', marginBottom:'6%'}}>{database.ptbr.botoes.download}</Download>
+        <Fechar onClick={ fClick }><img src={fechar} alt="fechar" /></Fechar>  
+        
       </Content>
     </Conteiner>
   );

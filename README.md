@@ -62,23 +62,28 @@
   - [x] Trocar botão "Créditos" por "Ficha Técnica"
   - [ ] Atualizar imagens do `Livro`
 
-- [ ] Aprofundamento da estilização
+- [ ] Aprofundamento da estilização 
   - [ ] Remover hover do texto de `Chamada`
-  - [ ] Adicionar botão de fechar (X) às pop ups que não tem
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescricao`
-  - [ ] Adicionar box-shadow às pop ups
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescrição`
-  - [ ] Alterar fonte para 'Inter'
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescrição`
-  - [ ] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
-  - [ ] Colocar 'cursor: pointer' em todos os elementos clicáveis
-    - [ ] Botões
-    - [ ] Âncoras
-    - [ ] Imagem `Livro`
-  - [ ] `PopUpCreditos`
+  - [x] Adicionar botão de fechar (X) às pop ups que não tem *Grego*
+    - [x] `PopUpDownload`
+    - [x] `PopUpAudiodescricao`
+  - [X] Adicionar box-shadow às pop ups *Grego*
+    - [x] `PopUpDownload`
+    - [x] `PopUpAudiodescrição`
+  - [x] Alterar fonte para 'Inter' *Grego*
+    - [x] `PopUpDownload`
+    - [x] `PopUpAudiodescrição`
+  - [x] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`*Grego*
+  - [x] Colocar 'cursor: pointer' em todos os elementos clicáveis *Grego*
+    - [x] Botões
+    - [x] Âncoras
+    - [x] Imagem `Livro`
+  - [ ] **`Artigos` - Mar**
+    - [ ] **Aumentar espaçamento entre as linhas no menu**
+    - [ ] **Alinhar marcador à esquerda dos itens do menu**
+    - [ ] **Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)**
+  - [ ] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
+  - [ ] `PopUpCreditos` - *Grego*
     - [ ] Aumentar padding do botão de fechar seguindo layout
     - [ ] Alinhar colunas das duas páginas (quando clica de um botão a outro ela muda de posição)
     - [ ] Diminuir padding lateral e gaps para caber todo o texto na página, e se preciso, diminuir um pouquinho a letra -- está dando overflow e sobrepondo os botões
@@ -99,7 +104,7 @@
     - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] Adicionar arquivos para download
+  - [ ] Adicionar arquivos para download - Mar
     - [ ] `PopUpDownload`: .pdf
     - [ ] `PopUpAudiodescricao`: audiodescrição
   - [ ] **`Global`: Aplicar lógica de línguas - Mar**
