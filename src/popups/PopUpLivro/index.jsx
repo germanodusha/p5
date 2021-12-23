@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Foto, ConteinerFoto, BotaoFechar } from './estilo';
 import { SetaEsq, SetaDir, XPreto } from '../../imagens/icones';
-import { Foto1, Foto2, Foto3, Foto4 } from '../../imagens/livro';
+import { Foto1, Foto2,Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9, Foto10,Foto11,Foto12,Foto13,Foto14,Foto15,Foto16,Foto17,Foto18,Foto19,Foto20,Foto21,Foto22,Foto23,Foto24 } from '../../imagens/livro';
 
 function PopUpLivro({ fClick }) {
 
   const [indice, setIndice] = useState(0);
-  const fotos = [Foto1, Foto2, Foto3, Foto4];
+  const fotos = [
+    Foto1, Foto2,Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9, Foto10,Foto11,Foto12,Foto13,Foto14,Foto15,Foto16,Foto17,Foto18,Foto19,Foto20,Foto21,Foto22,Foto23,Foto24];
 
   const mudarFoto = (dir) => {
     let novoIndice = indice + dir;
