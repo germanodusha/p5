@@ -12,7 +12,7 @@ function PopUpAudiodescricao({fClick}) {
           {database.ptbr.popups.audioDescricao}
         </Text>
 
-        <Download style={{marginTop:'-8%', marginBottom:'6%'}}>{database.ptbr.index.botoes.download}</Download>
+        <Download style={{marginTop:'-8%', marginBottom:'6%'}}>{database.ptbr.botoes.download}</Download>
         <Fechar onClick={ fClick }><img src={fechar} alt="fechar" /></Fechar>  
         
       </Content>
