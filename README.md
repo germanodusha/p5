@@ -55,11 +55,11 @@
 
 #### Tarefas
 - [ ] **Finalização de conteúdo - Jai**
-  - [ ] Adicionar conteúdo da `PopUpDownload`
-  - [ ] Adicionar textos da `PopUpAudiodescricao`
+  - [x] Adicionar conteúdo da `PopUpDownload`
+  - [x] Adicionar textos da `PopUpAudiodescricao`
   - [x] Adicionar textos em inglês à `database`
-  - [ ] Trocar texto do botão "Artigos" por "Ensaios"
-  - [ ] Trocar botão "Créditos" por "Ficha Técnica"
+  - [x] Trocar texto do botão "Artigos" por "Ensaios"
+  - [x] Trocar botão "Créditos" por "Ficha Técnica"
   - [ ] Atualizar imagens do `Livro`
 
 - [ ] Aprofundamento da estilização
@@ -91,7 +91,7 @@
   - [ ] Remover barra laranja ao fim da página
   - [ ] Aplicar animação de letreiro de LED ao banner da frase de chamada no `Menu`
   - [ ] Adicionar objeto 3D / gif à `Capa`
-  - [ ] Trocar a cor de seleção do texto por laranja (`Global`)
+  - [x] Trocar a cor de seleção do texto por laranja (`Global`)
   - [x] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `PopUpCreditos`
   - [x] `Artigos`
     - [x] Aumentar espaçamento entre as linhas no menu
@@ -99,7 +99,7 @@
     - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] Adicionar arquivos para download - Mar
+  - [ ] Adicionar arquivos para download
     - [ ] `PopUpDownload`: .pdf
     - [ ] `PopUpAudiodescricao`: audiodescrição
   - [ ] **`Global`: Aplicar lógica de línguas - Mar**
