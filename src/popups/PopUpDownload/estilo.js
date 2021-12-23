@@ -14,6 +14,7 @@ margin-left:2%;
 export const Content = styled.div`
 width:100%;
 height:100%;
+box-shadow: 0 0 20px 15px var(--preto);
 border-radius:3rem;
 background-color: var(--laranja);
 border:1px solid var(--preto);
@@ -40,6 +41,20 @@ font-family:'Inter';
 &:hover,&:focus{
   text-decoration:underline;
   text-underline-position: under;
+}
+`
+export const Fechar = styled.button`
+height:3rem;
+width:3.5rem;
+font-size: 1rem;
+background-color:transparent;
+border:none;
+position:fixed;
+top:6%;
+right:5%;
+img{
+  width:100%;
+  height: 100%;
 }
 `
 

@@ -63,16 +63,16 @@
 
 - [ ] Aprofundamento da estilização 
   - [ ] Remover hover do texto de `Chamada`
-  - [ ] Adicionar botão de fechar (X) às pop ups que não tem
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescricao`
-  - [ ] Adicionar box-shadow às pop ups
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescrição`
-  - [ ] Alterar fonte para 'Inter'
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescrição`
-  - [ ] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
+  - [x] Adicionar botão de fechar (X) às pop ups que não tem
+    - [x] `PopUpDownload`
+    - [x] `PopUpAudiodescricao`
+  - [X] Adicionar box-shadow às pop ups
+    - [x] `PopUpDownload`
+    - [x] `PopUpAudiodescrição`
+  - [x] Alterar fonte para 'Inter'
+    - [x] `PopUpDownload`
+    - [x] `PopUpAudiodescrição`
+  - [x] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
   - [x] Colocar 'cursor: pointer' em todos os elementos clicáveis
     - [x] Botões
     - [x] Âncoras
