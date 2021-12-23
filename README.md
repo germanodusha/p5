@@ -60,6 +60,7 @@
   - [ ] Adicionar textos em inglês à `database`
   - [ ] Trocar texto do botão "Artigos" por "Ensaios"
   - [ ] Trocar botão "Créditos" por "Ficha Técnica"
+  - [ ] Atualizar imagens do `Livro`
 
 - [ ] Aprofundamento da estilização
   - [ ] Remover hover do texto de `Chamada`
@@ -77,10 +78,6 @@
     - [ ] Botões
     - [ ] Âncoras
     - [ ] Imagem `Livro`
-  - [ ] **`Artigos` - Mar**
-    - [ ] **Aumentar espaçamento entre as linhas no menu**
-    - [ ] **Alinhar marcador à esquerda dos itens do menu**
-    - [ ] **Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)**
   - [ ] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
   - [ ] Corrigir posição do título "Periscópio" na `Capa` para que fique sempre fixo no fim da primeira tela
   - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
@@ -92,19 +89,19 @@
   - [ ] Aplicar animação de letreiro de LED ao banner da frase de chamada no `Menu`
   - [ ] Adicionar objeto 3D / gif à `Capa`
   - [ ] Trocar a cor de seleção do texto por laranja (`Global`)
+  - [x] `Artigos`
+    - [x] Aumentar espaçamento entre as linhas no menu
+    - [x] Alinhar marcador à esquerda dos itens do menu
+    - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/)
+  - [ ] **Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/) - Mar**
   - [ ] Adicionar lógica de scrollTo ao botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
   - [ ] Adicionar arquivos para download
     - [ ] `PopUpDownload`: .pdf
     - [ ] `PopUpAudiodescricao`: audiodescrição
   - [ ] `Global`: Aplicar lógica de línguas
   - [ ] Abrir `PopUpLivro` ao clicar na imagem do `Livro`
-  - [ ] Atualizar imagens do `Livro`
-
-
-- Ajustes a partir das conclusões da primeira entrega
 
 ### 27/12
 - Subir para o servidor
