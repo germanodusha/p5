@@ -57,7 +57,7 @@
 - [ ] **Finalização de conteúdo - Jai**
   - [ ] Adicionar conteúdo da `PopUpDownload`
   - [ ] Adicionar textos da `PopUpAudiodescricao`
-  - [ ] Adicionar textos em inglês à `database`
+  - [x] Adicionar textos em inglês à `database`
   - [ ] Trocar texto do botão "Artigos" por "Ensaios"
   - [ ] Trocar botão "Créditos" por "Ficha Técnica"
   - [ ] Atualizar imagens do `Livro`
