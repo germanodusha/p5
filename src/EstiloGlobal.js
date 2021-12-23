@@ -35,6 +35,14 @@ const EstiloGlobal = createGlobalStyle`
   --branco: #FFF;
 }
 
+::-moz-selection { /* Code for Firefox */
+  background: var(--laranja);
+}
+
+::selection {
+  background: var(--laranja);
+}
+
 body {
   background-color: var(--laranja);
   box-sizing: border-box;
