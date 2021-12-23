@@ -17,28 +17,21 @@
       - [x] Capa
       - [x] Chamada
       - [x] Livro
-<<<<<<< HEAD
-      - [ ] Indice
-      - [ ] Artigos
-      - [x] PopUpAudiodescrição
-      - [ ] PopUpCreditos
-=======
       - [x] Indice
       - [x] Artigos
       - [x] PopUpAudiodescrição
       - [x] PopUpCreditos
->>>>>>> 0f4ea3170449bf4603b3444d8fb98c518cff0952
       - [x] PopUpDownload
       - [x] PopUpLivro
   - [ ] Estruturar base de cada seção
       - [x] Menu
-      - [ ] **Capa - Jai**
+      - [x] Capa
       - [x] Chamada
       - [x] Livro
       - [x] Indice - Mar
       - [x] Artigos
       - [x] PopUpAudiodescrição
-      - [ ] **PopUpCreditos - Grego**
+      - [x] PopUpCreditos - Grego
       - [x] PopUpDownload
       - [x] PopUpLivro
 - [x] Desenvolver interações básicas das pop ups
@@ -61,28 +54,54 @@
 - audiodescrição para download
 
 #### Tarefas
+- [ ] **Finalização de conteúdo - Jai**
+  - [ ] Adicionar conteúdo da `PopUpDownload`
+  - [ ] Adicionar textos da `PopUpAudiodescricao`
+  - [ ] Adicionar textos em inglês à `database`
+  - [ ] Trocar texto do botão "Artigos" por "Ensaios"
+  - [ ] Trocar botão "Créditos" por "Ficha Técnica"
+
 - [ ] Aprofundamento da estilização
-  - [ ] Adicionar objeto 3D / gif à `Capa`
-  - [ ] Resolver cor dos botões do `Menu` com base na rolagem
-  - [ ] Adicionar transição da imagem do `Livro` durante a rolagem da página
-  - [ ] Remover barra laranja ao fim da página
-  - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescricao`
+  - [ ] Remover hover do texto de `Chamada`
   - [ ] Adicionar botão de fechar (X) às pop ups que não tem
     - [ ] `PopUpDownload`
     - [ ] `PopUpAudiodescricao`
-
+  - [ ] Adicionar box-shadow às pop ups
+    - [ ] `PopUpDownload`
+    - [ ] `PopUpAudiodescrição`
+  - [ ] Alterar fonte para 'Inter'
+    - [ ] `PopUpDownload`
+    - [ ] `PopUpAudiodescrição`
+  - [ ] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
+  - [ ] Colocar 'cursor: pointer' em todos os elementos clicáveis
+    - [ ] Botões
+    - [ ] Âncoras
+    - [ ] Imagem `Livro`
+  - [ ] **`Artigos` - Mar**
+    - [ ] **Aumentar espaçamento entre as linhas no menu**
+    - [ ] **Alinhar marcador à esquerda dos itens do menu**
+    - [ ] **Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)**
+  - [ ] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
+  - [ ] Corrigir posição do título "Periscópio" na `Capa` para que fique sempre fixo no fim da primeira tela
+  - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
+    - [ ] `PopUpDownload`
+    - [ ] `PopUpAudiodescricao`
+  - [ ] Resolver cor dos botões do `Menu` com base na rolagem
+  - [ ] Adicionar transição da imagem do `Livro` durante a rolagem da página
+  - [ ] Remover barra laranja ao fim da página
+  - [ ] Aplicar animação de letreiro de LED ao banner da frase de chamada no `Menu`
+  - [ ] Adicionar objeto 3D / gif à `Capa`
+  - [ ] Trocar a cor de seleção do texto por laranja (`Global`)
 
 - [ ] Desenvolvimento das interações
   - [ ] Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/)
   - [ ] Adicionar lógica de scrollTo ao botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
   - [ ] Adicionar arquivos para download
     - [ ] `PopUpDownload`: .pdf
-    - [ ] `PopUpDownload`: .epub
     - [ ] `PopUpAudiodescricao`: audiodescrição
   - [ ] `Global`: Aplicar lógica de línguas
   - [ ] Abrir `PopUpLivro` ao clicar na imagem do `Livro`
+  - [ ] Atualizar imagens do `Livro`
 
 
 - Ajustes a partir das conclusões da primeira entrega
