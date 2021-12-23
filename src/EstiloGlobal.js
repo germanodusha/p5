@@ -42,6 +42,13 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden;
+}
+
+div, section, article, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .centerColumn{
   display:flex;
@@ -53,6 +60,10 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
+}
+.underline{
+    text-decoration: underline;
+    text-underline-position: under;
 }
 `;
 
