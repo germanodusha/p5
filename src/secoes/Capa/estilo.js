@@ -13,6 +13,7 @@ font-size: 10em;
 font-weight: normal;
 line-height: 1;
 position:absolute;
+top: 75vh;
 width: 100%;
 text-align: center;
 bottom: -10vh;
