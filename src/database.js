@@ -96,6 +96,10 @@ const database = {
                     autoria: 'Marina Câmara, Janelas Indiscretas, Guto Lacaz'
                 },
                 {
+                    titulo: 'Janelas Indiscretas',
+                    autoria: 'Guto Lacaz'
+                },
+                {
                     titulo: 'Exposição de Galeria + Anotações sobre a prática',
                     autoria: 'Ana Linnemann'
                 },
@@ -169,10 +173,11 @@ const database = {
                 },
                 ],
             },
-            sobrePeriscopio: `Fundada em Belo Horizonte, em 2015, pelos sócios Alexandre Romanini, Altivo Duarte e Rodrigo Mitre, a Galeria Periscópio traz em seu nome a reverência ao instrumento óptico que permite enxergar por cima de um obstáculo. Orientada pela premissa da arte como vetor de expansão da visão, a galeria tem como objetivo colaborar com o panorama contemporâneo por meio de ações que deslocam o olhar e fazem ver além das barreiras impostas pelo cotidiano.
+            sobrePeriscopio: {titulo: 'Sobre Periscópio:',
+            texto:`Fundada em Belo Horizonte, em 2015, pelos sócios Alexandre Romanini, Altivo Duarte e Rodrigo Mitre, a Galeria Periscópio traz em seu nome a reverência ao instrumento óptico que permite enxergar por cima de um obstáculo. Orientada pela premissa da arte como vetor de expansão da visão, a galeria tem como objetivo colaborar com o panorama contemporâneo por meio de ações que deslocam o olhar e fazem ver além das barreiras impostas pelo cotidiano.
             Com um programa pautado pelo vigor da invenção estética e engajado às urgências correntes, a Periscópio apresenta mostras coletivas e exposições individuais privilegiando a pluralidade de ideias, de meios e formas, a fim de criar situações instigantes, fomentando o pensamento crítico e o debate produtivo. De jovens artistas ainda nos primeiros impulsos de suas trajetórias a nomes consolidados e importantes agentes de décadas passadas, a galeria trabalha para dar vazão ao que ainda nos é desconhecido, bem como para propor novas abordagens e leituras para o que já se encontra diante dos olhos.
             Como ativadora da cena da cultura local e ponto de articulação entre os atores e o público de todo o país, a Periscópio busca contribuir para o desenvolvimento de um imaginário social diverso e efervescente, com a firme crença na prática artística como chave de transformação positiva do indivíduo e da sociedade.
-            `,
+            `},
       fichaTecnica: {
         parte1: [
           {
@@ -256,164 +261,209 @@ const database = {
         },
         botoes: {
             download: 'DOWNLOAD',
-            epub: 'EPUB',
             pdf: 'PDF',
             downloadLivro: 'Download Livro',
             galeriaPeriscopio: 'Galeria Periscópio',
             livro: 'Livro',
-            artigos: 'Artigos',
+            artigos: 'Ensaios',
             info: 'Info',
             audioDescricao: 'Audiodescrição'
         },
         popups: {
-            audioDescricao: 'texto da popup audio Descricao',
-            creditos: 'texto da popup creditos',
-            download: 'texto da popup download',
+            audioDescricao: 'PARA A DESCRIÇÃO DO LIVRO E LEITURA DE SEU ÍNDICE, ENSAIOS E LISTA DE EXPOSIÇÕES, CLIQUE NO LINK ABAIXO PARA FAZER O DOWNLOAD DO ARQUIVO DE ÁUDIO.',
+            download: 'PERISCÓPIO 5 ANOS – ISBN 978-65-996497-0-7 CONFIGURA UM ARQUIVO DAS ATIVIDADES DA GALERIA PERISCÓPIO ENTRE OS ANOS DE 2015 E 2020. CLIQUE NO LINK ABAIXO PARA FAZER O DOWNLOAD DA PUBLICAÇÃO NA ÍNTEGRA. ',
         },
 
     },
     en: {
         principal: {
-            epigrafe: '',
-            fraseChamada: '',
-            artistasECuradores: ''
+            titulo: 'Archive',
+            epigrafe: '“I say: the real is not in the exit nor in the arrival: it is available to us is in the middle of the crossing.” João Guimarães Rosa, The Devil to Pay in the Backlands (Grande Sertão: Veredas)',
+            fraseChamada: 'Between 2015 and 2020, Galeria Periscópio occupied a listed house at Av. Álvares Cabral, nº 534, Belo Horizonte – MG, Brazil, and held 28 exhibitions. This book is an archive of the activities that took place during this period.',
+            artistasECuradores: 'Alice Ricci, Amilcar de Castro, Ana Linnemann, Andrea Brown, Andréa Brown, Andrea Gomes, Avilmar Maia, Beatriz de Almeida Magalhães, Binho Barreto, Bruno Faria, Bruno Palazzo, Camila Lacerda, Cristina Marigo, Daniel Bilac, Daniel de Paula, Daniel Steegmann Mangrané, Daniela Moser, Deyson Gilbert, Éder Oliveira, Eduardo Hargreaves, Ernesto Neto, Erre Erre, Fábio Baroli, Fábio Tremonte, Fabíola Moulin, Fabíola Tasca, Felipe Scovino, Flávia Péret, Flávio Cerqueira, Francisco Lara Rezende, Frederico Morais, Germano Dushá, Gisele Camargo, Guto Lacaz, Hélio Menezes, Henrique Detomi, Iara Marques, Iberê Camargo, Ina Gouveia, Ivens Machado, Janaina Wagner, José Lara, Juliana Gontijo, Júlio Martins, Katia Canton, Lais Myrrha, Laura Berbert, Letícia Grandinetti, Lorenzato, Luana Vitra, Lucas Dupin, Lucas ­Kröeff­, Lucas Simões, Marc Davi, ­Marcel­ Diogo, Marcela Novaes, Marcelo Drummond, Márcia Guimarães, Márcio Diegues, Marco Maria Zanin, Marco Sem S, Marcone Moreira, Marconi Drummond, Maria Palmeiro, Maria Thereza Alves, Marina Câmara, Maurício Meirelles, Mauro Restiffe, Nydia Negromonte, Patrícia Leite, Paula Borghi, Paula Huven, Paula Sampaio, Paulo Baptista, Pedro Motta, Rachel Cecília de Oliveira, Rafael RG, Randolpho Lamonier, Renata De Bonis, Ricardo Carioba, Rodrigo Albert, Rodrigo Braga, Rodrigo Cass, Selma Parreira, Sérgio Martins, TRAPLEV, Umberto Costa Barros, Victor Galvão, Wilson Baptista, Wilson Lázaro.'
         },
         index: {
-            titulo: '',
+            titulo: 'About Periscópio',
             ensaios: {
-                titulo: '',
+                titulo: 'Essays',
                 itens: [{
-                    titulo: 'Ampliando a visão',
-                    autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitr'
+                    titulo: 'Expanding visions',
+                    autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitr',
+                    texto:`
+                    <p>A periscope is an optical device that was created at the beginning of the 20th century. Its models and applications have taken many forms over time, but their primary function remains unmistakable: to extend the reach of human vision. When we invited the artist and professor Marcelo Drummond to think with us about a name for the gallery, it was not exactly the objective connotation that at first guided the suggestion of the name. The whole thing happened more spontaneously. In the search for a unique name that could convey the idea of ​​a collective project, Marcelo suddenly asked us: “I think the name of the gallery should be something a little strange indeed… like a periscope!”.</p>
+                    <p>Guto Lacaz's homonymous work, presented in 1994 at the exhibition “Arte/cidade 2”, in São Paulo, occurred to him as a reference. The urban intervention of large proportions brought a giant instrument attached to the facade of a building, allowing passersby to see the exhibition on the top floor and, in return, the building's visitor to observe what was happening on the street.</p>
+                    <p>At first, the suggestion was met with some resistance, but gradually the provocative force of this unusual name and the possibilities of its semantic charge began to produce positive stimuli. We soon decided to give this name to the project that had been sewing for many years and that, finally, was preparing to gain the world.</p>
+                    <p>It was back in the 1990s that Rodrigo once heard from the artist Amilcar de Castro (1920–2002) that his dream was to create a gallery to exhibit young artists, which would work in less usual ways. The watchword was hope. This became the inspiration for Mitre’s graduation project, which sowed the first seed that would sprout many years later. The original idea went through different phases until its maturation, and it was from the exchange between the three of us that it got its final tonus. The objective, on one hand, was to energize the contemporary art circuit in Minas Gerais and nationally, offering a stage for urgent conceptual, procedural and political issues, which hardly found outlets at that time. On the other hand, it was also to experiment with new ways of developing dialogues and partnerships with agents of art, and of activating, receiving and relating to the public. Along this path, each partner and collaborator brought their experiences, technical knowledge and, above all, the will to do things and unlimited dedication.</p>
+                    <p>It was then, at the end of 2015, a time when the country was already immersed in a turbulent period of profound difficulties, that we decided to open the gallery. In that context of economic downturn and huge uncertainties, we were aware of the challenge's complexity, but equally confident of its pertinence. After all, there was no “Plan B”: this was the project our lives and city asked for, and we were ready to take it to the last circumstance.</p>
+                    <p>Our first headquarters was a house listed by the Municipal Historic Heritage of Belo Horizonte, located on Avenida Álvares Cabral, in the city’s center – a place permeated by large institutions and a fundamental aspect for cultural diffusion. The property needed to be renovated with great care, and the excess of work and onerousness sometimes became a big problem. However, the location, the porosity in relation to the public and the charm of the manor house always paid off.</p>
+                    <p>Between 2015 and 2020, we held 28 shows in a space different from the traditional “white cube”. What we are going to present here is a record of these early years. With boldness and necessary audacity, much could be experienced, despite the extreme difficulties. When we look back at each exhibition project, we realize that there is a common thread between them. It is something that cannot be translated into words, but that somehow involves the sensitive eye and the power of creation directed towards contemporary emergencies.</p>
+                    <p>In this review of the first five years of our history, we have only one certainty: we do not shy away from battle. We approached artists and other thinkers we believe in and brought to life the projects we deemed necessary. With the solidity of the experience acquired, and taking new breaths to face new cycles, we want to continue contributing to a more diverse and vibrant history of Brazilian art, capable of expanding human vision and performance. Able to make us see and go beyond.</p>
+                    `
                 },
                 {
-                    titulo: 'Programa para transver o mundo',
-                    autoria: 'Germano Dushá'
+                    titulo: 'Program to transview the world',
+                    autoria: 'Germano Dushá',
+                    texto:`
+                    <p>When I first heard about Periscópio and its gallery program I was taken by a good omen. Its unusual name already denoted that its founders had forfeited the more traditional personal reference in favor of an idea as a symbol of their association. The gallery was about to open in a few months, and the freshness of a new space with an unique layout and a program intended on energizing Belo Horizonte's art system immediately triggered my enthusiasm. Adding to this initial spirit was the building and the location in themselves: its headquarters was a charming listed house, located in an important point in the metropolis and, curiously, on my parents' street – my home when I’m in the city.</p>
+                    <p>Through my dear friend and constant partner Lais Myrrha, I soon had the pleasure of meeting Rodrigo, Altivo and Alexandre, creators of Periscópio. The empathy was immediate, with energetic openness channeling a series of life threads into a single situation, quickly turning into familiar and fertile ground for collaborations.</p>
+                    <p>We decided to join forces for the exhibition that would inaugurate the gallerie’s arrival in the world: "Domingo", a solo show by Fábio Tremonte. From that point onwards, we carried out some type of project together practically every year, unfolding through uninterrupted exchange. I like to think that I somehow collaborated to start and pave the way for the gallery, in the same way that it has made its mark on my trajectory, weaving a rare web between professional rigor and true affection.</p>
+                    <p>Organizing this book was a way to revisit important memories which I collected over the five years covered in these pages. During this immersion process of reviewing images, it was invigorating to see the results with the same eyes that also witnessed the beginning of this authentic undertaking, which fought hard to innovate amidst the inherent difficulties of a rarefied circuit. Above all, it was an opportunity to discover new connections within an intense and complex program, articulating its various propositions.</p>
+                    <p>In this ensemble of nearly three dozen exhibitions held at Periscópio’s first headquarters, it is evident that the gallery built a proper place for the free development of language. Despite the differences among each project – which do not submit to reductive labels –, it is possible to see the presence of a shared spirit, the same verve of invention. From the many young artists, to those with a broad and solid trajectory, and ones from other eras who still demand due attention and reverence; from direct speeches to visual games and word games; from actions to transform space to pictorial experiments. What is evidently common is the movement, the heat and the occasion for creations both aware of the urgencies that surround us and engaged in re-elaborating our reality.</p>
+                    <p>To those of us who participated directly or indirectly in this story, this book serves as a greeting, a toast. For those interested in the intricacies of cultural production and the possibilities of contemporary thought in Brazil, this is an opportunity to discover the work of dozens of artists and art agents from different places, who, with their diversity of times, trajectories, identities, research and practices, sow powerful works on the surface, guided by countless interests and using innumerable ways and means.</p>
+                    <p>Therefore, borrowing the name of an instrument that allows us to see over obstacles for the gallery seems more than justified: its program is dedicated to the submerged body elevating its vision so it can see beyond everyday barriers and, consequently, fertilize its fields of imagination. It seems to take literally the universal advice of the poet, Manoel de Barros: “It is necessary to transview the world”.</p>
+                    `
                 },
                 {
-                    titulo: 'Arte – pensamento em ato',
-                    autoria: 'Libéria Neves e Vicente Camiloti'
+                    titulo: 'Art: thought in action',
+                    autoria: 'Libéria Neves e Vicente Camiloti',
+                    texto: `
+                    <p>Libéria Neves e Vicente Camiloti</p>
+                    <p>Between 2015 and 2020 in Brazil, radical changes to the nation’s political landscape perhaps has its most direct effect over the cultural sector, especially the field of arts. The status quo which emerged from these articulations was responsible for fueling censorship, defaming subsidized cultural development with State support, and restricting financial options for artistic production to private and collaborative initiatives.</p>
+                    <p>Periscópio was born in this scenario, emerging in the midst of turmoil and motivated by a fundamental choice: not to retreat in face of obscurantism. This was intrinsically linked to another vision moving its founders: to transpose canonical ideas of ​what constitutes a gallery and to defy the intersections between emerging artists seeking a space for germination, devoted artists looking for a space of resistance, and the public – as a diverse and plural audience. In common, artists and audiences demand a cultural space suited for free aesthetic thinking, capable of giving meaning to the world, and even predicting its twists and turns, through contemporary art.</p>
+                    <p>Through this periscope lens and in collaboration with similar initiatives, the gallery promoted exhibitions, performances, philosophical and educational events that spilled over the city of Belo Horizonte and beyond (such as the creation of the CAMA, in São Paulo), making the gallery – in its powerful and cozy house – a hub of constant activity.</p>
+                    <p>Among so many memories, “Esqueça o futuro” (Forget the future), by artist Rafael RG, has always echoed as a motto, because Periscópio does not wait to happen, it rather became the occurrence in the now. This work, a sign installed in the traffic island that connects two importante city squares, Afonso Arinos and Assembly, was a provocation to all who passed by, mobilizing the press to question its legality. But the debate that stuck was around what it meant for a traffic sign – made to guide, standardize and order –, to revive the spirit of deregulation and contestation contemporary art entails.</p>
+                    <p>Gazing beyond the clouds and mountains that surround the city, Periscópio configured itself as an aesthetic and political response to the paralyzing project based on a “past tense of the future”, imposed over Brazil in these five years. They are practicing thought action; in art!</p>
+
+                    `
                 },
                 {
-                    titulo: 'Apenas o começo',
-                    autoria: 'Raphael Fonseca'
+                    titulo: 'Just the beginning',
+                    autoria: 'Raphael Fonseca',
+                    texto: `
+                    <p>Looking back at the first five years of the Periscópio gallery, what captures one’s attention is the diversity of artists, curators and exhibition projects developed in the house that was first occupied by the gallery. Unlike so many commercial spaces dedicated to the visual arts which seem to be enclosed in rigid artist profiles, Periscópio carried out experiments based on desires in no way easy to fulfill: be open to artists residing in the city of Belo Horizonte, while not closing their eyes to artists from different regions of Brazil; be open to dialogue with great references in Brazilian art history, while bringing new names for their first solo shows in the gallery.</p>
+                    <p>These crossroads are evident from a quick look through the artists who held solo exhibitions in Periscópio’s first year (2015-2016). For its inauguration, not one, but two solo exhibitions: one by Marc Davi, an artist who lives in “Beagá” (Belo Horizonte), and another by Fábio Tremonte, based in São Paulo. For the second project, a collective with Andréa Brown, from Rio de Janeiro, Márcio Diegues, from São Paulo, and Camila Lacerda, from the capital of Minas Gerais. Subsequently, two solo exhibitions featured artists from the North of Brazil: Éder Oliveira, from Belém do Pará, and Marcone Moreira, from the state of Maranhão. By the end of 2016, it was Marcelo Drummond's turn, a reference in the field of visual arts in “Beagá” and, finally, a retrospective exhibition of Ivens Machado, from the state of Santa Catarina, in dialogue with other artists.</p>
+                    <p>Such a proposed program already in the gallery’s early years, was just a symptom of what was to come, of what would be solidified along a half-decade of intense work. While I write this essay, Periscópio’s push for new layers of meaning and connections can be seen reflected in the current project by curator Fabíola Rodrigues, named “corpocontinente”. Dedicated to the investigation of the “exchanges between the cultures of the native peoples of Brazil and of the populations brought from Africa”, the project articulates several artists who have recently been added to institutional collections in Brazil, building a powerful dialogue. This exhibition seems to be a perfect example of the journey, vision and stances – subtle yet firm – that characterize Periscópio in its short lifetime.</p>
+                    <p>Rafael RG, Randolpho Lamonier, Ana Linnemann, Gisele Camargo, Umberto Costa Barros, Luana Vitra, Selma Parreira, Flávio Cerqueira, curators Germano Dushá, Marina Câmara and João Guilherme Dayrell...These are just a few of the people that have passed through here and that made Periscópio’s bold objectives possible, through its diverse home and itinerant program, bringing to Beagá (and beyond) visual arts expressions and productions in political, provocative, and sometimes transhistorical and plurigeographic approaches.</p>
+                    <p>And that's just the beginning.</p>
+                    `
                 }],
             },
             exposicoes: {
-                titulo: 'Exposições',
+                titulo: 'Exhibitions',
                 itens: [{
-                    titulo: 'Domingo',
+                    titulo: 'Domingo (Sunday)',
                     autoria: 'Fabio Tremonte'
                 },
                 {
-                    titulo: 'Da Morte e Do Amor',
+                    titulo: 'Da Morte e Do Amor (Of Death and of Love)',
                     autoria: 'Marc Davi'
                 },
                 {
-                    titulo: 'Hiperlink',
+                    titulo: 'Hiperlink (Hyperlink)',
                     autoria: 'Andrea Brown, Camila Lacerda, Márcio Diegues'
                 },
                 {
-                    titulo: 'Todos os tempos',
+                    titulo: 'Todos os tempos (All Times)',
                     autoria: 'Marcone Moreira'
                 },
                 {
-                    titulo: 'Você é a seta',
+                    titulo: 'Você é a seta (You Are the Arrow)',
                     autoria: 'Éder Oliveira'
                 },
                 {
-                    titulo: 'Todos por Um',
+                    titulo: 'Todos por Um (All For One)',
                     autoria: 'Curadoria Wilson Lázaro'
                 },
                 {
-                    titulo: 'Um Piano na Selva',
+                    titulo: 'Um Piano na Selva (A Piano in the Jungle)',
                     autoria: 'Curadoria Germano Dushá'
                 },
                 {
-                    titulo: 'Projeto Wilson Baptista',
+                    titulo: 'Projeto Wilson Baptista (Wilson Baptista Project)',
                     autoria: 'Wilson Baptista'
                 },
                 {
-                    titulo: 'Sem Título (Do Impossível ao Porvir)',
+                    titulo: 'Sem Título (Do Impossível ao Porvir) Untitled (From the Impossible to the Future)',
                     //no arquivo cada nome abaixo está em uma linha
                     autoria: 'Marina Câmara, Janelas Indiscretas, Guto Lacaz'
                 },
                 {
-                    titulo: 'Exposição de Galeria + Anotações sobre a prática',
+                    titulo: 'Janelas Indiscretas (Rear Windows)',
+                    autoria: 'Guto Lacaz'
+                },
+                {
+                    titulo: 'Exposição de Galeria + Anotações sobre a prática (Gallery Show + Notes on the Practice)',
                     autoria: 'Ana Linnemann'
                 },
                 {
-                    titulo: 'Da diversidade vivemos',
+                    titulo: 'Da diversidade vivemos (Of Diversity We Live)',
                     autoria: 'Acervo'
                 },
                 {
-                    titulo: 'A cidade onde envelheço',
+                    titulo: 'A cidade onde envelheço (The city where I grow old)',
                     autoria: 'Rafael RG'
                 },
                 {
-                    titulo: 'Luas, Brutos e Sóis',
+                    titulo: 'Luas, Brutos e Sóis (Moons, Brutes and Suns)',
                     autoria: 'Gisele Camargo'
                 },
                 {
-                    titulo: 'Olhar Instantâneo',
+                    titulo: 'Olhar Instantâneo (Instant Gaze)',
                     autoria: 'Acervo'
                 },
                 {
-                    titulo: 'Daquilo que é próprio',
+                    titulo: 'Daquilo que é próprio (Of Which Is Proper)',
                     autoria: 'Marcelo Drummond'
                 },
                 {
-                    titulo: 'À porta de casa',
+                    titulo: 'À porta de casa (At the Doorstep)',
                     autoria: 'Fábio Baroli'
                 },
                 {
-                    titulo: 'República da Cobra',
+                    titulo: 'República da Cobra (Republic of the Snake)',
                     autoria: 'Randolpho Lamonier e Thiago Martins de Melo'
                 },
                 {
-                    titulo: 'Toda tentativa é um fracasso',
+                    titulo: 'Toda tentativa é um fracasso (Every Attempt is a Failure)',
                     autoria: 'Alice Ricci'
                 },
                 {
-                    titulo: 'Plano e risco',
+                    titulo: 'Plano e risco (Plane and Trace)',
                     autoria: 'Eduardo Hargreaves'
                 },
                 {
-                    titulo: 'Somos todos riscadores',
+                    titulo: 'Somos todos riscadores (We are all scribblers)',
                     autoria: 'Fábio Tremonte'
                 },
                 {
-                    titulo: 'A parte pelo todo',
+                    titulo: 'A parte pelo todo (The Part for the Whole)',
                     autoria: 'Lucas Dupin'
                 },
                 {
-                    titulo: 'Como ativar os estilhaços da história pela linguagem: re-alfabetização política urgente',
+                    titulo: 'Como ativar os estilhaços da história pela linguagem: re-alfabetização política urgente (How to activate shards of history through language: urgent political reliteracy)',
                     autoria: 'Traplev'
                 },
                 {
-                    titulo: 'Sangue sem voz',
+                    titulo: 'Sangue sem voz (Blood without voice)',
                     autoria: 'Umberto Costa Barros'
                 },
                 {
-                    titulo: 'A escultura no flagrante da ação',
+                    titulo: 'A escultura no flagrante da ação (The sculpture caught in the act)',
                     autoria: 'Flávio Cerqueira'
                 },
                 {
-                    titulo: 'Corpo rasgado em estado de céu aberto',
+                    titulo: 'Corpo rasgado em estado de céu aberto (Torn Body in Open-Pit State)',
                     autoria: 'Luana Vitra'
                 },
                 {
-                    titulo: 'Memórias são histórias da pele',
+                    titulo: 'Memórias são histórias da pele (Memories Are Stories of the Skin)',
                     autoria: 'Selma Parreira'
                 },
                 {
-                    titulo: 'Um erro inesperado aconteceu',
+                    titulo: 'Um erro inesperado aconteceu (An unexpected error occurred)',
                     autoria: 'Curadoria Marcelo Drummond e Nydia Negromonte'
                 },
                 ],
             },
-            sobrePeriscopio: ``,
-            fichaTecnica: [{
+            sobrePeriscopio: {
+                titulo:'About Periscópio:',
+                texto:`Founded in 2015 by partners Alexandre Romanini, Altivo Duarte and Rodrigo Mitre, in Belo Horizonte, Periscópio Arte Contemporânea brings in its name the reverence for the optical instrument that allows you to see over an obstacle. Guided by the premise of art as a vector for expanding vision, the gallery's objective is to collaborate with the contemporary panorama through actions that shift the gaze and make it possible to see beyond the barriers of everyday life.
+                With a program guided by the vigor of aesthetic invention and engaged with current urgencies, Periscópio presents group shows and individual exhibitions that privilege the plurality of ideas, means and forms, in order to create exciting situations, fostering critical thinking and productive debates. From young artists still in the first impulses of their trajectories to consolidated names and important agents of past decades, the gallery works to open paths to what is still unknown, as well as to propose new approaches and interpretations for what is already before our eyes.
+                As an activator of the local cultural scene and a point of articulation between actors and audiences across the country, Periscópio seeks to contribute to the development of a diverse and effervescent social imaginary, firm in the belief of artistic practice as a key to positive transformation of the individual and of the society.
+            `},
+            fichaTecnica:{
+                parte1: [
+                {
                 titulo: 'A project by:',
                 autoria: 'Galeria Periscópio'
             },
@@ -424,7 +474,7 @@ const database = {
              `
             },
             {
-                titulo: 'Patrocínio:',
+                titulo: 'Sponsorship:',
                 autoria: 'Agropel; Nova Catalão, Tecar Fiat'
             },
             {
@@ -436,7 +486,7 @@ const database = {
                 autoria: 'Rodrigo Mitre'
             },
             {
-                titulo: 'Coordenação editorial',
+                titulo: 'Coordenação editorial Editorial coordination:',
                 autoria: 'Fora/Genesys'
             },
             {
@@ -450,7 +500,8 @@ const database = {
             {
                 titulo: 'Essays:',
                 autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitre; Germano Dushá; Libéria Neves e Vicente Camiloti; Raphael Fonseca'
-            },
+            },],
+            parte2:[
             {
                 titulo: 'Graphic design:',
                 autoria: 'Raul Luna'
@@ -476,7 +527,7 @@ const database = {
                 autoria: 'Eduardo Eckenfels; Everton Ballardin; Pat Kilgore; Rodrigo Albert'
             },
             {
-                titulo: 'Equipe Periscópio Team (2015-2021):',
+                titulo: 'Team (2015-2021):',
                 autoria: 'Alessandra Ferreira; André Victor; Franimar Araújo; Gustavo Germano; Isabela Barros; John Silveira; José Abel Catarina; Julia Costa; Lucas Lima; Rafael Boneco; Vanessa Monteze'
             },
             {
@@ -484,11 +535,26 @@ const database = {
                 autoria: 'Alberto Pezeiro; Alessandra Mitre; Alex Schott; Alexandre Meira; Álvaro Piquet; Augusto Nunes;  Beatriz de Almeida Magalhães; Beatriz Menezes; Breno Schott; Bruno Assumpção; Bruno Bedinelli; Carolina Bortoletto; Cristiana Mitre; Fabiano Galdino; Fabíola Moulin; Felice Filmes; Felipe Scovino; Flávio Reis; Francisco Gracindo; Frederico Morais; Galeria Celma Albuquerque; Galeria Fortes D’Aloia & Gabriel; Galeria Jaqueline Martins; Galeria Mendes Wood DM; Hamilton Mitre; Hallison Moreira; Hélio Lauar; Hélio Menezes; Jarbas Velloso; João Guilherme Dayrell; Joelina Santos; José Élcio Monteze; Júlio Martins; Katia Canton; Leonardo Bortoletto; Libéria Neves; Lucas e Luquinas; Lúcio Chamon; Luiz Flávio; Luiz Rodrigo Cerqueira; Manoel Macedo; Marcelo Drummond; Marcelo Costa; Marconi Drummond; Maria Clara Godoy; Maria de Lourdes Macedo; Maria Eduarda Pacheco; Maria Montero; Maria Regina Costa; Mariana Abrao; Marina Câmara; Mateus Gontijo; Mônica Grandchamp; Nydia Negromonte; Odete Romanini; Paula Borghi; Paulo Baptista; Paulo Caetano; Pedro Mendes; Prof. Dr. Auterives Maciel Jr; Raimundo Jorge Mourão; Raphael Fonseca; Raquel Cecília de Oliveira; Renata Marquez; Renata Montagneri; Renata Romanini; Renato Silva; Samuel Lacerda; Sé Galeria; Sérgio Martins; Sérgio Mattos; Silvia Batista, Talita Meira; Uiara Azevedo; Vanessa Costa; Vicente Camiloti; Victor Galvão; Vinicius Veloso; Virginia Geo; Wagner Nardy; Wilson Lázaro; Wlins Amaranto; Zeca Camargo; Zezé Monteze'
             },
             {
-                titulo: 'Impressão:',
+                titulo: 'Printing:',
                 autoria: 'Rona Editora'
             }],
-            notaFinal: '',
+            notaFinal: 'This book was composed using ES Build, Interval, and Inter fonts; and printed on Couchê Brilho 150 gsm paper, Eurobulk 135 gsm and Color Plus 80 gsm by Rona Editora, in December 2021.',
         }
+    },
+        botoes: {
+            download: 'DOWNLOAD',
+            pdf: 'PDF',
+            downloadLivro: 'Book Download',
+            galeriaPeriscopio: 'Galeria Periscópio',
+            livro: 'Book',
+            artigos: 'Essays',
+            info: 'Info',
+            audioDescricao: 'Audiodescription'
+        },
+        popups: {
+            audioDescricao: 'FOR AN AUDIO DESCRIPTION OF THE BOOK, WITH A READING OF ITS INDEX, ESSAYS AND EXHIBITION LIST, CLICK ON THE LINK BELOW TO DOWNLOAD THE AUDIO FILE.',
+            download: 'PERISCÓPIO 5 YEARS – ISBN 978-65-996497-0-7 CONSTITUTES AN ARCHIVE OF GALERIA PERISCÓPIO ACTIVITIES BETWEEN 2015 AND 2020. CLICK ON THE LINK BELOW TO DOWNLOAD THE FULL PUBLICATION.',
+        },
     }
 
 }}
