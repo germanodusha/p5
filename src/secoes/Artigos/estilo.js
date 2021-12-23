@@ -40,7 +40,7 @@ position:relative;
     align-items:center;
     img{
         height: 100%;
-        width: auto;
+        max-width: 100%;
     }
 }
 `;

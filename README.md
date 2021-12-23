@@ -95,13 +95,13 @@
     - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] **Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/) - Mar**
-  - [ ] Adicionar lógica de scrollTo ao botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
-  - [ ] Adicionar arquivos para download
-    - [ ] `PopUpDownload`: .pdf
-    - [ ] `PopUpAudiodescricao`: audiodescrição
+  - [ ] **Adicionar arquivos para download - Mar**
+    - [ ] **`PopUpDownload`: .pdf**
+    - [ ] **`PopUpAudiodescricao`: audiodescrição**
   - [ ] `Global`: Aplicar lógica de línguas
   - [ ] Abrir `PopUpLivro` ao clicar na imagem do `Livro`
+  - [x] Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/)
+  - [x] Adicionar lógica de scrollTo aos botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
 
 ### 27/12
 - Subir para o servidor

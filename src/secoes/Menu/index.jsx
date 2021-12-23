@@ -31,16 +31,16 @@ function Menu() {
         {database.ptbr.index.botoes.downloadLivro}
       </Botao>
 
-      <Botao pos={{x: 'esquerda', y: 'inferior'}} >
-        {database.ptbr.index.botoes.galeriaPeriscopio}
+      <Botao pos={{x: 'esquerda', y: 'inferior'}}>
+        <a href="https://periscopio.art.br/" target="_blank" rel="noopener noreferrer">{database.ptbr.index.botoes.galeriaPeriscopio}</a>
       </Botao>
 
       <NavCentral>
-        <Botao fClick={(e) => { e.preventDefault(); toggle('Livro');}}>
+        <Botao fClick={(e) => { e.preventDefault(); document.getElementById('livro').scrollIntoView(); toggle('Livro');}}>
           {database.ptbr.index.botoes.livro}
         </Botao> 
         <Botao>
-          {database.ptbr.index.botoes.artigos}
+          <a href="#ensaios">{database.ptbr.index.botoes.artigos}</a>
         </Botao> 
         <Botao fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
           {database.ptbr.index.botoes.info}

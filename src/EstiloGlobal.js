@@ -45,13 +45,20 @@ body {
   overflow-x: hidden;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 div, section, article, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 button,a{
   cursor:pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .centerColumn{
   display:flex;
