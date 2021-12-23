@@ -9,7 +9,7 @@ function PopUpAudiodescricao({fClick}) {
     >
       <Content className="centerColumn">
         <Text>
-          {database.ptbr.index.popups.audioDescricao}
+          {database.ptbr.popups.audioDescricao}
         </Text>
 
         <Download style={{marginTop:'-8%', marginBottom:'6%'}}>{database.ptbr.index.botoes.download}</Download>

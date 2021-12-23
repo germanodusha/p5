@@ -121,7 +121,7 @@
     - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] Adicionar arquivos para download - Mar
+  - [ ] Adicionar arquivos para download
     - [ ] `PopUpDownload`: .pdf
     - [ ] `PopUpAudiodescricao`: audiodescrição
   - [ ] **`Global`: Aplicar lógica de línguas - Mar**

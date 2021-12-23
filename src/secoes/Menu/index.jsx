@@ -28,22 +28,22 @@ function Menu() {
       <p>{database.ptbr.principal.fraseChamada}</p>
 
       <Botao pos={{ x: 'esquerda', y: 'superior' }} fClick={(e) => {e.preventDefault(); toggle('Download');}}>
-        {database.ptbr.index.botoes.downloadLivro}
+        {database.ptbr.botoes.downloadLivro}
       </Botao>
 
       <Botao pos={{x: 'esquerda', y: 'inferior'}}>
-        <a href="https://periscopio.art.br/" target="_blank" rel="noopener noreferrer">{database.ptbr.index.botoes.galeriaPeriscopio}</a>
+        <a href="https://periscopio.art.br/" target="_blank" rel="noopener noreferrer">{database.ptbr.botoes.galeriaPeriscopio}</a>
       </Botao>
 
       <NavCentral>
         <Botao fClick={(e) => { e.preventDefault(); document.getElementById('livro').scrollIntoView(); toggle('Livro');}}>
-          {database.ptbr.index.botoes.livro}
+          {database.ptbr.botoes.livro}
         </Botao> 
         <Botao>
-          <a href="#ensaios">{database.ptbr.index.botoes.artigos}</a>
+          <a href="#ensaios">{database.ptbr.botoes.artigos}</a>
         </Botao> 
         <Botao fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
-          {database.ptbr.index.botoes.info}
+          {database.ptbr.botoes.info}
         </Botao>
       </NavCentral>
 
@@ -52,7 +52,7 @@ function Menu() {
       </Botao>
 
       <Botao pos={{x: 'direita', y: 'superior'}} fClick={(e) => { e.preventDefault(); toggle('Audiodescricao');}}>
-        {database.ptbr.index.botoes.audioDescricao}
+        {database.ptbr.botoes.audioDescricao}
       </Botao>
 
       {abrirLivro && <PopUpLivro fClick={() => {toggle('Livro')}} />}
