@@ -15,18 +15,31 @@ background-color:var(--laranja);
   justify-content:center;
   align-items:flex-start;
   align-self:flex-start;
-  margin-top:3%;
-  gap:10%;
+  margin-top:2%;
+  margin-left:2%;
+  gap:2%;
 }
 #agradecimentos{
   flex-direction:column;
-  gap:1%;
+  max-width:40%;
   h3{
     margin:0;
   }
+  p{
+    width:100%;
+    padding-bottom: 2px;
+  }
 }
-#artistasECuradores{
+.artistasECuradores{
   max-width:70%;
+  margin-right:5%;
+  span,p{
+    font-size:0.9em;
+    line-height: 20px;
+    @media (min-width:1720px){
+      font-size:1em;
+    }
+  }
 }
 
 `
@@ -35,7 +48,7 @@ export const Content = styled.div`
 width:100%;
 height:100%;
 .navegacao{
-  width:20%;
+  width:30%;
   display:flex;
   position:fixed;
   gap:10%;
@@ -52,17 +65,19 @@ position:fixed;
   left:6%;
   position:fixed;
 }
+.equipeTecnica{
+  width:40%;
+}
 
 `
 export const CaixaTexto = styled.div`
-width:40%;
+width:80%;
 max-height:50vh;
-text-align:justify
-gap:10%;
+text-align:justify;
 `
 
 export const Info = styled.div`
-max-width:30%;
+max-width:40%;
 height:auto;
 display:flex;
 justify-content:flex-start;
@@ -70,7 +85,13 @@ align-items:flex-start;
 flex-flow:column nowrap;
 text-align:justify;
 font-family: 'Inter';
-gap:0.5rem;
+gap:0.2rem;
+span,p{
+    font-size:0.9em;
+    @media (min-width:1720px){
+      font-size:1em;
+    }
+  }
 
 `
 export const Ancora = styled.button`

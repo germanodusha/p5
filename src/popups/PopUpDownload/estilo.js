@@ -28,15 +28,19 @@ div{
 `
 export const Text = styled.p`
 text-align:center;
-font-size:2.5em;
+font-size:2em;
 font-weight:200;
 width:70%;
 height:50%;
 padding-bottom:10%;
 font-family:'Inter';
+@media(min-width:1720px){
+  font-size:2.5em;
+  margin-bottom:5%;
+}
 `
 export const Download = styled.a`
-font-size:2em;
+font-size:2.5em;
 font-family:'Inter';
 &:hover,&:focus{
   text-decoration:underline;
