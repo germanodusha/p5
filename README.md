@@ -54,13 +54,13 @@
 - audiodescrição para download
 
 #### Tarefas
-- [ ] **Finalização de conteúdo - Jai**
+- [x] **Finalização de conteúdo - Jai**
   - [x] Adicionar conteúdo da `PopUpDownload`
   - [x] Adicionar textos da `PopUpAudiodescricao`
   - [x] Adicionar textos em inglês à `database`
   - [x] Trocar texto do botão "Artigos" por "Ensaios"
   - [x] Trocar botão "Créditos" por "Ficha Técnica"
-  - [ ] Atualizar imagens do `Livro`
+  - [x] Atualizar imagens do `Livro`
 
 - [ ] Aprofundamento da estilização 
   - [ ] Remover hover do texto de `Chamada`
