@@ -57,8 +57,8 @@ function Menu() {
 
       {abrirLivro && <PopUpLivro fClick={() => {toggle('Livro')}} />}
       {abrirCreditos && <PopUpCreditos fClick={() => {toggle('Creditos')}}/> }
-      {abrirAudiodescricao && <PopUpAudiodescricao />}
-      {abrirDownload && <PopUpDownload />}
+      {abrirAudiodescricao && <PopUpAudiodescricao fClick={() => {toggle('Audiodescricao')}}/>}
+      {abrirDownload && <PopUpDownload fClick={() => {toggle('Download')}}/>}
      
     </Conteiner>
   );

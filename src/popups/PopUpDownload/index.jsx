@@ -11,7 +11,7 @@ function PopUpDownload({fClick}) {
       <Content className="centerColumn">
         <Text>{database.ptbr.popups.download}</Text>
         <div>
-          <Download>{database.ptbr.index.botoes.pdf}</Download>  
+          <Download>{database.ptbr.botoes.pdf}</Download>  
           <Fechar onClick={ fClick }><img src={fechar} alt="fechar" /></Fechar>    
         </div>
       </Content>
