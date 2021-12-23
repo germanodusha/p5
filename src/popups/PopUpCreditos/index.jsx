@@ -27,7 +27,7 @@ function PopUpCreditos({ fClick }) {
       <Content className="centerRow">
         {estado ? (<> 
         <Info id="agradecimentos" className="startRow">
-          <h3>Sobre o Periscópio</h3>
+          <h3>{database.ptbr.index.titulo}</h3>
           <p>{db}</p>
         </Info>
         <CaixaTexto className="startRow" >

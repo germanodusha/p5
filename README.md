@@ -55,14 +55,16 @@
 
 #### Tarefas
 - [ ] **Finalização de conteúdo - Jai**
-  - [ ] Adicionar conteúdo da `PopUpDownload`
-  - [ ] Adicionar textos da `PopUpAudiodescricao`
-  - [ ] Adicionar textos em inglês à `database`
-  - [ ] Trocar texto do botão "Artigos" por "Ensaios"
-  - [ ] Trocar botão "Créditos" por "Ficha Técnica"
+  - [x] Adicionar conteúdo da `PopUpDownload`
+  - [x] Adicionar textos da `PopUpAudiodescricao`
+  - [x] Adicionar textos em inglês à `database`
+  - [x] Trocar texto do botão "Artigos" por "Ensaios"
+  - [x] Trocar botão "Créditos" por "Ficha Técnica"
+  - [ ] Atualizar imagens do `Livro`
 
 - [ ] Aprofundamento da estilização 
   - [ ] Remover hover do texto de `Chamada`
+<<<<<<< HEAD
   - [x] Adicionar botão de fechar (X) às pop ups que não tem
     - [x] `PopUpDownload`
     - [x] `PopUpAudiodescricao`
@@ -82,6 +84,26 @@
     - [ ] **Alinhar marcador à esquerda dos itens do menu**
     - [ ] **Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)**
   - [ ] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
+=======
+  - [ ] Adicionar botão de fechar (X) às pop ups que não tem
+    - [ ] `PopUpDownload`
+    - [ ] `PopUpAudiodescricao`
+  - [ ] Adicionar box-shadow às pop ups
+    - [ ] `PopUpDownload`
+    - [ ] `PopUpAudiodescrição`
+  - [ ] Alterar fonte para 'Inter'
+    - [ ] `PopUpDownload`
+    - [ ] `PopUpAudiodescrição`
+  - [ ] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
+  - [ ] Colocar 'cursor: pointer' em todos os elementos clicáveis
+    - [ ] Botões
+    - [ ] Âncoras
+    - [ ] Imagem `Livro`
+  - [ ] `PopUpCreditos`
+    - [ ] Aumentar padding do botão de fechar seguindo layout
+    - [ ] Alinhar colunas das duas páginas (quando clica de um botão a outro ela muda de posição)
+    - [ ] Diminuir padding lateral e gaps para caber todo o texto na página, e se preciso, diminuir um pouquinho a letra -- está dando overflow e sobrepondo os botões
+>>>>>>> 08072fd17b75c96f12ff81b6c4e13c202a5e532a
   - [ ] Corrigir posição do título "Periscópio" na `Capa` para que fique sempre fixo no fim da primeira tela
   - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
     - [ ] `PopUpDownload`
@@ -91,20 +113,21 @@
   - [ ] Remover barra laranja ao fim da página
   - [ ] Aplicar animação de letreiro de LED ao banner da frase de chamada no `Menu`
   - [ ] Adicionar objeto 3D / gif à `Capa`
-  - [ ] Trocar a cor de seleção do texto por laranja (`Global`)
+  - [x] Trocar a cor de seleção do texto por laranja (`Global`)
+  - [x] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `PopUpCreditos`
+  - [x] `Artigos`
+    - [x] Aumentar espaçamento entre as linhas no menu
+    - [x] Alinhar marcador à esquerda dos itens do menu
+    - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/)
-  - [ ] Adicionar lógica de scrollTo ao botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
-  - [ ] Adicionar arquivos para download
+  - [ ] Adicionar arquivos para download - Mar
     - [ ] `PopUpDownload`: .pdf
     - [ ] `PopUpAudiodescricao`: audiodescrição
-  - [ ] `Global`: Aplicar lógica de línguas
+  - [ ] **`Global`: Aplicar lógica de línguas - Mar**
   - [ ] Abrir `PopUpLivro` ao clicar na imagem do `Livro`
-  - [ ] Atualizar imagens do `Livro`
-
-
-- Ajustes a partir das conclusões da primeira entrega
+  - [x] Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/)
+  - [x] Adicionar lógica de scrollTo aos botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
 
 ### 27/12
 - Subir para o servidor
