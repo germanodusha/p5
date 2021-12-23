@@ -64,18 +64,17 @@
 
 - [ ] Aprofundamento da estilização 
   - [ ] Remover hover do texto de `Chamada`
-<<<<<<< HEAD
-  - [x] Adicionar botão de fechar (X) às pop ups que não tem
+  - [x] Adicionar botão de fechar (X) às pop ups que não tem *Grego*
     - [x] `PopUpDownload`
     - [x] `PopUpAudiodescricao`
-  - [X] Adicionar box-shadow às pop ups
+  - [X] Adicionar box-shadow às pop ups *Grego*
     - [x] `PopUpDownload`
     - [x] `PopUpAudiodescrição`
-  - [x] Alterar fonte para 'Inter'
+  - [x] Alterar fonte para 'Inter' *Grego*
     - [x] `PopUpDownload`
     - [x] `PopUpAudiodescrição`
-  - [x] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
-  - [x] Colocar 'cursor: pointer' em todos os elementos clicáveis
+  - [x] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`*Grego*
+  - [x] Colocar 'cursor: pointer' em todos os elementos clicáveis *Grego*
     - [x] Botões
     - [x] Âncoras
     - [x] Imagem `Livro`
@@ -84,26 +83,10 @@
     - [ ] **Alinhar marcador à esquerda dos itens do menu**
     - [ ] **Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)**
   - [ ] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
-=======
-  - [ ] Adicionar botão de fechar (X) às pop ups que não tem
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescricao`
-  - [ ] Adicionar box-shadow às pop ups
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescrição`
-  - [ ] Alterar fonte para 'Inter'
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescrição`
-  - [ ] Retirar link "EPUB" e centralizar "PDF" na `PopUpDownload`
-  - [ ] Colocar 'cursor: pointer' em todos os elementos clicáveis
-    - [ ] Botões
-    - [ ] Âncoras
-    - [ ] Imagem `Livro`
-  - [ ] `PopUpCreditos`
+  - [ ] `PopUpCreditos` - *Grego*
     - [ ] Aumentar padding do botão de fechar seguindo layout
     - [ ] Alinhar colunas das duas páginas (quando clica de um botão a outro ela muda de posição)
     - [ ] Diminuir padding lateral e gaps para caber todo o texto na página, e se preciso, diminuir um pouquinho a letra -- está dando overflow e sobrepondo os botões
->>>>>>> 08072fd17b75c96f12ff81b6c4e13c202a5e532a
   - [ ] Corrigir posição do título "Periscópio" na `Capa` para que fique sempre fixo no fim da primeira tela
   - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
     - [ ] `PopUpDownload`
@@ -121,7 +104,7 @@
     - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] Adicionar arquivos para download
+  - [ ] Adicionar arquivos para download - Mar
     - [ ] `PopUpDownload`: .pdf
     - [ ] `PopUpAudiodescricao`: audiodescrição
   - [ ] **`Global`: Aplicar lógica de línguas - Mar**
