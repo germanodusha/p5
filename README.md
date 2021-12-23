@@ -78,7 +78,10 @@
     - [ ] Botões
     - [ ] Âncoras
     - [ ] Imagem `Livro`
-  - [ ] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
+  - [ ] `PopUpCreditos`
+    - [ ] Aumentar padding do botão de fechar seguindo layout
+    - [ ] Alinhar colunas das duas páginas (quando clica de um botão a outro ela muda de posição)
+    - [ ] Diminuir padding lateral e gaps para caber todo o texto na página, e se preciso, diminuir um pouquinho a letra -- está dando overflow e sobrepondo os botões
   - [ ] Corrigir posição do título "Periscópio" na `Capa` para que fique sempre fixo no fim da primeira tela
   - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
     - [ ] `PopUpDownload`
@@ -89,16 +92,17 @@
   - [ ] Aplicar animação de letreiro de LED ao banner da frase de chamada no `Menu`
   - [ ] Adicionar objeto 3D / gif à `Capa`
   - [ ] Trocar a cor de seleção do texto por laranja (`Global`)
+  - [x] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `PopUpCreditos`
   - [x] `Artigos`
     - [x] Aumentar espaçamento entre as linhas no menu
     - [x] Alinhar marcador à esquerda dos itens do menu
     - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
 
 - [ ] Desenvolvimento das interações
-  - [ ] **Adicionar arquivos para download - Mar**
-    - [ ] **`PopUpDownload`: .pdf**
-    - [ ] **`PopUpAudiodescricao`: audiodescrição**
-  - [ ] `Global`: Aplicar lógica de línguas
+  - [ ] Adicionar arquivos para download - Mar
+    - [ ] `PopUpDownload`: .pdf
+    - [ ] `PopUpAudiodescricao`: audiodescrição
+  - [ ] **`Global`: Aplicar lógica de línguas - Mar**
   - [ ] Abrir `PopUpLivro` ao clicar na imagem do `Livro`
   - [x] Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/)
   - [x] Adicionar lógica de scrollTo aos botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
