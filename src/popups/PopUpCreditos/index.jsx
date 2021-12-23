@@ -12,7 +12,7 @@ import {
 import fechar from "../../imagens/icones/x_preto.svg"
 
 import database from "../../database";
-import { dblClick } from "@testing-library/user-event/dist/click";
+
 
 function PopUpCreditos({ fClick }) {
   const fichaTecnica = database.ptbr.index.fichaTecnica;
