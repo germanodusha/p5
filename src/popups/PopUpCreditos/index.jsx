@@ -8,27 +8,24 @@ import {
   Bolinha,
   Fechar,
 } from "./estilo";
-
 import fechar from "../../imagens/icones/x_preto.svg"
-
 import database from "../../database";
 
 
 function PopUpCreditos({ fClick }) {
   const fichaTecnica = database.ptbr.info.fichaTecnica;
-  const artistasECuradores = database.ptbr.principal.artistasECuradores;
-  const db = database.ptbr.info.sobrePeriscopio;
+  const artistasECuradores = database.ptbr.info.artistasECuradores;
+  const sobre = database.ptbr.info.sobrePeriscopio;
   const [estado,setEstado] = useState(true);
 
-  console.log(db);
   return (
     
     <Conteiner>
       <Content className="centerRow">
         {estado ? (<> 
         <Info id="agradecimentos" className="startRow">
-          <h3>{database.ptbr.info.titulo}</h3>
-          <p>{db}</p>
+          <h3>{sobre.titulo}</h3>
+          <p>{sobre.texto}</p>
         </Info>
         <CaixaTexto className="startRow" >
           <Info id="artistasECuradores">
