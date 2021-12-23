@@ -54,7 +54,7 @@
 - audiodescrição para download
 
 #### Tarefas
-- [x] **Finalização de conteúdo - Jai**
+- [x] Finalização de conteúdo
   - [x] Adicionar conteúdo da `PopUpDownload`
   - [x] Adicionar textos da `PopUpAudiodescricao`
   - [x] Adicionar textos em inglês à `database`
@@ -63,7 +63,26 @@
   - [x] Atualizar imagens do `Livro`
 
 - [ ] Aprofundamento da estilização 
-  - [ ] Remover hover do texto de `Chamada`
+  - [ ] `PopUpCreditos` - *Grego*
+    - [ ] Aumentar padding do botão de fechar seguindo layout
+    - [ ] Alinhar colunas das duas páginas (quando clica de um botão a outro ela muda de posição)
+    - [ ] Diminuir padding lateral e gaps para caber todo o texto na página, e se preciso, diminuir um pouquinho a letra -- está dando overflow e sobrepondo os botões
+  - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
+    - [ ] `PopUpDownload`
+    - [ ] `PopUpAudiodescricao`
+  - [ ] Resolver cor dos botões do `Menu` com base na rolagem
+  - [ ] Adicionar transição da imagem do `Livro` durante a rolagem da página
+  - [ ] Aplicar animação de letreiro de LED ao banner da frase de chamada no `Menu`
+  - [ ] Adicionar objeto 3D / gif à `Capa`
+  - [x] Remover barra laranja ao fim da página
+  - [x] Trocar a cor de seleção do texto por laranja (`Global`)
+  - [x] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `PopUpCreditos`
+  - [x] `Artigos`
+    - [x] Aumentar espaçamento entre as linhas no menu
+    - [x] Alinhar marcador à esquerda dos itens do menu
+    - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
+  - [x] Remover hover do texto de `Chamada`
+  - [x] Corrigir posição do título "Periscópio" na `Capa` para que fique sempre fixo no fim da primeira tela
   - [x] Adicionar botão de fechar (X) às pop ups que não tem *Grego*
     - [x] `PopUpDownload`
     - [x] `PopUpAudiodescricao`
@@ -78,37 +97,18 @@
     - [x] Botões
     - [x] Âncoras
     - [x] Imagem `Livro`
-  - [ ] **`Artigos` - Mar**
-    - [ ] **Aumentar espaçamento entre as linhas no menu**
-    - [ ] **Alinhar marcador à esquerda dos itens do menu**
-    - [ ] **Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)**
-  - [ ] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
-  - [ ] `PopUpCreditos` - *Grego*
-    - [ ] Aumentar padding do botão de fechar seguindo layout
-    - [ ] Alinhar colunas das duas páginas (quando clica de um botão a outro ela muda de posição)
-    - [ ] Diminuir padding lateral e gaps para caber todo o texto na página, e se preciso, diminuir um pouquinho a letra -- está dando overflow e sobrepondo os botões
-  - [ ] Corrigir posição do título "Periscópio" na `Capa` para que fique sempre fixo no fim da primeira tela
-  - [ ] Manter botões do `Menu` ativos quando as pop ups estão abertas
-    - [ ] `PopUpDownload`
-    - [ ] `PopUpAudiodescricao`
-  - [ ] Resolver cor dos botões do `Menu` com base na rolagem
-  - [ ] Adicionar transição da imagem do `Livro` durante a rolagem da página
-  - [ ] Remover barra laranja ao fim da página
-  - [ ] Aplicar animação de letreiro de LED ao banner da frase de chamada no `Menu`
-  - [ ] Adicionar objeto 3D / gif à `Capa`
-  - [x] Trocar a cor de seleção do texto por laranja (`Global`)
-  - [x] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `PopUpCreditos`
   - [x] `Artigos`
     - [x] Aumentar espaçamento entre as linhas no menu
     - [x] Alinhar marcador à esquerda dos itens do menu
     - [x] Centralizar mais o conteúdo (sobrepõe com o botão em algumas telas)
+  - [x] Inverter coluna "Sobre a Periscópio" e a lista de pessoas nos `Creditos`
 
 - [ ] Desenvolvimento das interações
-  - [ ] Adicionar arquivos para download - Mar
+  - [ ] Adicionar arquivos para download
     - [ ] `PopUpDownload`: .pdf
     - [ ] `PopUpAudiodescricao`: audiodescrição
   - [ ] **`Global`: Aplicar lógica de línguas - Mar**
-  - [ ] Abrir `PopUpLivro` ao clicar na imagem do `Livro`
+  - [x] Abrir `PopUpLivro` ao clicar na imagem do `Livro`
   - [x] Adicionar link Periscópio ao `Menu` (https://periscopio.art.br/)
   - [x] Adicionar lógica de scrollTo aos botão `Artigo` do `Menu` ([react-hash-link](https://www.npmjs.com/package/react-hash-link))
 

@@ -25,7 +25,7 @@ function PopUpLivro({ fClick }) {
         mudarFoto(1);
       }} />
       <Foto src={fotos[indice]} />
-      <BotaoFechar src={XPreto} onClick={fClick} />
+      <BotaoFechar src={XPreto} onClick={() => { fClick(); console.log('foi aqui') }} />
     </ConteinerFoto>
   );
 }
