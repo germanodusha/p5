@@ -7,7 +7,18 @@ height: 100vh;
 position: relative;
 `;
 
-export const Titulo = styled.h1`
+export const TituloPrincipal = styled.h1`
+font-family: 'ES Build';
+font-size: 10em;
+font-weight: normal;
+line-height: 1;
+position:absolute;
+width: 100%;
+text-align: center;
+bottom: -10vh;
+`;
+
+export const Titulo = styled.h2`
 font-family: 'ES Build';
 font-size: 10em;
 font-weight: normal;
@@ -21,6 +32,9 @@ ${(props) => props.temSpan
         ? 'justify-content: space-between;'
         : 'justify-content: space-around;'
     }
+.cabecalho{
+    padding: 2vh 3vw 0 3vw;
+}
 `;
 
 export const Livro = styled.img`
