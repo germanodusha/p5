@@ -11,8 +11,8 @@ width: 100%;
 justify-content: space-around;
 text-align: center;
 color: var(--preto);
-&:hover, &:focus {
+/* &:hover, &:focus {
     text-shadow: var(--preto) 10px -10px 20px,var(--preto) -10px -10px 20px,var(--preto) -10px 10px 20px,var(--preto) 10px 10px 20px;
     color: var(--laranja);
-}
+} */
 `;
