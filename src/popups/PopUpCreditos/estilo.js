@@ -38,6 +38,7 @@ background-color:var(--laranja);
     line-height: 20px;
     @media (min-width:1720px){
       font-size:1em;
+      line-height: 32px;
     }
   }
 }
@@ -90,6 +91,7 @@ span,p{
     font-size:0.9em;
     @media (min-width:1720px){
       font-size:1em;
+      line-height:26px;
     }
   }
 
@@ -119,7 +121,7 @@ font-size: 1rem;
 background-color:transparent;
 border:none;
 position:fixed;
-top:10%;
+top:12%;
 right:2%;
 img{
   width:100%;

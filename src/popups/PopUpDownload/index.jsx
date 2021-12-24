@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 import { Conteiner, Content, Download, Text, Fechar } from "./estilo";
 import fechar from "../../imagens/icones/x_preto.svg"

@@ -12,6 +12,7 @@ import { usePopUps } from '../../AcessoPopUps';
 
 function Menu() {
   const [popUps, setPopUps] = usePopUps();
+  const [estado, setEstado] = useState(true);
 
   const [abrirAudiodescricao, setAbrirAudiodescricao] = useState(false);
   const [abrirCreditos, setAbrirCreditos] = useState(false);
@@ -56,7 +57,7 @@ function Menu() {
         EN/PT
       </Botao>
 
-      <Botao pos={{x: 'direita', y: 'superior'}} fClick={(e) => { e.preventDefault(); toggle('Audiodescricao');}}>
+      <Botao pos={{x: 'direita', y: 'superior'}}  fClick={(e) => { e.preventDefault(); toggle('Audiodescricao');}}>
         {database.ptbr.botoes.audioDescricao}
       </Botao>
 
