@@ -14,7 +14,12 @@ function Artigos() {
       <div>
       <MenuIndice>
         {itens.map((artigo, i) => (
-          <ItemMenuIndice ativo={indice === i} onClick={()=>{setIndice(i)}} key={artigo.titulo.replaceAll(" ","-").slice(-10)}>
+          <ItemMenuIndice ativo={indice === i} onClick={
+            () => {
+              setIndice(i);
+              window.location.replace("#ensaios");
+            }}
+            key={artigo.titulo.replaceAll(" ", "-").slice(-10)}>
           <p className="underline">{artigo.titulo}</p>
             <p>{artigo.autoria}</p>
             <div className="marcador">
