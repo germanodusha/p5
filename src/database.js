@@ -1,5 +1,5 @@
 const database = {
-    ptbr: {
+    ptBr: {
 
         principal: {
             titulo: 'Arquivo',
@@ -262,7 +262,10 @@ const database = {
                 notaFinal: 'Este livro foi composto utilizando as fontes ES Build, Interval e Inter; e impresso em papel Couchê Brilho 150 grs, Eurobulk 135 grs e Color Plus 80 grs pela Rona Editora, em dezembro de 2021.',
             },
             artistasECuradores: 'Alice Ricci, Amilcar de Castro, Ana Linnemann, Andrea Brown, Andréa Brown, Andrea Gomes, Avilmar Maia, Beatriz de Almeida Magalhães, Binho Barreto, Bruno Faria, Bruno Palazzo, Camila Lacerda, Cristina Marigo, Daniel Bilac, Daniel de Paula, Daniel Steegmann Mangrané, Daniela Moser, Deyson Gilbert, Éder Oliveira, Eduardo Hargreaves, Ernesto Neto, Erre Erre, Fábio Baroli, Fábio Tremonte, Fabíola Moulin, Fabíola Tasca, Felipe Scovino, Flávia Péret, Flávio Cerqueira, Francisco Lara Rezende, Frederico Morais, Germano Dushá, Gisele Camargo, Guto Lacaz, Hélio Menezes, Henrique Detomi, Iara Marques, Iberê Camargo, Ina Gouveia, Ivens Machado, Janaina Wagner, José Lara, Juliana Gontijo, Júlio Martins, Katia Canton, Lais Myrrha, Laura Berbert, Letícia Grandinetti, Lorenzato, Luana Vitra, Lucas Dupin, Lucas ­Kröeff­, Lucas Simões, Marc Davi, ­Marcel­ Diogo, Marcela Novaes, Marcelo Drummond, Márcia Guimarães, Márcio Diegues, Marco Maria Zanin, Marco Sem S, Marcone Moreira, Marconi Drummond, Maria Palmeiro, Maria Thereza Alves, Marina Câmara, Maurício Meirelles, Mauro Restiffe, Nydia Negromonte, Patrícia Leite, Paula Borghi, Paula Huven, Paula Sampaio, Paulo Baptista, Pedro Motta, Rachel Cecília de Oliveira, Rafael RG, Randolpho Lamonier, Renata De Bonis, Ricardo Carioba, Rodrigo Albert, Rodrigo Braga, Rodrigo Cass, Selma Parreira, Sérgio Martins, TRAPLEV, Umberto Costa Barros, Victor Galvão, Wilson Baptista, Wilson Lázaro.'
-
+            , botoes: {
+                fichaTecnica: 'Ficha Técnica',
+                sobre: 'Sobre/Artistas'
+            }
         },
         botoes: {
             download: 'DOWNLOAD',
@@ -547,7 +550,10 @@ const database = {
                 notaFinal: 'This book was composed using ES Build, Interval, and Inter fonts; and printed on Couchê Brilho 150 gsm paper, Eurobulk 135 gsm and Color Plus 80 gsm by Rona Editora, in December 2021.',
             },
             artistasECuradores: 'Alice Ricci, Amilcar de Castro, Ana Linnemann, Andrea Brown, Andréa Brown, Andrea Gomes, Avilmar Maia, Beatriz de Almeida Magalhães, Binho Barreto, Bruno Faria, Bruno Palazzo, Camila Lacerda, Cristina Marigo, Daniel Bilac, Daniel de Paula, Daniel Steegmann Mangrané, Daniela Moser, Deyson Gilbert, Éder Oliveira, Eduardo Hargreaves, Ernesto Neto, Erre Erre, Fábio Baroli, Fábio Tremonte, Fabíola Moulin, Fabíola Tasca, Felipe Scovino, Flávia Péret, Flávio Cerqueira, Francisco Lara Rezende, Frederico Morais, Germano Dushá, Gisele Camargo, Guto Lacaz, Hélio Menezes, Henrique Detomi, Iara Marques, Iberê Camargo, Ina Gouveia, Ivens Machado, Janaina Wagner, José Lara, Juliana Gontijo, Júlio Martins, Katia Canton, Lais Myrrha, Laura Berbert, Letícia Grandinetti, Lorenzato, Luana Vitra, Lucas Dupin, Lucas ­Kröeff­, Lucas Simões, Marc Davi, ­Marcel­ Diogo, Marcela Novaes, Marcelo Drummond, Márcia Guimarães, Márcio Diegues, Marco Maria Zanin, Marco Sem S, Marcone Moreira, Marconi Drummond, Maria Palmeiro, Maria Thereza Alves, Marina Câmara, Maurício Meirelles, Mauro Restiffe, Nydia Negromonte, Patrícia Leite, Paula Borghi, Paula Huven, Paula Sampaio, Paulo Baptista, Pedro Motta, Rachel Cecília de Oliveira, Rafael RG, Randolpho Lamonier, Renata De Bonis, Ricardo Carioba, Rodrigo Albert, Rodrigo Braga, Rodrigo Cass, Selma Parreira, Sérgio Martins, TRAPLEV, Umberto Costa Barros, Victor Galvão, Wilson Baptista, Wilson Lázaro.'
-
+            , botoes: {
+                fichaTecnica: 'Credits',
+                sobre: 'About/Artists'
+            }
         },
         botoes: {
             download: 'DOWNLOAD',

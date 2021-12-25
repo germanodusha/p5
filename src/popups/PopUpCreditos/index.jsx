@@ -11,12 +11,13 @@ import {
 
 import fechar from "../../imagens/icones/x_preto.svg";
 
-import database from "../../database";
+import { useGlobal } from '../../AcessoGlobal';
 
 function PopUpCreditos({ fClick }) {
-  const fichaTecnica = database.ptbr.info.fichaTecnica;
-  const artistasECuradores = database.ptbr.info.artistasECuradores;
-  const db = database.ptbr.info.sobrePeriscopio;
+
+  const [global, mudarGlobal] = useGlobal();
+
+  const { fichaTecnica, artistasECuradores, sobrePeriscopio, botoes } = global.db.info; 
   const [estado, setEstado] = useState(true);
 
   return (
@@ -26,8 +27,8 @@ function PopUpCreditos({ fClick }) {
           <>
           <CaixaTexto className="startRow">
             <Info className="artistasECuradores">
-              <h3>{db.titulo}</h3>
-              <p>{db.texto}</p>
+              <h3>{sobrePeriscopio.titulo}</h3>
+              <p>{sobrePeriscopio.texto}</p>
             </Info>
               <Info className="artistasECuradores">
                 <p>{artistasECuradores}</p>
@@ -38,20 +39,20 @@ function PopUpCreditos({ fClick }) {
           <>
             <CaixaTexto className="startRow">
               <Info className="equipeTecnica">
-                {fichaTecnica.parte1.map((e) => (
+                {fichaTecnica.parte1.map((item) => (
                   <>
-                    <span>{e.titulo}</span>
-                    <span>{e.autoria}</span>
+                    <span>{item.titulo}</span>
+                    <span>{item.autoria}</span>
                   </>
                 ))}
               </Info>
 
               <Info className="equipeTecnica">
-                {fichaTecnica.parte2.slice(0, 7).map((e) => (
+                {fichaTecnica.parte2.slice(0, 7).map((item) => (
                   <>
                     {" "}
-                    <span>{e.titulo}</span>
-                    <span>{e.autoria}</span>
+                    <span>{item.titulo}</span>
+                    <span>{item.autoria}</span>
                   </>
                 ))}
               </Info>
@@ -74,7 +75,7 @@ function PopUpCreditos({ fClick }) {
             }}
             ativo={estado}
           >
-            Sobre/Artistas
+            {botoes.sobre}
           </Ancora>
           <Ancora
             onClick={() => {
@@ -82,7 +83,7 @@ function PopUpCreditos({ fClick }) {
             }}
             ativo={!estado}
           >
-            Ficha Técnica
+            {botoes.fichaTecnica}
           </Ancora>
         </div>
         <Bolinha className="bola1" />

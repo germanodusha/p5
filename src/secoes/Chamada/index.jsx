@@ -1,14 +1,14 @@
 import React from 'react';
 import { Texto } from './estilo';
-import database from '../../database'
+import { useGlobal } from '../../AcessoGlobal';
 
 function Chamada() {
-  console.log(database)
-  const fraseChamada = database.ptbr.principal.fraseChamada;
+  const [global, mudarGlobal] = useGlobal();
+  const { fraseChamada } = global.db.principal;
+  
   return (
     <Texto>
       {fraseChamada}
-      
     </Texto>
   );
 }

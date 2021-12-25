@@ -1,7 +1,6 @@
 import React, {
     createContext, useReducer, useContext, useEffect,
 } from 'react';
-import database from './database';
 
 /* estado inicial */
 const estadoInicial = {

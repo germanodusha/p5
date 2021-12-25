@@ -23,7 +23,7 @@ export const AcessoGlobal = ({ children }) => {
     useEffect(() => {
         const thisDb = global.ptBr ? database.ptBr : database.en;
         mudarGlobal({ db: thisDb });
-        console.log('atualizou state');
+        console.log('atualizou língua');
     }, [global.ptBr]);
 
     return (
@@ -44,8 +44,6 @@ export const useGlobal = () => [
 /*
     import { useGlobal } from '../../AcessoGlobal';
 
-    function GaleriaFilmes({ categoria }) {
-    // eslint-disable-next-line no-unused-vars
     const [global, mudarGlobal] = useGlobal();
 
     const { filmes } = global.db; 

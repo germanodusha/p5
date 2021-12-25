@@ -1,27 +1,28 @@
 import React from 'react';
 import { Epigrafe, SecaoIndice, ItemIndice, Conteiner } from './estilo';
-import database from '../../database'
+import { useGlobal } from '../../AcessoGlobal'
 
 function Indice() {
-const ensaios = database.ptbr.index.ensaios.itens;
-  const exposicoes = database.ptbr.index.exposicoes.itens;
+  const [global, mudarGlobal] = useGlobal();
+  const { principal } = global.db;
+  const { ensaios, exposicoes, titulo } = global.db.index;
   
   return (
     <Conteiner>
-      <Epigrafe dangerouslySetInnerHTML={{__html:database.ptbr.principal.epigrafe}}>
+      <Epigrafe dangerouslySetInnerHTML={{__html:principal.epigrafe}}>
       </Epigrafe>
       <SecaoIndice>
         <div>
-          Sobre a Periscópio
+          {titulo}
         </div>
         <div></div>
       </SecaoIndice>
       <SecaoIndice>
         <div>
-        Ensaios
+          {ensaios.titulo}
         </div>
         <div>
-          {ensaios.map((ensaio) => (
+          {ensaios.itens.map((ensaio) => (
             <ItemIndice key={ensaio.titulo.replace(' ','-')}>
               <p className="underline">{ensaio.titulo}</p>
               <p>{ensaio.autoria}</p>
@@ -31,10 +32,10 @@ const ensaios = database.ptbr.index.ensaios.itens;
       </SecaoIndice>
       <SecaoIndice>
         <div>
-        Exposições
+        {exposicoes.titulo}
         </div>
         <div>
-          {exposicoes.map((exposicao) => (
+          {exposicoes.itens.map((exposicao) => (
             <ItemIndice key={exposicao.titulo.replace(' ', '-')}>
               <p className="underline">{exposicao.titulo}</p>
               <p>{exposicao.autoria}</p>
