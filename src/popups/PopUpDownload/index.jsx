@@ -2,7 +2,8 @@ import React,{useState} from 'react';
 
 import { Conteiner, Content, Download, Text, Fechar } from "./estilo";
 import fechar from "../../imagens/icones/x_preto.svg"
-  import { useGlobal } from '../../AcessoGlobal';
+import pdf from '../../download/P5.pdf'
+import { useGlobal } from '../../AcessoGlobal';
 
 function PopUpDownload({fClick}) {
   const [global, mudarGlobal] = useGlobal();
@@ -13,7 +14,7 @@ function PopUpDownload({fClick}) {
       <Content className="centerColumn">
         <Text>{popups.download}</Text>
         <div>
-          <Download>{botoes.pdf}</Download>  
+          <Download><a href={pdf} download>{botoes.pdf}</a></Download>  
           <Fechar onClick={ fClick }><img src={fechar} alt="fechar" /></Fechar>    
         </div>
       </Content>

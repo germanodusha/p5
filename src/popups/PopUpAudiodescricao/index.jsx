@@ -4,6 +4,8 @@ import fechar from "../../imagens/icones/x_preto.svg"
 
 import { useGlobal } from '../../AcessoGlobal';
 
+import mp3 from '../../download/audiodesc.mp3';
+
 function PopUpAudiodescricao({fClick}) {
   const [global, mudarGlobal] = useGlobal();
   const { popups, botoes } = global.db; 
@@ -17,7 +19,9 @@ function PopUpAudiodescricao({fClick}) {
           {popups.audioDescricao}
         </Text>
 
-        <Download style={{marginTop:'-8%', marginBottom:'6%'}}>{botoes.download}</Download>
+        <Download  href={mp3} download style={{ marginTop: '-8%', marginBottom: '6%' }}>
+          {botoes.download}
+        </Download>
         <Fechar onClick={ fClick }><img src={fechar} alt="fechar" /></Fechar>  
         
       </Content>
