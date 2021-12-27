@@ -27,8 +27,13 @@ function PopUpCreditos({ fClick }) {
           <>
           <CaixaTexto className="startRow">
             <Info className="artistasECuradores">
+<<<<<<< Updated upstream
               <h3>{sobrePeriscopio.titulo}</h3>
               <p>{sobrePeriscopio.texto}</p>
+=======
+              <p>{db.titulo}</p>
+              <p>{db.texto}</p>
+>>>>>>> Stashed changes
             </Info>
               <Info className="artistasECuradores">
                 <p>{artistasECuradores}</p>
@@ -59,7 +64,7 @@ function PopUpCreditos({ fClick }) {
             
 
             <Info id="agradecimentos" >
-              <h3>{fichaTecnica.parte2[7].titulo}</h3>
+              <p>{fichaTecnica.parte2[7].titulo}</p>
               <p>{fichaTecnica.parte2[7].autoria}</p>
               <span>{fichaTecnica.parte2[8].titulo}</span>
               <p>{fichaTecnica.parte2[8].autoria}</p>
@@ -75,7 +80,11 @@ function PopUpCreditos({ fClick }) {
             }}
             ativo={estado}
           >
+<<<<<<< Updated upstream
             {botoes.sobre}
+=======
+            Sobre/Agentes
+>>>>>>> Stashed changes
           </Ancora>
           <Ancora
             onClick={() => {
