@@ -17,7 +17,7 @@ export const EstiloBotao = styled.button`
 
     z-index: 30;
 
-    transition: 1s;
+    transition: background-color 1s, .5s;
 
     ${(props) => {
         let estilo = ''
@@ -41,9 +41,15 @@ export const EstiloBotao = styled.button`
 
     &:hover, &:focus {
     background: var(--preto);
-    color: var(--laranja);
+    ${(props) => {
+        if (props.taBranco) {
+            return 'color: var(--branco);';
+        } else {
+            return 'color: var(--laranja);';
+        }
+    }}
     box-shadow: 0 0 20px 15px var(--preto);
     /* o border-radius deixa uma marca laranja na borda do botão. se tirar, ela some */
-    /* border-radius:0;*/ 
+    /* border-radius: 0;  */
     }
 `;
