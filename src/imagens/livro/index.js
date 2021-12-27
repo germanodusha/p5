@@ -21,7 +21,7 @@ import Foto20 from './livro_p5_00020.jpg';
 import Foto21 from './livro_p5_00021.jpg';
 import Foto22 from './livro_p5_00022.jpg';
 import Foto23 from './livro_p5_00023.jpg';
-import Foto24 from './livro_p5_00024.jpg';
+import Foto0 from './livro_p5_00000.jpg';
 
 
 export { 
@@ -48,5 +48,5 @@ export {
     Foto21,
     Foto22,
     Foto23,
-    Foto24
+    Foto0
 };
