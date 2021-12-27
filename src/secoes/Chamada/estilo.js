@@ -15,4 +15,8 @@ color: var(--preto);
     text-shadow: var(--preto) 10px -10px 20px,var(--preto) -10px -10px 20px,var(--preto) -10px 10px 20px,var(--preto) 10px 10px 20px;
     color: var(--laranja);
 } */
+
+@media (max-width: 800px) {
+    font-size: 4.75em;
+}
 `;
