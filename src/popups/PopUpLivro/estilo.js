@@ -19,10 +19,13 @@ z-index: 1000;
 export const ConteinerDireita = styled.div`
 position: absolute;
 right: 10vw;
+
 .seta{
     visibility: visible;
     position: absolute;    
-    
+@media (max-width:800px){
+    visibility: hidden;
+}    
 }
 .hover{
     position: absolute;
@@ -37,10 +40,13 @@ right: 10vw;
         visibility: visible;
     }
 
+    
 }
+
 `;
 export const ConteinerEsquerda = styled.div`
 position: absolute;
+
 .esquerda{
     left: 5vw;
 }
@@ -48,7 +54,9 @@ position: absolute;
 .seta{
     visibility: visible;
     position: absolute;    
-    
+    @media (max-width:800px){
+    visibility: hidden;
+}
 }
 .hover{
     position: absolute;
@@ -64,6 +72,7 @@ position: absolute;
     }
 
 }
+
 `;
 
 export const BotaoFechar = styled.button`
