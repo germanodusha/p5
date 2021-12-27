@@ -7,6 +7,7 @@ import database from './database';
 const estadoInicial = {
     ptBr: true,
     db: database.ptBr,
+    taBranco: false,
 };
 
 /* contexto do estado + valor inicial */
