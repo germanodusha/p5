@@ -9,7 +9,6 @@ function Artigos() {
   const { itens } = global.db.index.ensaios;
 
   return (
-
     <Conteiner id="ensaios">
       <div>
       <MenuIndice>

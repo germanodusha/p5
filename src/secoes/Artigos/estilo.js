@@ -43,7 +43,6 @@ position:relative;
         max-width: 100%;
     }
 }
-
 .marcador:not(.semPadding) {
     width: 80%;
 }
