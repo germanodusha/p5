@@ -42,6 +42,7 @@ font-family:'Inter';
 export const Download = styled.a`
 font-size:2.5em;
 font-family:'Inter';
+font-weight:200;
 &:hover,&:focus{
   text-decoration:underline;
   text-underline-position: under;
