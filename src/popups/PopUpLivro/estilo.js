@@ -7,7 +7,11 @@ width: 100vw;
 height: 100vh;
 top:0;
 z-index: 1000;
-
+&:hover,&:focus{
+    img{
+        cursor: pointer;
+    }
+}
 .seta{
     position: absolute;
     width: 3vw;
@@ -23,8 +27,11 @@ z-index: 1000;
     right: 5vw;
 }
 `;
+export const ConteinerHover = styled.div`
 
-export const BotaoFechar = styled.img`
+`;
+
+export const BotaoFechar = styled.button`
     position: fixed;
     right: 5vw;
     top: 5vh;
@@ -35,5 +42,5 @@ export const BotaoFechar = styled.img`
 export const Foto = styled.img`
 width:100%;
 height:100vh;
-object-fit:contain;
+object-fit:cover;
 `;

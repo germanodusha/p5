@@ -58,12 +58,12 @@ height:100%;
 }
 .bola1{
 top:15%;
-left:6%;
+left:3%;
 position:fixed;
 }
 .bola2{
   top:50%;
-  left:6%;
+  left:3%;
   position:fixed;
 }
 .equipeTecnica{
@@ -109,8 +109,8 @@ text-underline-position: under;
 }
 `
 export const Bolinha = styled.div`
-width:2rem;
-height:2rem;
+width:1.6rem;
+height:1.6rem;
 border-radius:50%;
 background-color: var(--preto);
 `

@@ -8,7 +8,6 @@ import {
   Bolinha,
   Fechar,
 } from "./estilo";
-
 import fechar from "../../imagens/icones/x_preto.svg";
 
 import { useGlobal } from '../../AcessoGlobal';
@@ -27,7 +26,7 @@ function PopUpCreditos({ fClick }) {
           <>
           <CaixaTexto className="startRow">
             <Info className="artistasECuradores">
-              <h3>{sobrePeriscopio.titulo}</h3>
+              <p>{sobrePeriscopio.titulo}</p>
               <p>{sobrePeriscopio.texto}</p>
             </Info>
               <Info className="artistasECuradores">
@@ -59,7 +58,7 @@ function PopUpCreditos({ fClick }) {
             
 
             <Info id="agradecimentos" >
-              <h3>{fichaTecnica.parte2[7].titulo}</h3>
+              <p>{fichaTecnica.parte2[7].titulo}</p>
               <p>{fichaTecnica.parte2[7].autoria}</p>
               <span>{fichaTecnica.parte2[8].titulo}</span>
               <p>{fichaTecnica.parte2[8].autoria}</p>
@@ -75,7 +74,7 @@ function PopUpCreditos({ fClick }) {
             }}
             ativo={estado}
           >
-            {botoes.sobre}
+            Sobre/Agentes
           </Ancora>
           <Ancora
             onClick={() => {

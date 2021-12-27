@@ -268,7 +268,7 @@ const database = {
             }
         },
         botoes: {
-            download: 'DOWNLOAD',
+            download: 'MP3',
             pdf: 'PDF',
             downloadLivro: 'Download Livro',
             galeriaPeriscopio: 'Galeria Periscópio',
@@ -556,7 +556,7 @@ const database = {
             }
         },
         botoes: {
-            download: 'DOWNLOAD',
+            download: 'MP3',
             pdf: 'PDF',
             downloadLivro: 'Book Download',
             galeriaPeriscopio: 'Galeria Periscópio',
