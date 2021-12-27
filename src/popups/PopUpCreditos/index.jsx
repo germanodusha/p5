@@ -8,7 +8,6 @@ import {
   Bolinha,
   Fechar,
 } from "./estilo";
-
 import fechar from "../../imagens/icones/x_preto.svg";
 
 import { useGlobal } from '../../AcessoGlobal';
@@ -27,13 +26,8 @@ function PopUpCreditos({ fClick }) {
           <>
           <CaixaTexto className="startRow">
             <Info className="artistasECuradores">
-<<<<<<< Updated upstream
-              <h3>{sobrePeriscopio.titulo}</h3>
+              <p>{sobrePeriscopio.titulo}</p>
               <p>{sobrePeriscopio.texto}</p>
-=======
-              <p>{db.titulo}</p>
-              <p>{db.texto}</p>
->>>>>>> Stashed changes
             </Info>
               <Info className="artistasECuradores">
                 <p>{artistasECuradores}</p>
@@ -80,11 +74,7 @@ function PopUpCreditos({ fClick }) {
             }}
             ativo={estado}
           >
-<<<<<<< Updated upstream
-            {botoes.sobre}
-=======
             Sobre/Agentes
->>>>>>> Stashed changes
           </Ancora>
           <Ancora
             onClick={() => {
