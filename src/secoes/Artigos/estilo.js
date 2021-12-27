@@ -19,10 +19,11 @@ position: sticky;
 top: 5vh;
 display: flex;
 flex-direction: column;
+width: 17vw;
 `;
 
 export const ItemMenuIndice = styled.button`
-width: 15vw;
+width: fit-content;
 background-color: transparent;
 border: none;
 font: inherit;
@@ -34,19 +35,22 @@ position:relative;
     display:${(props) => props.ativo ? 'flex' : 'none'};
     position: absolute;
     height: 100%;
-    width: 100%;
     top: 0;
-    justify-content:left;
+    justify-content:center;
     align-items:center;
     img{
         height: 100%;
         max-width: 100%;
     }
 }
+
+.marcador:not(.semPadding) {
+    width: 80%;
+}
 `;
 
 export const Artigo = styled.article`
-padding-right: 10vw;
+padding-right: 8vw;
 p{
     padding-bottom: 1em;
 }
