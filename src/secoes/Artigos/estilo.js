@@ -16,7 +16,7 @@ position: relative;
 export const MenuIndice = styled.nav`
 -webkit-position: sticky;
 position: sticky;
-top: 5vh;
+top: 13vh;
 display: flex;
 flex-direction: column;
 width: 17vw;

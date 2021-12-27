@@ -1,5 +1,5 @@
 import React from 'react';
-import { Foto, ConteinerFoto } from './estilo';
+import { Foto, ConteinerFoto, ConteinerLivro } from './estilo';
 import { Foto1 } from '../../imagens/livro'
 import { usePopUps } from '../../AcessoPopUps';
 import { useGlobal } from '../../AcessoGlobal';
@@ -8,19 +8,21 @@ import { useGlobal } from '../../AcessoGlobal';
     const [popUps, setPopUps] = usePopUps();
     const [global, mudarGlobal] = useGlobal();
   
-  return (
-    <ConteinerFoto id="livro">
+    return (
+    <ConteinerLivro id="livro">
+    <ConteinerFoto>
       <Foto
         src={Foto1}
         onClick={
           () => {
-          setPopUps({ livro: true });
+            setPopUps({ livro: true });
           }
         }
         taBranco={global.taBranco}
         rolagem={rolagem}
-      />
+        />
     </ConteinerFoto>
+        </ConteinerLivro>
   );
 }
 

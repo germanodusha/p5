@@ -29,10 +29,8 @@ export const EstiloBotao = styled.button`
             if (props.pos.y === 'superior' && props.pos.x === 'direita') estilo += 'top: 40vh; right: 0; transform: rotate(-90deg);';
         }
         if (props.taBranco) {
-            console.log('css branco')
             estilo += 'background: var(--branco);';
         } else {
-            console.log('css laranja')
             estilo += 'background: var(--laranja);';
         }
         return estilo;
