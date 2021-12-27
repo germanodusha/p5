@@ -25,6 +25,7 @@ div{
   justify-content: space-around;
   align-items: center;
 }
+
 `
 export const Text = styled.p`
 text-align:center;
@@ -38,6 +39,14 @@ font-family:'Inter';
   font-size:2.5em;
   margin-bottom:5%;
 }
+@media(max-width: 800px){
+  width:80%;
+  height: 70%;
+  font-size: 1.25em;
+  font-weight:300;
+  padding: 0;
+  overflow-y: auto;
+}
 `
 export const Download = styled.a`
 font-size:2.5em;
@@ -46,6 +55,10 @@ font-weight:200;
 &:hover,&:focus{
   text-decoration:underline;
   text-underline-position: under;
+}
+@media (max-width:800px){
+font-size: 1.5em;
+
 }
 `
 export const Fechar = styled.button`
@@ -61,5 +74,9 @@ img{
   width:100%;
   height: 100%;
 }
+@media (max-width:800px){
+ display: none; 
+}
+
 `
 

@@ -73,6 +73,9 @@ button,a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width:800px){
+    justify-content: space-around;
+  }
 }
 .centerRow{
   display:flex;

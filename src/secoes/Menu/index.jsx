@@ -44,13 +44,13 @@ function Menu() {
       </Botao>
 
       <NavCentral>
-        <Botao fClick={(e) => { e.preventDefault(); document.getElementById('livro').scrollIntoView(); toggle('Livro');}}>
+        <Botao className="livro" fClick={(e) => { e.preventDefault(); document.getElementById('livro').scrollIntoView(); toggle('Livro');}}>
           {botoes.livro}
         </Botao> 
-        <Botao>
+        <Botao className="ensaios" >
           <a href="#ensaios">{botoes.artigos}</a>
         </Botao> 
-        <Botao fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
+        <Botao className="info" fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
           {botoes.info}
         </Botao>
       </NavCentral>

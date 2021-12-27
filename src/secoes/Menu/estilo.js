@@ -26,5 +26,14 @@ justify-content: center;
 
 gap: 1vw;
 z-index: 10;
+
+@media(max-width:800px){
+    .livro{
+        display: none;
+    }
+    .ensaios{
+        display: none;
+    }
+}
 `;
 
