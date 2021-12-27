@@ -9,8 +9,7 @@ export const EstiloBotao = styled.button`
     
     font-family: 'Inter';
     font-size: 1.3em;
-    
-    background: var(--laranja);
+
     color: var(--preto);
 
     border: 2px solid var(--preto);
@@ -18,15 +17,25 @@ export const EstiloBotao = styled.button`
 
     z-index: 30;
 
-    ${(props) => { 
+    transition: 1s;
+
+    ${(props) => {
+        let estilo = ''
         if (props.pos) {
-            let estilo = 'position: fixed;';
+            estilo += 'position: fixed;';
             if (props.pos.x === 'direita' && props.pos.y === 'inferior') estilo += 'right: 5vw; bottom: 5vh;';
             if (props.pos.x === 'esquerda' && props.pos.y === 'inferior') estilo += 'left: 5vw; bottom: 5vh;';
             if (props.pos.y === 'superior' && props.pos.x === 'esquerda') estilo += 'top: 40vh; left: 0; transform: rotate(-90deg);';
             if (props.pos.y === 'superior' && props.pos.x === 'direita') estilo += 'top: 40vh; right: 0; transform: rotate(-90deg);';
-            return estilo;
         }
+        if (props.taBranco) {
+            console.log('css branco')
+            estilo += 'background: var(--branco);';
+        } else {
+            console.log('css laranja')
+            estilo += 'background: var(--laranja);';
+        }
+        return estilo;
     }
     }
 
