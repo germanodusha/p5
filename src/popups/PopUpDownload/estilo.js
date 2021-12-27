@@ -29,12 +29,13 @@ div{
 `
 export const Text = styled.p`
 text-align:center;
-font-size:2em;
+font-size:2.5em;
 font-weight:200;
 width:70%;
-height:50%;
-padding-bottom:10%;
+height:auto;
+padding:10% 0;
 font-family:'Inter';
+overflow-y: auto;
 @media(min-width:1720px){
   font-size:2.5em;
   margin-bottom:5%;
@@ -52,14 +53,16 @@ font-family:'Inter';
 export const Download = styled.a`
 font-size:2.5em;
 font-family:'Inter';
-font-weight:200;
+font-weight:300;
+position: fixed;
+bottom: 3vh;
 &:hover,&:focus{
   text-decoration:underline;
   text-underline-position: under;
 }
 @media (max-width:800px){
-font-size: 1.5em;
-
+font-size: 1.25em;
+font-weight:300;
 }
 `
 export const Fechar = styled.button`
