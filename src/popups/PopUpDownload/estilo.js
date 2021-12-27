@@ -41,11 +41,12 @@ font-family:'Inter';
 }
 @media(max-width: 800px){
   width:80%;
-  height: 70%;
+  height: 65%;
   font-size: 1.25em;
   font-weight:300;
   padding: 0;
   overflow-y: auto;
+  padding-top: 20%;
 }
 `
 export const Download = styled.a`
@@ -73,9 +74,6 @@ right:5%;
 img{
   width:100%;
   height: 100%;
-}
-@media (max-width:800px){
- display: none; 
 }
 
 `
