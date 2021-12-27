@@ -19,17 +19,17 @@ function Artigos() {
               setIndice(i);
               window.location.replace("#ensaios");
             }}
-            key={artigo.titulo.replaceAll(" ", "-").slice(-10)}>
+            key={artigo.titulo.replaceAll(" ", "-").slice(-10)}
+          >
           <p className="underline">{artigo.titulo}</p>
             <p>{artigo.autoria}</p>
-            <div className="marcador">
+            <div className={`marcador ${i === 3 && 'semPadding'}`}>
             <img src={Marcador} alt="" />
             </div>
           </ItemMenuIndice>))}
         </MenuIndice>
         </div>
-      <Artigo dangerouslySetInnerHTML={{__html:itens[indice].texto}}>
-      </Artigo>
+      <Artigo dangerouslySetInnerHTML={{__html:itens[indice].texto}} />
     </Conteiner>
   );
 }
