@@ -27,17 +27,15 @@ function App() {
         se a roalagem passar da metade do conteiner do livro,
         a variável global taBranco é verdadeira
       */
-      if ((window.scrollY + alturaLivro / 2) > posLivro) {
+      if (window.scrollY > posLivro + (alturaLivro / 3)) {
         mudarGlobal({ taBranco: true });
       } else {
         mudarGlobal({ taBranco: false });
       }
+      const posScroll = window.scrollY - posLivro;
+      const rol = (100 * posScroll) / alturaLivro;
+      setRolagemLivro(rol);
 
-      if (global.taBranco) {
-        const posScroll = window.scrollY - posLivro;
-        const rol = (100 * posScroll) / alturaLivro;
-        setRolagemLivro(rol);
-      }
     });
 
   }, [])
@@ -53,7 +51,7 @@ function App() {
         <Menu />
         <Capa />
         <Chamada />
-        <Livro />
+        <Livro rolagem={rolagemLivro} />
         <Indice />
         <Artigos />
       </AcessoPopUps>
