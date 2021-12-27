@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Foto, ConteinerFoto, BotaoFechar } from './estilo';
+import { Foto, ConteinerFoto, BotaoFechar, ConteinerHover } from './estilo';
 import { SetaEsq, SetaDir, XPreto } from '../../imagens/icones';
 import { Foto1, Foto2,Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9, Foto10,Foto11,Foto12,Foto13,Foto14,Foto15,Foto16,Foto17,Foto18,Foto19,Foto20,Foto21,Foto22,Foto23,Foto24 } from '../../imagens/livro';
 
@@ -18,14 +18,19 @@ function PopUpLivro({ fClick }) {
 
   return (
     <ConteinerFoto>
+      <ConteinerHover>
       <img className="seta esquerda" src={SetaEsq} alt="foto anterior" onClick={() => {
         mudarFoto(-1);
       }} />
       <img className="seta direita" src={SetaDir} alt="próxima foto" onClick={() => {
         mudarFoto(1);
       }} />
+      </ConteinerHover>
       <Foto src={fotos[indice]} />
-      <BotaoFechar src={XPreto} onClick={() => { fClick(); console.log('foi aqui') }} />
+      <BotaoFechar onClick={() => { fClick(); console.log('foi aqui') }} >
+        <img />
+        <img />
+        </BotaoFechar>
     </ConteinerFoto>
   );
 }
