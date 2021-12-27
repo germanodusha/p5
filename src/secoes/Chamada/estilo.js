@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const Conteiner = styled.section`
+width: 100%;
+background-color: var(--laranja);
+height: max-content;
+position: relative;
+z-index: 8;
+`;
+
 export const Texto = styled.p`
 font-family: 'ES Build';
 font-size: 10em;

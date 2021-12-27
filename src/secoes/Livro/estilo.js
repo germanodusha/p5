@@ -5,9 +5,12 @@ width: 100vw;
 height: 200vh;
 box-sizing: border-box;
 background-color:var(--laranja);
+position:relative;
+z-index: 6;
 `;
 
 export const ConteinerFoto = styled.section`
+-webkit-position: sticky;
 position: sticky;
 top: 0;
 width: 100vw;
@@ -16,7 +19,7 @@ box-sizing: border-box;
 display: flex;
 align-items: center;
 justify-content: center;
-overflow:hidden
+overflow:hidden;
 `;
 
 export const Foto = styled.img`

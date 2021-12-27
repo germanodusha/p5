@@ -10,7 +10,7 @@ import { useGlobal } from '../../AcessoGlobal';
   
     return (
     <ConteinerLivro id="livro">
-    <ConteinerFoto >
+    <ConteinerFoto>
       <Foto
         src={Foto1}
         onClick={

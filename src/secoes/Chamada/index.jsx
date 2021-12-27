@@ -1,5 +1,5 @@
 import React from 'react';
-import { Texto } from './estilo';
+import { Texto, Conteiner } from './estilo';
 import { useGlobal } from '../../AcessoGlobal';
 
 function Chamada() {
@@ -7,9 +7,11 @@ function Chamada() {
   const { fraseChamada } = global.db.principal;
   
   return (
+    <Conteiner>
     <Texto>
       {fraseChamada}
     </Texto>
+    </Conteiner>
   );
 }
 
