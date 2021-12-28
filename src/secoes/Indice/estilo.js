@@ -32,3 +32,15 @@ font-size: 1em;
 line-height: 1.2;
 box-sizing:border-box;
 `;
+
+export const EpigrafeMobile = styled.blockquote`
+
+`;
+
+export const SecaoIndiceMobile = styled.section`
+
+`;
+
+export const ItemIndiceMobile = styled.section`
+
+`;

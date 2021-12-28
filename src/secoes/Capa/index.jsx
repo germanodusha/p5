@@ -1,5 +1,4 @@
 import React from 'react';
-import MediaQuery  from 'react-responsive'
 
 import { Titulo, Livro, ConteinerCapa, TituloPrincipal, ConteinerLivro } from './estilo';
 import Livro3D from '../../imagens/livro3D.png';
@@ -10,9 +9,7 @@ function Capa() {
   
   return (
     <ConteinerCapa>
-      <MediaQuery maxWidth={800}>
 
-      </MediaQuery>
     <Titulo temSpan={true}><span className="cabecalho">P5</span><span className="cabecalho">2015-2020</span></Titulo>
     <Titulo>{titulo}</Titulo>
     <ConteinerLivro>
