@@ -27,7 +27,7 @@ function PopUpCreditos({ fClick }) {
           <CaixaTexto className="startRow">
             <Info className="artistasECuradores">
               <p>{sobrePeriscopio.titulo}</p>
-              <p>{sobrePeriscopio.texto}</p>
+              {sobrePeriscopio.texto.map((paragrafo)=>(<p className="tab">{paragrafo}</p>))}
             </Info>
               <Info className="artistasECuradores">
                 <p>{artistasECuradores}</p>
@@ -37,25 +37,25 @@ function PopUpCreditos({ fClick }) {
         ) : (
           <>
             <CaixaTexto className="startRow">
-              <Info className="equipeTecnica">
+              <div style={{maxWidth:'45%', display:'flex', gap:'2rem'}}>
+                <Info className="equipeTecnica">
                 {fichaTecnica.parte1.map((item) => (
-                  <>
+                  <p className="startColumn">
                     <span>{item.titulo}</span>
-                    <span>{item.autoria}</span>
-                  </>
+                    <span >{item.autoria}</span>
+                  </p>
                 ))}
               </Info>
 
               <Info className="equipeTecnica">
                 {fichaTecnica.parte2.slice(0, 7).map((item) => (
-                  <>
-                    {" "}
+                  <p className="startColumn">
                     <span>{item.titulo}</span>
-                    <span>{item.autoria}</span>
-                  </>
+                    <span style={{borderBottom:'1rem'}}>{item.autoria}</span>
+                  </p>
                 ))}
               </Info>
-            
+              </div>
 
             <Info id="agradecimentos" >
               <p>{fichaTecnica.parte2[7].titulo}</p>

@@ -10,18 +10,22 @@ position:fixed;
 z-index:1000;
 background-color:var(--laranja);
 
-.startRow, startColumn{
+.startRow, .startColumn{
   display:flex;
   justify-content:center;
   align-items:flex-start;
   align-self:flex-start;
   margin-top:2%;
   margin-left:2%;
-  gap:2%;
+
+}
+.startColumn{
+  flex-direction:column;
 }
 #agradecimentos{
   flex-direction:column;
-  max-width:40%;
+  margin-left:-4.8%;
+  margin-right:5%;
   h3{
     margin:0;
   }
@@ -31,8 +35,11 @@ background-color:var(--laranja);
   }
 }
 .artistasECuradores{
-  max-width:70%;
+  width:100%;
   margin-right:5%;
+  .tab{
+    text-indent: 2.5rem;
+  }
   span,p{
     font-size:0.9em;
     line-height: 20px;
@@ -42,10 +49,10 @@ background-color:var(--laranja);
     }
   }
 }
-
 `
 
 export const Content = styled.div`
+overflow-y:scroll;
 width:100%;
 height:100%;
 .navegacao{
@@ -54,7 +61,7 @@ height:100%;
   position:fixed;
   gap:10%;
   bottom:6%;
-  right:25%;
+  right:17.5%;
 }
 .bola1{
 top:15%;
@@ -67,18 +74,22 @@ position:fixed;
   position:fixed;
 }
 .equipeTecnica{
-  width:40%;
+  width:100%;
 }
 
 `
 export const CaixaTexto = styled.div`
-width:80%;
+width:100%;
 max-height:50vh;
 text-align:justify;
+display:flex;
+align-items:center;
+justify-content:center;
+justify-self:center;
 `
 
 export const Info = styled.div`
-max-width:40%;
+max-width:35%;
 height:auto;
 display:flex;
 justify-content:flex-start;
@@ -105,7 +116,7 @@ font-family: 'Interval';
 text-decoration:${(props) => props.ativo ? 'underline' :'none' };
 text-underline-position: under;
 &:hover,&:focus{
-  text-decoration:underline;
+  text-decoration:underlaine;
 }
 `
 export const Bolinha = styled.div`
