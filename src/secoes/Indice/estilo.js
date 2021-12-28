@@ -34,7 +34,10 @@ box-sizing:border-box;
 `;
 
 export const EpigrafeMobile = styled.blockquote`
-
+width: 100%;
+text-align: center;
+margin: 0;
+padding-bottom: 10vh;
 `;
 
 export const SecaoIndiceMobile = styled.section`
@@ -42,5 +45,8 @@ export const SecaoIndiceMobile = styled.section`
 `;
 
 export const ItemIndiceMobile = styled.section`
-
+line-height: 1.75;
+div{
+    padding: 1.25vh 0;
+}
 `;

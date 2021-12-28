@@ -15,7 +15,7 @@ function Indice() {
         </EpigrafeMobile>
         <SecaoIndiceMobile>
         <div>
-          {titulo}
+          {/* {titulo} */}
         </div>
         <div></div>
       </SecaoIndiceMobile>
@@ -26,8 +26,8 @@ function Indice() {
         <div>
           {exposicoes.itens.map((exposicao) => (
             <ItemIndiceMobile key={exposicao.titulo.replace(' ', '-')}>
-              <p className="underline">{exposicao.titulo}</p>
-              <p>{exposicao.autoria}</p>
+              <div><p className="underline">{exposicao.titulo}</p>
+              <p>{exposicao.autoria}</p></div>
             </ItemIndiceMobile>
         ))}
           
@@ -35,7 +35,10 @@ function Indice() {
       </SecaoIndiceMobile>
 
       </MediaQuery>
-      <MediaQuery maxWidth={800}>
+
+
+
+      <MediaQuery minWidth={800}>
       <Epigrafe dangerouslySetInnerHTML={{__html:principal.epigrafe}}>
       </Epigrafe>
       <SecaoIndice>
