@@ -8,7 +8,7 @@ function Capa() {
   
   return (
     <ConteinerCapa>
-    <Titulo temSpan={true}><span class="cabecalho">P5</span><span class="cabecalho">2015-2020</span></Titulo>
+    <Titulo temSpan={true}><span className="cabecalho">P5</span><span className="cabecalho">2015-2020</span></Titulo>
     <Titulo>{titulo}</Titulo>
     <ConteinerLivro>
       <Livro src={Livro3D} />

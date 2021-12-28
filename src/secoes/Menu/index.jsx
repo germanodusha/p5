@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Botao from '../../componentes/Botao';
-import { Conteiner, NavCentral } from './estilo';
+import { Conteiner, NavCentral, FraseBanner, Animacao, FundoBanner } from './estilo';
 import {
   PopUpLivro,
   PopUpCreditos,
@@ -33,8 +33,13 @@ function Menu() {
   
   return (
     <Conteiner>
-      <p>{principal.fraseChamada}</p>
-
+      <FundoBanner/>
+      <FraseBanner>
+        <Animacao>
+        <p>{principal.fraseChamada}</p>
+        </Animacao>
+      </FraseBanner>
+      
       <Botao pos={{ x: 'esquerda', y: 'superior' }} fClick={(e) => {e.preventDefault(); toggle('Download');}}>
         {botoes.downloadLivro}
       </Botao>
@@ -44,13 +49,13 @@ function Menu() {
       </Botao>
 
       <NavCentral>
-        <Botao fClick={(e) => { e.preventDefault(); document.getElementById('livro').scrollIntoView(); toggle('Livro');}}>
+        <Botao className="livro" fClick={(e) => { e.preventDefault(); document.getElementById('livro').scrollIntoView(); toggle('Livro');}}>
           {botoes.livro}
         </Botao> 
-        <Botao>
+        <Botao className="ensaios" >
           <a href="#ensaios">{botoes.artigos}</a>
         </Botao> 
-        <Botao fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
+        <Botao className="info" fClick={(e) => { e.preventDefault(); toggle('Creditos');}}>
           {botoes.info}
         </Botao>
       </NavCentral>

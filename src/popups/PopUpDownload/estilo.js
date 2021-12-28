@@ -24,26 +24,44 @@ div{
   height:auto;
   align-items: center;
 }
+
 `
 export const Text = styled.p`
 text-align:center;
-font-size:2em;
+font-size:2.5em;
 font-weight:200;
-max-width:70%;
+width:70%;
 height:auto;
-padding-bottom:10%;
+padding:10% 0;
 font-family:'Inter';
+overflow-y: auto;
 @media(min-width:1720px){
   font-size:2.5em;
   margin-bottom:5%;
+}
+@media(max-width: 800px){
+  width:80%;
+  height: 65%;
+  font-size: 1.25em;
+  font-weight:300;
+  padding: 0;
+  overflow-y: auto;
+  padding-top: 20%;
 }
 `
 export const Download = styled.a`
 font-size:2em;
 font-family:'Inter';
+font-weight:300;
+position: fixed;
+bottom: 3vh;
 &:hover,&:focus{
   text-decoration:underline;
   text-underline-position: under;
+}
+@media (max-width:800px){
+font-size: 1.25em;
+font-weight:300;
 }
 `
 export const Fechar = styled.button`
@@ -59,5 +77,6 @@ img{
   width:100%;
   height: 100%;
 }
+
 `
 

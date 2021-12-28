@@ -73,6 +73,7 @@ button,a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .centerRow{
   display:flex;
