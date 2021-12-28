@@ -5,16 +5,28 @@ background: var(--laranja);
 z-index: 20;
 height: 100vh;
 position: relative;
+@media (max-width:799px){
+    position:absolute;
+    height:auto;
+}
+
 
 `;
 
 export const ConteinerLivro = styled.div`
 position: absolute;
 top: 28vh;
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
+width: 100vw;
+height: 50vh;
+display: flex;
+justify-content: center;
+@media (max-width:799px){
+    top:7vh;
+    position:relative;
+    width:80%;
+    height:70vh;
+    margin-bottom:2rem;
+}
 `;
 
 export const TituloPrincipal = styled.h1`
@@ -26,7 +38,12 @@ position:absolute;
 top: 75vh;
 width: 100%;
 text-align: center;
-bottom: -10vh;
+@media (max-width:799px){
+    font-size:6em;
+    text-align: center;  
+    position:relative;
+    margin-top:40%;
+}
 `;
 
 export const Titulo = styled.h2`
@@ -46,6 +63,11 @@ ${(props) => props.temSpan
 .cabecalho{
     padding: 2vh 3vw 0 3vw;
 }
+@media (max-width:799px){  
+    position:relative;
+    font-size:5em;
+    text-align:center;
+}
 `;
 
 export const Livro = styled.img`
@@ -54,5 +76,9 @@ export const Livro = styled.img`
 // top: 20vh;
 // left: 30vw;
 width: auto;
+@media (max-width:799px){
+    width:100%;
+    
+}
 // margin: auto !important;
 `;

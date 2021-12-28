@@ -19,22 +19,13 @@ export const NavCentral = styled.nav`
 position: fixed;
 bottom: 5vh;
 width: 100vw;
-
 display: flex;
 flex-direction: row;
 justify-content: center;
-
 gap: 1vw;
 z-index: 10;
 
-@media(max-width:800px){
-    .livro{
-        display: none;
-    }
-    .ensaios{
-        display: none;
-    }
-}
+
 `;
 
 export const FundoBanner = styled.div`

@@ -6,7 +6,6 @@ export const EstiloBotao = styled.button`
     padding: 5px 10px;
     margin: 0;
     box-sizing: border-box;
-    
     font-family: 'Inter';
     font-size: 1.3em;
 
@@ -35,6 +34,28 @@ export const EstiloBotao = styled.button`
         }
         return estilo;
     }
+    }
+    @media (max-width:799px){
+        width: max-content;
+        height: max-content;
+        ${(props) => {
+        let estilo = ''
+        if (props.pos) {
+            estilo += 'position: fixed;';
+            if (props.pos.x === 'direita' && props.pos.y === 'inferior') estilo += 'right: 20vw; top: 5vh;';
+            if (props.pos.x === 'esquerda' && props.pos.y === 'inferior') estilo += 'left: 5vw; top: 5vh;';
+            if (props.pos.y === 'superior' && props.pos.x === 'esquerda') estilo += 'top: 50vh; left: 0; transform: rotate(-90deg);';
+            if (props.pos.y === 'superior' && props.pos.x === 'direita') estilo += 'top: 50vh; right: 0; transform: rotate(-90deg);';
+        }
+        if (props.taBranco) {
+            estilo += 'background: var(--branco);';
+        } else {
+            estilo += 'background: var(--laranja);';
+        }
+        return estilo;
+    }
+    }
+
     }
 
     &:hover, &:focus {
