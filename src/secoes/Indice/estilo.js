@@ -31,6 +31,9 @@ font-family: 'Interval';
 font-size: 1em;
 line-height: 1.2;
 box-sizing:border-box;
+@media (max-width: 800px){
+    padding: 15vh 15vw;
+}
 `;
 
 export const EpigrafeMobile = styled.blockquote`
