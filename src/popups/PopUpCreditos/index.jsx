@@ -9,7 +9,7 @@ import {
   Fechar,
 } from "./estilo";
 import fechar from "../../imagens/icones/x_preto.svg";
-
+import MediaQuery from "react-responsive";
 import { useGlobal } from '../../AcessoGlobal';
 
 function PopUpCreditos({ fClick }) {
@@ -21,6 +21,10 @@ function PopUpCreditos({ fClick }) {
 
   return (
     <Conteiner>
+      <MediaQuery maxWidth={799}>
+
+      </MediaQuery>
+      <MediaQuery minWidth={800}>
       <Content className="startRow">
         {estado ? (
           <>
@@ -74,7 +78,7 @@ function PopUpCreditos({ fClick }) {
             }}
             ativo={estado}
           >
-            Sobre/Agentes
+            {botoes.sobre}
           </Ancora>
           <Ancora
             onClick={() => {
@@ -91,6 +95,7 @@ function PopUpCreditos({ fClick }) {
           <img src={fechar} alt="fechar" />
         </Fechar>
       </Content>
+      </MediaQuery>
     </Conteiner>
   );
 }
