@@ -11,7 +11,7 @@ import {
 import Livro3D from "../../imagens/livro3D.png";
 import { useGlobal } from "../../AcessoGlobal";
 function Capa() {
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
   const { titulo } = global.db.principal;
 
   return (

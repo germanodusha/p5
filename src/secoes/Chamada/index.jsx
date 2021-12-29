@@ -3,7 +3,7 @@ import { Texto, Conteiner } from './estilo';
 import { useGlobal } from '../../AcessoGlobal';
 
 function Chamada() {
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
   const { fraseChamada } = global.db.principal;
   
   return (

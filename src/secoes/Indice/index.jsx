@@ -4,7 +4,7 @@ import { useGlobal } from '../../AcessoGlobal';
 import MediaQuery from 'react-responsive';
 
 function Indice() {
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
   const { principal } = global.db;
   const { ensaios, exposicoes, titulo, index } = global.db.index;
   

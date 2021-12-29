@@ -3,7 +3,7 @@ import { EstiloBotao } from './estilo';
 import { useGlobal } from '../../AcessoGlobal';
 
 function Botao({ pos, fClick, children }) {
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
 
   return (
       <EstiloBotao pos={pos} onClick={fClick} taBranco={global.taBranco}>
