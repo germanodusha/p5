@@ -5,7 +5,8 @@ import {
   Chamada,
   Livro,
   Indice,
-  Artigos
+  Artigos,
+  Creditos
 } from './secoes';
 
 import EstiloGlobal from './EstiloGlobal';

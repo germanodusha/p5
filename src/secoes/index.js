@@ -12,5 +12,5 @@ export {
     Chamada,
     Livro,
     Indice,
-    Artigos
+    Artigos,
 }

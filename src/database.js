@@ -7,6 +7,7 @@ const database = {
             fraseChamada: 'Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral n. 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.',
         },
         index: {
+            index: 'Index',
             titulo: 'Sobre a Periscópio',
             ensaios: {
                 titulo: 'Ensaios',
@@ -287,6 +288,7 @@ const database = {
             fraseChamada: 'Between 2015 and 2020, Galeria Periscópio occupied a listed house at Av. Álvares Cabral, nº 534, Belo Horizonte – MG, Brazil, and held 28 exhibitions. This book is an archive of the activities that took place during this period.',
         },
         index: {
+            index: 'Index',
             titulo: 'About Periscópio',
             ensaios: {
                 titulo: 'Essays',
