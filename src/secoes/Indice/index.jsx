@@ -1,6 +1,7 @@
 import React from 'react';
-import { Epigrafe, SecaoIndice, ItemIndice, Conteiner } from './estilo';
-import { useGlobal } from '../../AcessoGlobal'
+import { Epigrafe, SecaoIndice, ItemIndice, Conteiner, EpigrafeMobile, SecaoIndiceMobile, ItemIndiceMobile } from './estilo';
+import { useGlobal } from '../../AcessoGlobal';
+import MediaQuery from 'react-responsive';
 
 function Indice() {
   const [global, mudarGlobal] = useGlobal();
@@ -9,6 +10,35 @@ function Indice() {
   
   return (
     <Conteiner>
+      <MediaQuery maxWidth={799}>
+        <EpigrafeMobile dangerouslySetInnerHTML={{__html:principal.epigrafe}}>
+        </EpigrafeMobile>
+        <SecaoIndiceMobile>
+        <div>
+          {/* {titulo} */}
+        </div>
+        <div></div>
+      </SecaoIndiceMobile>
+      <SecaoIndiceMobile>
+        <div>
+        {exposicoes.titulo}
+        </div>
+        <div>
+          {exposicoes.itens.map((exposicao) => (
+            <ItemIndiceMobile key={exposicao.titulo.replace(' ', '-')}>
+              <div><p className="underline">{exposicao.titulo}</p>
+              <p>{exposicao.autoria}</p></div>
+            </ItemIndiceMobile>
+        ))}
+          
+          </div>
+      </SecaoIndiceMobile>
+
+      </MediaQuery>
+
+
+
+      <MediaQuery minWidth={800}>
       <Epigrafe dangerouslySetInnerHTML={{__html:principal.epigrafe}}>
       </Epigrafe>
       <SecaoIndice>
@@ -44,6 +74,7 @@ function Indice() {
           
           </div>
       </SecaoIndice>
+      </MediaQuery>
     </Conteiner>
   );
 }

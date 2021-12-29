@@ -54,3 +54,21 @@ p{
     padding-bottom: 1em;
 }
 `;
+
+export const MenuIndiceMobile = styled.nav`
+
+`;
+
+export const ItemMenuIndiceMobile = styled.section`
+display: flex;
+flex-direction: column;
+background-color: transparent;
+font: inherit;
+margin-bottom: 3vh;
+text-align: left;
+position:relative;
+`;
+
+export const ArtigoMobile = styled.article`
+padding: 3vh 0
+`;

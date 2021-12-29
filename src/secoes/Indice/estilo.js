@@ -31,4 +31,25 @@ font-family: 'Interval';
 font-size: 1em;
 line-height: 1.2;
 box-sizing:border-box;
+@media (max-width: 800px){
+    padding: 15vh 15vw;
+}
+`;
+
+export const EpigrafeMobile = styled.blockquote`
+width: 100%;
+text-align: center;
+margin: 0;
+padding-bottom: 10vh;
+`;
+
+export const SecaoIndiceMobile = styled.section`
+
+`;
+
+export const ItemIndiceMobile = styled.section`
+line-height: 1.75;
+div{
+    padding: 1.25vh 0;
+}
 `;
