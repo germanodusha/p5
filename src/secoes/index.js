@@ -5,6 +5,7 @@ import Chamada from './Chamada';
 import Livro from './Livro';
 import Indice from './Indice';
 import Artigos from './Artigos';
+import Logos from './Logos';
 
 export {
     Menu,
@@ -13,4 +14,5 @@ export {
     Livro,
     Indice,
     Artigos,
+    Logos
 }

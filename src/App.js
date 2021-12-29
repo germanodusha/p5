@@ -6,7 +6,7 @@ import {
   Livro,
   Indice,
   Artigos,
-  Creditos
+  Logos
 } from './secoes';
 
 import EstiloGlobal from './EstiloGlobal';
@@ -55,6 +55,7 @@ function App() {
         <Livro rolagem={rolagemLivro} />
         <Indice />
         <Artigos />
+        <Logos />
       </AcessoPopUps>
     </>
   );
