@@ -105,10 +105,20 @@ export const BotaoFechar = styled.button`
 
     }
 
+
+@media (max-width:799px){
+    .preto, .transp {
+        width: 3vh;
+    }
+}
 `;
 
 export const Foto = styled.img`
 width:100%;
 height:100vh;
 object-fit:cover;
+
+@media (max-width:799px){
+    object-fit: contain;
+}
 `;

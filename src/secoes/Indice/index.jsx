@@ -4,9 +4,9 @@ import { useGlobal } from '../../AcessoGlobal';
 import MediaQuery from 'react-responsive';
 
 function Indice() {
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
   const { principal } = global.db;
-  const { ensaios, exposicoes, titulo } = global.db.index;
+  const { ensaios, exposicoes, titulo, index } = global.db.index;
   
   return (
     <Conteiner>
@@ -14,13 +14,27 @@ function Indice() {
         <EpigrafeMobile dangerouslySetInnerHTML={{__html:principal.epigrafe}}>
         </EpigrafeMobile>
         <SecaoIndiceMobile>
-        <div>
+          <div className="titulo">{index}</div>
+        <div className="titulo">
           {titulo}
         </div>
         <div></div>
+        </SecaoIndiceMobile>
+        <SecaoIndiceMobile>
+        <div className="titulo">
+          {ensaios.titulo}
+        </div>
+        <div>
+          {ensaios.itens.map((ensaio) => (
+            <ItemIndiceMobile key={ensaio.titulo.replace(' ','-')}>
+              <div><p className="underline">{ensaio.titulo}</p>
+              <p>{ensaio.autoria}</p></div>
+            </ItemIndiceMobile>
+        ))}
+        </div>
       </SecaoIndiceMobile>
       <SecaoIndiceMobile>
-        <div>
+        <div className="titulo exposicoes">
         {exposicoes.titulo}
         </div>
         <div>

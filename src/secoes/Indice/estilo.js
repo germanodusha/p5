@@ -44,7 +44,12 @@ padding-bottom: 10vh;
 `;
 
 export const SecaoIndiceMobile = styled.section`
-
+.titulo{
+    padding: 2vh 0;
+}
+.exposicoes{
+    margin-top: 10vh;
+}
 `;
 
 export const ItemIndiceMobile = styled.section`

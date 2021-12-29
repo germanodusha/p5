@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 import { Conteiner, Content, Download, Text, ConteudoMobile, FecharMobile, TextoMobile, DownloadMobile } from "./estilo";
 import { BotaoFechar } from '../PopUpLivro/estilo';
@@ -10,7 +10,7 @@ import { useGlobal } from '../../AcessoGlobal';
 import MediaQuery from 'react-responsive';
 
 function PopUpDownload({fClick}) {
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
   const { popups, botoes } = global.db;
 
   return (

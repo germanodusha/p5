@@ -7,20 +7,68 @@ import {
   Ancora,
   Bolinha,
   Fechar,
+  ConteudoMobile,
+  CaixaTextoMobile,
+  InfoMobile,
 } from "./estilo";
 import fechar from "../../imagens/icones/x_preto.svg";
-
+import fecharHover from "../../imagens/icones/x_transp.svg";
+import MediaQuery from "react-responsive";
 import { useGlobal } from '../../AcessoGlobal';
 
 function PopUpCreditos({ fClick }) {
 
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
 
   const { fichaTecnica, artistasECuradores, sobrePeriscopio, botoes } = global.db.info; 
   const [estado, setEstado] = useState(true);
 
   return (
     <Conteiner>
+      <MediaQuery maxWidth={799}>
+        <ConteudoMobile>
+        <Fechar onClick={fClick}>
+          <img src={fechar} alt="fechar" />
+        </Fechar>
+        <Bolinha className="bola1" />
+        <Bolinha className="bola2" />
+
+        <CaixaTextoMobile>
+          <InfoMobile>
+              <p>{sobrePeriscopio.titulo}</p>
+              {sobrePeriscopio.texto.map((paragrafo)=>(<p className="tab">{paragrafo}</p>))}
+          </InfoMobile>
+
+          <InfoMobile>
+          <p>{artistasECuradores}</p>
+          </InfoMobile>
+
+          <InfoMobile>
+             {fichaTecnica.parte1.map((item) => (
+                  <p>
+                    <span>{item.titulo}</span>
+                    <span >{item.autoria}</span>
+                  </p>
+                ))}
+              {fichaTecnica.parte2.slice(0, 7).map((item) => (
+                  <p >
+                    <span>{item.titulo}</span>
+                    <span>{item.autoria}</span>
+                  </p>
+                ))}
+          </InfoMobile>
+          <InfoMobile>
+          <p>{fichaTecnica.parte2[7].titulo}</p>
+              <p>{fichaTecnica.parte2[7].autoria}</p>
+              <span>{fichaTecnica.parte2[8].titulo}</span>
+              <p>{fichaTecnica.parte2[8].autoria}</p>
+              <p>{fichaTecnica.notaFinal}</p>
+          </InfoMobile>
+
+          </CaixaTextoMobile>
+        </ConteudoMobile>
+      </MediaQuery>
+      <MediaQuery minWidth={800}>
       <Content className="startRow">
         {estado ? (
           <>
@@ -74,7 +122,7 @@ function PopUpCreditos({ fClick }) {
             }}
             ativo={estado}
           >
-            Sobre/Agentes
+            {botoes.sobre}
           </Ancora>
           <Ancora
             onClick={() => {
@@ -88,9 +136,11 @@ function PopUpCreditos({ fClick }) {
         <Bolinha className="bola1" />
         <Bolinha className="bola2" />
         <Fechar onClick={fClick}>
-          <img src={fechar} alt="fechar" />
+          <img src={fechar} alt="fechar" className="x preto" />
+          <img src={fecharHover} alt="fechar" className="x transp" />
         </Fechar>
       </Content>
+      </MediaQuery>
     </Conteiner>
   );
 }

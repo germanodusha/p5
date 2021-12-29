@@ -6,7 +6,7 @@ import MediaQuery from 'react-responsive';
 
 function Artigos() {
   const [indice, setIndice] = useState(0);
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
   const { itens } = global.db.index.ensaios;
 
   return (
