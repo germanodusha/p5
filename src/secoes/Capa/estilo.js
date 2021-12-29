@@ -24,8 +24,8 @@ justify-content: right;
 @media (max-width:799px){
     top:7vh;
     position:relative;
-    width:80%;
-    height:70vh;
+    width:60%;
+    height:50vh;
     margin-bottom:2rem;
 }
 `;

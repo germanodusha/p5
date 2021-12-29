@@ -26,7 +26,7 @@ color: var(--preto);
 
 @media (max-width: 800px) {
     font-size: 4.75em;  
-    padding:120vh 0 5vh 0;
+    padding:140vh 0 5vh 0;
     
 }
 `;
