@@ -11,6 +11,7 @@ import {
 import EstiloGlobal from './EstiloGlobal';
 import { useGlobal } from './AcessoGlobal';
 import { AcessoPopUps } from './AcessoPopUps';
+import Objeto3d from './componentes/Objeto3d';
 import HashLinkObserver from 'react-hash-link';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       const posLivro = livro.offsetTop;
       const alturaLivro = livro.offsetHeight;
 
-      /* 
+      /*
         se a roalagem passar da metade do conteiner do livro,
         a variável global taBranco é verdadeira
       */
@@ -54,6 +55,7 @@ function App() {
         <Livro rolagem={rolagemLivro} />
         <Indice />
         <Artigos />
+        <Objeto3d />
       </AcessoPopUps>
     </>
   );

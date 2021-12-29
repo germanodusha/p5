@@ -84,6 +84,13 @@ button,a{
     text-decoration: underline;
     text-underline-position: under;
 }
+
+/* Threejs */
+canvas {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+};
 `;
 
 export default EstiloGlobal;
