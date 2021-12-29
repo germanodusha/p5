@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Botao from '../../componentes/Botao';
 
 export const Conteiner = styled.nav`
 /* 
@@ -35,7 +34,18 @@ left: 0;
 z-index: 5;
 width: 100%;
 height: 13vh;
-background: var(--branco);
+
+/* Solid color or jpg fallback */
+background-color: var(--branco); 
+/* For Chrome (v 10-25) and Safari(v 5.1-6)  */
+background-image: -webkit-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+/* For Firefox(v 3.6-15)  */
+background-image: -moz-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+/* For Opera(v 11.5) */
+background-image: -o-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+/* For IE 10+ */
+background-image: -ms-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+/* For Modern browsers */
 background: linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
 `;
 

@@ -6,7 +6,7 @@ import { useGlobal } from '../../AcessoGlobal';
 
   function Livro({rolagem}) {
     const [popUps, setPopUps] = usePopUps();
-    const [global, mudarGlobal] = useGlobal();
+    const [global] = useGlobal();
   
     return (
     <ConteinerLivro id="livro">

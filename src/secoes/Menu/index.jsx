@@ -26,7 +26,6 @@ function Menu() {
   const [abrirAudiodescricao, setAbrirAudiodescricao] = useState(false);
   const [abrirCreditos, setAbrirCreditos] = useState(false);
   const [abrirDownload, setAbrirDownload] = useState(false);
-  const [abrirLivro, setAbrirLivro] = useState(false);
 
   const toggle = (item) => {
     item === "Livro"

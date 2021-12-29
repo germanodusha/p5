@@ -18,7 +18,7 @@ import { useGlobal } from '../../AcessoGlobal';
 
 function PopUpCreditos({ fClick }) {
 
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
 
   const { fichaTecnica, artistasECuradores, sobrePeriscopio, botoes } = global.db.info; 
   const [estado, setEstado] = useState(true);

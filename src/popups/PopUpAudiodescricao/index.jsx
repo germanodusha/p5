@@ -7,7 +7,7 @@ import { useGlobal } from '../../AcessoGlobal';
 import mp3 from '../../download/audiodesc.mp3';
 
 function PopUpAudiodescricao({fClick}) {
-  const [global, mudarGlobal] = useGlobal();
+  const [global] = useGlobal();
   const { popups, botoes } = global.db; 
 
   return (
