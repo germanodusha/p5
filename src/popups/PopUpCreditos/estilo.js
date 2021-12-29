@@ -190,6 +190,6 @@ height: 100%;
 `;
 
 export const InfoMobile = styled.section`
-
+padding: 3vh 0;
 `;
 
