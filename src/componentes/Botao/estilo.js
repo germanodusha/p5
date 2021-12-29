@@ -14,9 +14,9 @@ export const EstiloBotao = styled.button`
     border: 2px solid var(--preto);
     border-radius: 5vh;
 
-    z-index: 30;
-
     transition: background-color 1s, .5s;
+
+    z-index: 30;
 
     ${(props) => {
         let estilo = ''
@@ -41,11 +41,11 @@ export const EstiloBotao = styled.button`
         ${(props) => {
         let estilo = ''
         if (props.pos) {
-            estilo += 'position: fixed;';
+            estilo += 'position: absolute;';
             if (props.pos.x === 'direita' && props.pos.y === 'inferior') estilo += 'right: 10vw; top: 5vh;';
             if (props.pos.x === 'esquerda' && props.pos.y === 'inferior') estilo += 'left: 10vw; top: 5vh;';
-            if (props.pos.y === 'superior' && props.pos.x === 'esquerda') estilo += 'top: 50vh; left: 0; transform: rotate(-90deg);';
-            if (props.pos.y === 'superior' && props.pos.x === 'direita') estilo += 'top: 50vh; right: 0; transform: rotate(-90deg);';
+            if (props.pos.y === 'superior' && props.pos.x === 'esquerda') estilo += 'top: 50vh; left: -10vw; transform: rotate(-90deg);';
+            if (props.pos.y === 'superior' && props.pos.x === 'direita') estilo += 'top: 50vh; right: -10vw; transform: rotate(-90deg);';
         }
         if (props.taBranco) {
             estilo += 'background: var(--branco);';
