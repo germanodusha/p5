@@ -9,24 +9,23 @@ position: relative;
     position:absolute;
     height:auto;
 }
+
+
 `;
 
 export const ConteinerLivro = styled.div`
 position: absolute;
-top: 58vh;
-right: 2vw;
-width: 20vw;
-height: 30vh;
+top: 28vh;
+width: 100vw;
+height: 50vh;
 display: flex;
-justify-content: right;
-
+justify-content: center;
 @media (max-width:799px){
     top:7vh;
     position:relative;
     width:80%;
     height:70vh;
-    margin-bottom:3rem;
-    margin-top:-2rem;
+    margin-bottom:2rem;
 }
 `;
 
@@ -72,6 +71,10 @@ ${(props) => props.temSpan
 `;
 
 export const Livro = styled.img`
+// height: 70%;
+// position: absolute;
+// top: 20vh;
+// left: 30vw;
 width: auto;
 @media (max-width:799px){
     width:100%;
