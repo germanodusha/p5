@@ -15,7 +15,7 @@ function Indice() {
         </EpigrafeMobile>
         <SecaoIndiceMobile>
         <div>
-          {/* {titulo} */}
+          {titulo}
         </div>
         <div></div>
       </SecaoIndiceMobile>
