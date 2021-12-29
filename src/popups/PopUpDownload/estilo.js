@@ -103,7 +103,7 @@ export const TextoMobile = styled.p`
 text-align:center;
 width: 80%;
 height: auto;
-padding-top: 8vh;
+padding-top: 10vh;
 overflow-y: auto;
 `;
 
