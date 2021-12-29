@@ -15,11 +15,12 @@ position: relative;
 
 export const ConteinerLivro = styled.div`
 position: absolute;
-top: 28vh;
-width: 100vw;
-height: 50vh;
+top: 58vh;
+right: 2vw;
+width: 20vw;
+height: 30vh;
 display: flex;
-justify-content: center;
+justify-content: right;
 @media (max-width:799px){
     top:7vh;
     position:relative;
