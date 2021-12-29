@@ -1,6 +1,6 @@
 import React from 'react';
 import { Foto, ConteinerFoto, ConteinerLivro } from './estilo';
-import { Foto1 } from '../../imagens/livro'
+import { Foto0 } from '../../imagens/livro'
 import { usePopUps } from '../../AcessoPopUps';
 import { useGlobal } from '../../AcessoGlobal';
 
@@ -12,7 +12,7 @@ import { useGlobal } from '../../AcessoGlobal';
     <ConteinerLivro id="livro">
     <ConteinerFoto>
       <Foto
-        src={Foto1}
+        src={Foto0}
         onClick={
           () => {
             setPopUps({ livro: true });

@@ -10,6 +10,7 @@ import {
     Logo7
 } from '../../imagens/logos'
 import { Conteiner, Linha, Coluna, Imagens, Labels } from './estilo'
+import MediaQuery from 'react-responsive'
 
 const Logos = () => {
     return (
@@ -37,18 +38,35 @@ const Logos = () => {
                         <img className="genesys" src={Logo3} alt="" />
                     </Imagens>
                 </Coluna>
-                <Coluna>
-                    <Labels>
-                        <p>PATROCÍNIO</p>
-                        <p>SPONSOR</p>
-                    </Labels>
-                    <Imagens>
-                        <img className="agropeu" src={Logo4} alt="" />
-                        <img src={Logo5} alt="" />
-                        <img src={Logo6} alt="" />
-                    </Imagens>
-                </Coluna>
+                <MediaQuery minWidth={800}>
+                    <Coluna>
+                        <Labels>
+                            <p>PATROCÍNIO</p>
+                            <p>SPONSOR</p>
+                        </Labels>
+                        <Imagens>
+                            <img className="agropeu" src={Logo4} alt="" />
+                            <img src={Logo5} alt="" />
+                            <img src={Logo6} alt="" />
+                        </Imagens>
+                    </Coluna>
+                </MediaQuery>
             </Linha>
+            <MediaQuery maxWidth={799}>
+                <Linha className="logos">
+                    <Coluna>
+                        <Labels>
+                            <p>PATROCÍNIO</p>
+                            <p>SPONSOR</p>
+                        </Labels>
+                        <Imagens>
+                            <img className="agropeu" src={Logo4} alt="" />
+                            <img src={Logo5} alt="" />
+                            <img src={Logo6} alt="" />
+                        </Imagens>
+                    </Coluna>
+                </Linha>
+            </MediaQuery>
             <Linha>
                 <Coluna className="secretaria" >
                     <Labels>
