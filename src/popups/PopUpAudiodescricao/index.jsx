@@ -33,7 +33,7 @@ function PopUpAudiodescricao({fClick}) {
           {popups.audioDescricao}
         </Text>
 
-        <div><Download  href={mp3} download style={{ marginTop: '2%', marginBottom: '6%' }}>
+        <div><Download  href={mp3} download>
           {botoes.download}
         </Download>
         <Fechar onClick={ fClick }><img src={fechar} alt="fechar" /></Fechar>  

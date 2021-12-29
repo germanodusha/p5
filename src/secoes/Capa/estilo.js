@@ -25,7 +25,8 @@ justify-content: right;
     position:relative;
     width:80%;
     height:70vh;
-    margin-bottom:2rem;
+    margin-bottom:3rem;
+    margin-top:-2rem;
 }
 `;
 

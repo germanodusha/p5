@@ -15,7 +15,6 @@ margin-left:2%;
 }
 `
 export const Content = styled.div`
-overflow-y:scroll;
 width:100%;
 height:100%;
 box-shadow: 0 0 20px 15px var(--preto);
@@ -23,21 +22,21 @@ border-radius:3rem;
 background-color: var(--laranja);
 border:1px solid var(--preto);
 div{
-  width:auto;
-  height:auto;
+  display:flex;
+  width:100%;
+  height:10vh;
   align-items: center;
+  justify-content: center;
 }
 
 `
 export const Text = styled.p`
 text-align:center;
-font-size:2.5em;
+font-size:2.3em;
 font-weight:200;
-width:70%;
+width:80%;
 height:auto;
-padding:10% 0;
 font-family:'Inter';
-overflow-y: auto;
 @media(min-width:1720px){
   font-size:2.5em;
   margin-bottom:5%;
@@ -45,11 +44,11 @@ overflow-y: auto;
 
 `
 export const Download = styled.a`
-font-size:2em;
+font-size:2.3em;
 font-family:'Inter';
 font-weight:300;
 position: fixed;
-bottom: 3vh;
+bottom: 15%;
 &:hover,&:focus{
   text-decoration:underline;
   text-underline-position: under;
