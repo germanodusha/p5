@@ -54,7 +54,7 @@ background-color:var(--laranja);
 export const Content = styled.div`
 overflow-y:scroll;
 width:100%;
-height:100%;
+height:80%;
 .navegacao{
   width:30%;
   display:flex;
@@ -81,7 +81,7 @@ position:fixed;
 export const CaixaTexto = styled.div`
 width:100%;
 max-height:50vh;
-text-align:justify;
+text-align:left;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -95,7 +95,7 @@ display:flex;
 justify-content:flex-start;
 align-items:flex-start;
 flex-flow:column nowrap;
-text-align:justify;
+text-align:left;
 font-family: 'Inter';
 gap:0.2rem;
 span,p{
@@ -138,4 +138,38 @@ img{
   width:100%;
   height: 100%;
 }
+display: flex;
+.preto{
+  visibility: visible;
+  position: relative;
+  width: 3vw;
+  height: auto;
+}
+.transp{
+  position: absolute;
+  visibility: hidden;
+  width: 3vw;
+  height: auto;
+}
+&:hover,&:focus{
+  .preto{
+  visibility: hidden;
+  }
+  .transp{
+      visibility: visible;
+  }
+  cursor: pointer;
+
+}
 `
+export const ConteudoMobile = styled.section`
+
+`;
+
+export const CaixaTextoMobile = styled.section`
+
+`;
+
+export const InfoMobile = styled.section`
+
+`;
