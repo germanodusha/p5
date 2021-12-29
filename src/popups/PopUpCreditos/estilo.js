@@ -10,6 +10,18 @@ position:fixed;
 z-index:1000;
 background-color:var(--laranja);
 
+.bola1{
+  top:15%;
+  left:3%;
+  position:fixed;
+  }
+  .bola2{
+    top:50%;
+    left:3%;
+    position:fixed;
+  
+  }
+
 .startRow, .startColumn{
   display:flex;
   justify-content:center;
@@ -49,6 +61,15 @@ background-color:var(--laranja);
     }
   }
 }
+@media (max-width:800px){
+  overflow-y: scroll;
+  ::-webkit-scrollbar-track {
+    background: var(--laranja);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--laranja);
+  }
+}
 `
 
 export const Content = styled.div`
@@ -63,18 +84,10 @@ height:80%;
   bottom:6%;
   right:17.5%;
 }
-.bola1{
-top:15%;
-left:3%;
-position:fixed;
-}
-.bola2{
-  top:50%;
-  left:3%;
-  position:fixed;
-}
+
 .equipeTecnica{
   width:100%;
+
 }
 
 `
@@ -163,13 +176,20 @@ display: flex;
 }
 `
 export const ConteudoMobile = styled.section`
-
+font-weight:100;
+font-family: 'Interval';
+display:flex;
+justify-content: center;
 `;
 
 export const CaixaTextoMobile = styled.section`
+padding: 5vh 0;
+width: 70%;
+height: 100%;
 
 `;
 
 export const InfoMobile = styled.section`
 
 `;
+

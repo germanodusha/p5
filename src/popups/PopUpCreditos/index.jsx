@@ -30,6 +30,7 @@ function PopUpCreditos({ fClick }) {
         <Fechar onClick={fClick}>
           <img src={fechar} alt="fechar" />
         </Fechar>
+
         <Bolinha className="bola1" />
         <Bolinha className="bola2" />
 
