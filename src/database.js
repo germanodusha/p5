@@ -4,7 +4,7 @@ const database = {
         principal: {
             titulo: 'Arquivo',
             epigrafe: '<p>“Digo: o real não está na saída nem na chegada: ele se dispõe para a gente é no meio da travessia.”</p> <p><span class="underline">João Guimarães Rosa</span>, Grande Sertão: Veredas</p>',
-            fraseChamada: 'Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral no 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.',
+            fraseChamada: 'Entre os anos de 2015 e 2020, a Galeria Periscópio ocupou uma casa tombada na Av. Álvares Cabral n. 534, em Belo Horizonte, onde realizou 28 exposições. Este livro configura um arquivo das atividades que ocorreram nesse período.',
         },
         index: {
             titulo: 'Sobre a Periscópio',
@@ -12,7 +12,7 @@ const database = {
                 titulo: 'Ensaios',
                 itens: [{
                     titulo: 'Ampliando a visão',
-                    autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitr',
+                    autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitre',
                     texto: `<p>Criado no início do século 20, o periscópio é um dispositivo óptico cujos modelos e aplicações assumiram muitas formas ao longo do tempo, mas sua função primordial é inequívoca: ampliar o alcance da visão humana. No entanto, quando foi sugerido como nome para a galeria pelo artista e professor Marcelo Drummond a nosso convite, essa conotação não estava clara: a ideia surgiu de maneira mais espontânea. Buscando por um termo singular, que transmitisse a ideia de um projeto coletivo, Marcelo, de repente, nos interpelou:  “Acho que o nome da galeria deveria ser algo meio estranho mesmo… como periscópio!”.</p> 
                     <p>Naquele momento, a referência que ocorreu a Marcelo foi a obra homônima de Guto Lacaz, apresentada em 1994 na exposição Arte/cidade 2, em São Paulo. Essa intervenção urbana de amplas proporções trazia um instrumento gigante acoplado à fachada de um prédio, que permitia aos transeuntes verem, da rua, a exposição no último andar do edifício e, em contrapartida, possibilitava ao visitante do edifício observar o que se passava na calçada.</p>
                     <p>A princípio a sugestão encontrou alguma resistência, mas aos poucos a força da provocação desse nome pouco usual e as possibilidades de sua carga semântica passaram a produzir estímulos positivos. Logo decidimos batizar assim o projeto que vinha se costurando havia muitos anos e que, enfim, estava pronto para ganhar o mundo.</p> 
@@ -292,7 +292,7 @@ const database = {
                 titulo: 'Essays',
                 itens: [{
                     titulo: 'Expanding visions',
-                    autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitr',
+                    autoria: 'Alexandre Romanini, Altivo Duarte e Rodrigo Mitre',
                     texto: `
                     <p>A periscope is an optical device that was created at the beginning of the 20th century. Its models and applications have taken many forms over time, but their primary function remains unmistakable: to extend the reach of human vision. When we invited the artist and professor Marcelo Drummond to think with us about a name for the gallery, it was not exactly the objective connotation that at first guided the suggestion of the name. The whole thing happened more spontaneously. In the search for a unique name that could convey the idea of ​​a collective project, Marcelo suddenly asked us: “I think the name of the gallery should be something a little strange indeed… like a periscope!”.</p>
                     <p>Guto Lacaz's homonymous work, presented in 1994 at the exhibition “Arte/cidade 2”, in São Paulo, occurred to him as a reference. The urban intervention of large proportions brought a giant instrument attached to the facade of a building, allowing passersby to see the exhibition on the top floor and, in return, the building's visitor to observe what was happening on the street.</p>
