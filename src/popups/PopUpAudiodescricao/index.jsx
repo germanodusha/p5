@@ -1,10 +1,12 @@
 import React from "react";
-import { Conteiner, Content, Download, Text, Fechar, ConteudoMobile,DownloadMobile,TextoMobile, FecharMobile } from "../PopUpDownload/estilo.js";
+import { Conteiner, Content, Download, Text, ConteudoMobile,DownloadMobile,TextoMobile, FecharMobile } from "../PopUpDownload/estilo.js";
+import fecharCinza from "../../imagens/icones/x_transp.svg";
 import fechar from "../../imagens/icones/x_preto.svg";
 import MediaQuery from 'react-responsive';
 import { useGlobal } from '../../AcessoGlobal';
 
 import mp3 from '../../download/audiodesc.mp3';
+import { BotaoFechar } from "../PopUpLivro/estilo.js";
 
 function PopUpAudiodescricao({fClick}) {
   const [global, mudarGlobal] = useGlobal();
@@ -36,7 +38,10 @@ function PopUpAudiodescricao({fClick}) {
         <div><Download  href={mp3} download>
           {botoes.download}
         </Download>
-        <Fechar onClick={ fClick }><img src={fechar} alt="fechar" /></Fechar>  
+        <BotaoFechar onClick={ fClick }>
+            <img src={fechar} alt="fechar" className="x preto"/>
+            <img src={fecharCinza} alt="fechar" className="x transp"/>
+          </BotaoFechar>  
         </div>
       </Content>
       </MediaQuery>

@@ -37,8 +37,8 @@ function PopUpLivro({ fClick }) {
       </ConteinerDireita>
       <Foto src={fotos[indice]} />
       <BotaoFechar onClick={() => { fClick(); console.log('foi aqui') }} >
-        <img src={XPreto} className="x preto"/>
-        <img src={XTransp}className="x transp" />
+        <img src={XPreto}  className="x preto"/>
+        <img src={XTransp} className="x transp" />
         </BotaoFechar>
     </ConteinerFoto>
   );

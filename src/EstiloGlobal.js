@@ -84,6 +84,7 @@ button,a{
     text-decoration: underline;
     text-underline-position: under;
 }
+
 `;
 
 export default EstiloGlobal;
