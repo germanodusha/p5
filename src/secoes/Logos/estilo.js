@@ -16,6 +16,10 @@ color: var(--preto);
 .logos{
     justify-content: space-between;
 }
+
+@media (max-width:799px) {
+    font-size: .5em;
+}
 `;
 
 export const Linha = styled.div`
@@ -27,14 +31,22 @@ padding-bottom: 3vh;
 img {
     height: 10vh;
 }
+@media (max-width:799px) {
+    width: 80vw;
+    img {
+        height: 6vh;
+    }
+}
 `;
 
 export const Coluna = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: left;
+align-items: left;
+justify-content: center;
+text-align: left;
 gap: 2vh;
+width: 100%;
 `;
 
 export const Imagens = styled.div`
@@ -44,6 +56,8 @@ align-items: center;
 justify-content: left;
 height: 8vh;
 gap: 2vw;
+max-width: 100%;
+
 img{
     height: 100%;
 }
@@ -56,6 +70,15 @@ img{
 }
 .fora{
 height: 130%;
+}
+
+
+@media (max-width: 799px){
+    height: 4vh;
+    .logo-secretaria{
+        width: 100%;
+        height: auto;
+    }
 }
 `;
 
