@@ -15,6 +15,7 @@ import fechar from "../../imagens/icones/x_preto.svg";
 import fecharHover from "../../imagens/icones/x_transp.svg";
 import MediaQuery from "react-responsive";
 import { useGlobal } from '../../AcessoGlobal';
+import { FundoTransparente } from "../PopUpDownload/estilo";
 
 function PopUpCreditos({ fClick }) {
 
@@ -24,6 +25,7 @@ function PopUpCreditos({ fClick }) {
   const [estado, setEstado] = useState(true);
 
   return (
+    <FundoTransparente>
     <Conteiner>
       <MediaQuery maxWidth={799}>
         <ConteudoMobile>
@@ -143,6 +145,7 @@ function PopUpCreditos({ fClick }) {
       </Content>
       </MediaQuery>
     </Conteiner>
+    </FundoTransparente>
   );
 }
 

@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const FundoTransparente= styled.div`
+width:100%;
+height:100%;
+z-index:1000;
+background:transparent;
+position:fixed;
+`
 export const Conteiner = styled.div`
 width:70vw;
 height:70vh;

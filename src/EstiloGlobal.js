@@ -49,7 +49,7 @@ body {
   font-family: 'ES Build', sans-serif;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -84,6 +84,7 @@ button,a{
     text-decoration: underline;
     text-underline-position: under;
 }
+
 `;
 
 export default EstiloGlobal;

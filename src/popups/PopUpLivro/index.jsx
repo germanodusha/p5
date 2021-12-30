@@ -3,6 +3,7 @@ import { Foto, ConteinerFoto, BotaoFechar, ConteinerDireita, ConteinerEsquerda }
 import { SetaEsq, SetaDir, XPreto, SetaEsqTransp, SetaDirTransp, XTransp } from '../../imagens/icones';
 import { Foto1, Foto2,Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9, Foto10,Foto11,Foto12,Foto13,Foto14,Foto15,Foto16,Foto17,Foto18,Foto19,Foto20,Foto21,Foto22,Foto23,Foto0 } from '../../imagens/livro';
 import { useSwipeable } from 'react-swipeable';
+import { FundoTransparente } from '../PopUpDownload/estilo';
 
 function PopUpLivro({ fClick }) {
 
@@ -25,6 +26,7 @@ function PopUpLivro({ fClick }) {
   });
 
   return (
+    <FundoTransparente>
     <ConteinerFoto {...handlers}>
       <ConteinerEsquerda>
       <img className="seta esquerda" src={SetaEsq} alt="foto anterior" onClick={() => {
@@ -48,6 +50,7 @@ function PopUpLivro({ fClick }) {
         <img src={XTransp}className="x transp" alt="fechar"/>
         </BotaoFechar>
     </ConteinerFoto>
+    </FundoTransparente>
   );
 }
 

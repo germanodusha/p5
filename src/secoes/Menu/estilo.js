@@ -5,13 +5,10 @@ export const Conteiner = styled.nav`
 * Estilo temporário para visualizar a construção inicial. Uma vez posicionados, não precisamos mais de um conteiner estilizado.
 * Ainda assim, é bom usarmos a tag <nav> de conteiner por questões semânticas.
  */
-width: 100vw;
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-position: fixed;
-top: 5vh;
-position: absolute;
+
+ .sumir {
+   z-index: 30;
+ }
 `;
 
 export const NavCentral = styled.nav`
@@ -23,8 +20,6 @@ flex-direction: row;
 justify-content: center;
 gap: 1vw;
 z-index: 10;
-
-
 `;
 
 export const FundoBanner = styled.div`

@@ -6,7 +6,7 @@ import {
   NavCentral,
   FraseBanner,
   Animacao,
-  FundoBanner,
+  FundoBanner
 } from "./estilo";
 import {
   PopUpLivro,
@@ -49,7 +49,7 @@ function Menu() {
             </Animacao>
           </FraseBanner>
 
-          <Botao
+          <Botao mobile="sumir"
             pos={{ x: "esquerda", y: "superior" }}
             fClick={(e) => {
               e.preventDefault();
@@ -59,7 +59,8 @@ function Menu() {
             {botoes.downloadLivro}
           </Botao>
 
-          <Botao pos={{ x: "esquerda", y: "inferior" }}>
+          <Botao mobile="sumir"
+            pos={{ x: "esquerda", y: "inferior" }}>
             <a
               href="https://periscopio.art.br/"
               target="_blank"
@@ -81,14 +82,14 @@ function Menu() {
             </Botao>
           </NavCentral>
 
-          <Botao
+          <Botao mobile="sumir"
             pos={{ x: "direita", y: "inferior" }}
             fClick={() => mudarGlobal({ ptBr: !global.ptBr })}
           >
             {global.ptBr ? "EN" : "PT"}
           </Botao>
 
-          <Botao
+          <Botao mobile="sumir"
             pos={{ x: "direita", y: "superior" }}
             fClick={(e) => {
               e.preventDefault();
