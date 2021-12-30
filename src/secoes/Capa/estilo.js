@@ -8,9 +8,8 @@ position: relative;
 width: 100%;
 
 @media (max-width:799px){
-    height:100%;
+    height:100vh;
     position:absolute;
-    height:auto;
 }
 .line{
     white-space: nowrap;
@@ -55,12 +54,11 @@ justify-content: right;
     position:relative;
     width:60%;
     height:50vh;
-    margin-bottom:2rem;
 }
 `;
 
 export const TituloPrincipal = styled.h1`
-font-family: 'ES Build';
+font-family: 'ES Build', sans-serif;
 font-size: 10em;
 font-weight: normal;
 line-height: 1;
@@ -86,7 +84,7 @@ top:30vh;
 width:max-content;
 `
 export const Titulo = styled.h2`
-font-family: 'ES Build';
+font-family: 'ES Build', sans-serif;
 font-size: 10em;
 font-weight: normal;
 line-height: 1;

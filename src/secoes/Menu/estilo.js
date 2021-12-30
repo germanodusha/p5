@@ -56,6 +56,11 @@ background: transparent;
 display: flex;
 align-items: center;
 justify-content: center;
+
+.delay{
+  transform: translate(120%, 0);
+  animation-delay: 15s;
+}
 `;
 
 export const Animacao = styled.div`
@@ -64,17 +69,17 @@ export const Animacao = styled.div`
 
  p {
   display: inline-block;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 1.3em;
   z-index:11;
 }
 
 @keyframes marquee {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(120%, 0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-120%, 0);
   }
 }
 `;

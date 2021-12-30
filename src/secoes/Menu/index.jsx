@@ -6,6 +6,7 @@ import {
   NavCentral,
   FraseBanner,
   Animacao,
+  Animacao2,
   FundoBanner
 } from "./estilo";
 import {
@@ -41,10 +42,15 @@ function Menu() {
   return (
     <>
       <MediaQuery maxWidth={799}>
-      <Conteiner>
-          <FundoBanner />
+        <Conteiner >
+          <FundoBanner/>
           <FraseBanner>
             <Animacao>
+              <p>{principal.fraseChamada}</p>
+            </Animacao>
+          </FraseBanner>
+          <FraseBanner>
+            <Animacao className="delay">
               <p>{principal.fraseChamada}</p>
             </Animacao>
           </FraseBanner>
@@ -72,6 +78,7 @@ function Menu() {
 
           <NavCentral>                   
             <Botao
+              id="info"
               className="info"
               fClick={(e) => {
                 e.preventDefault();
@@ -135,6 +142,11 @@ function Menu() {
           <FundoBanner />
           <FraseBanner>
             <Animacao>
+              <p>{principal.fraseChamada}</p>
+            </Animacao>
+          </FraseBanner>
+          <FraseBanner>
+            <Animacao className="delay">
               <p>{principal.fraseChamada}</p>
             </Animacao>
           </FraseBanner>

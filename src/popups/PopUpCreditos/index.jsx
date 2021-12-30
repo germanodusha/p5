@@ -72,7 +72,7 @@ function PopUpCreditos({ fClick }) {
         </ConteudoMobile>
       </MediaQuery>
       <MediaQuery minWidth={800}>
-      <Content className="startRow">
+      <Content className="startRow" >
         {estado ? (
           <>
           <CaixaTexto className="startRow">

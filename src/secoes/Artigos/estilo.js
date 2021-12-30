@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Conteiner = styled.section`
 display: flex;
 flex-direction: row;
-font-family: 'Interval';
+font-family: 'Interval', monospace;
 font-size: 1em;
 line-height: 1.5;
 padding: 15vh 15vw;

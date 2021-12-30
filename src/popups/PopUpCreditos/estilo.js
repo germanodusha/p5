@@ -1,8 +1,15 @@
 import styled from 'styled-components';
 
 export const Conteiner = styled.div`
+animation-name:slideup;
+animation: slideup 0.5s;
+
+@keyframes slideup {
+  from { height: 0; }
+  to   { height: 90vh; }
+}
 width:100%;
-height:90vh;
+height: 90vh;
 bottom:0;
 left:0;
 border-top:3px solid var(--preto);
@@ -61,6 +68,9 @@ background-color:var(--laranja);
     }
   }
 }
+
+
+
 @media (max-width:800px){
   overflow-y: scroll;
   ::-webkit-scrollbar-track {
@@ -73,6 +83,8 @@ background-color:var(--laranja);
 `
 
 export const Content = styled.div`
+
+}
 overflow-y:scroll;
 width:100%;
 height:80%;
@@ -109,7 +121,7 @@ justify-content:flex-start;
 align-items:flex-start;
 flex-flow:column nowrap;
 text-align:left;
-font-family: 'Inter';
+font-family: 'Inter', sans-serif;
 gap:0.2rem;
 span,p{
     font-size:0.9em;
@@ -125,7 +137,7 @@ background-color:transparent;
 border:transparent;
 font-size:1rem;
 font-weight:100;
-font-family: 'Interval';
+font-family: 'Interval', monospace;
 text-decoration:${(props) => props.ativo ? 'underline' :'none' };
 text-underline-position: under;
 &:hover,&:focus{
@@ -177,7 +189,7 @@ display: flex;
 `
 export const ConteudoMobile = styled.section`
 font-weight:100;
-font-family: 'Interval';
+font-family: 'Interval', monospace;
 display:flex;
 justify-content: center;
 `;

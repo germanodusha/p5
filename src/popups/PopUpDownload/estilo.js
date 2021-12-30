@@ -16,6 +16,15 @@ margin:0 auto;
 position: relative;
 transform: translateY(-39%); 
 margin-left:2%;
+
+animation-name:fadein;
+animation: fadein 0.5s;
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @media (max-width:800px){
   display: flex;
   justify-content: center;
@@ -43,7 +52,7 @@ font-size:2.3em;
 font-weight:200;
 width:80%;
 height:auto;
-font-family:'Inter';
+font-family:'Inter', sans-serif;
 @media(min-width:1720px){
   font-size:2.5em;
   margin-bottom:5%;
@@ -52,7 +61,7 @@ font-family:'Inter';
 `
 export const Download = styled.a`
 font-size:2.3em;
-font-family:'Inter';
+font-family:'Inter', sans-serif;
 font-weight:300;
 position: fixed;
 bottom: 15%;
@@ -76,6 +85,7 @@ img{
   height: 100%;
 }
 
+
 `;
 
 export const ConteudoMobile = styled.section`
@@ -90,7 +100,7 @@ display: flex;
 flex-direction: column;
 font-size: 1.25em;
 align-items: center;
-font-family:'Inter';
+font-family:'Inter', sans-serif;
 font-weight:200;
 
 `;

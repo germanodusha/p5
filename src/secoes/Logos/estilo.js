@@ -10,8 +10,10 @@ box-sizing: border-box;
 padding-bottom: 20vh;
 width: 100vw;
 font-size: .8em;
-font-family: 'Inter';
+font-family: 'Inter', sans-serif;
 color: var(--preto);
+
+overflow-x: hidden;
 
 .logos{
     justify-content: space-between;
@@ -69,15 +71,18 @@ img{
     height: 150%;
 }
 .fora{
-height: 130%;
+    height: 130%;
+}
+.logo-rona{
+    height: 70%;
 }
 
-
 @media (max-width: 799px){
-    height: 4vh;
+    height: 5vh;
     .logo-secretaria{
         width: 100%;
         height: auto;
+        max-width: 400px;
     }
 }
 `;
