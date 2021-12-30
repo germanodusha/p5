@@ -84,6 +84,10 @@ button,a{
     text-decoration: underline;
     text-underline-position: under;
 }
+.no-scroll{
+  overflow: hidden;
+}
+
 
 `;
 

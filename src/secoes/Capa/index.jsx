@@ -3,6 +3,7 @@ import MediaQuery from "react-responsive";
 
 import {
   Titulo,
+  TituloArquivo,
   Livro,
   ConteinerCapa,
   TituloPrincipal,
@@ -26,21 +27,25 @@ function Capa() {
             <span className="cabecalho">P5</span>
             <span className="cabecalho">2015-2020</span>
           </Titulo>
-          <Titulo>{titulo} Periscópio</Titulo>
+          <Titulo className="titulo-principal">{titulo} Periscópio</Titulo>
         </div>
         </ConteinerCapa>
       </MediaQuery>
       <MediaQuery minWidth={800}>
         <ConteinerCapa>
           <Titulo temSpan={true}>
-          <span className="cabecalho">P5</span>
-          <span className="cabecalho">2015-2020</span>
-        </Titulo>
-        <Titulo>{titulo}</Titulo>
+          <span id="span1" className="cabecalho" >P5</span>
+          <span id="span2" className="cabecalho" >2015-2020</span>
+          </Titulo>
+        <div className="centerRow">
+          <TituloArquivo className="line typing-animation">{titulo}</TituloArquivo>
+        </div>
         <ConteinerLivro>
           <Livro src={Livro3D} />
         </ConteinerLivro>
-        <TituloPrincipal>Periscópio</TituloPrincipal>
+        <div className="centerRow">
+          <TituloPrincipal className="line typing-animation" >Periscópio</TituloPrincipal>
+        </div>
         </ConteinerCapa>
     </MediaQuery>
     </>
