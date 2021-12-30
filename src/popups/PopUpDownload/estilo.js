@@ -16,6 +16,15 @@ margin:0 auto;
 position: relative;
 transform: translateY(-39%); 
 margin-left:2%;
+
+animation-name:fadein;
+animation: fadein 0.5s;
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @media (max-width:800px){
   display: flex;
   justify-content: center;
@@ -75,6 +84,7 @@ img{
   width:100%;
   height: 100%;
 }
+
 
 `;
 

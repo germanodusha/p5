@@ -1,8 +1,15 @@
 import styled from 'styled-components';
 
 export const Conteiner = styled.div`
+animation-name:slideup;
+animation: slideup 0.5s;
+
+@keyframes slideup {
+  from { height: 0; }
+  to   { height: 90vh; }
+}
 width:100%;
-height:90vh;
+height: 90vh;
 bottom:0;
 left:0;
 border-top:3px solid var(--preto);
@@ -76,6 +83,8 @@ background-color:var(--laranja);
 `
 
 export const Content = styled.div`
+
+}
 overflow-y:scroll;
 width:100%;
 height:80%;

@@ -17,7 +17,7 @@ import MediaQuery from "react-responsive";
 import { useGlobal } from '../../AcessoGlobal';
 import { FundoTransparente } from "../PopUpDownload/estilo";
 
-function PopUpCreditos({ fClick, taAberto }) {
+function PopUpCreditos({ fClick }) {
 
   const [global] = useGlobal();
 
@@ -72,7 +72,7 @@ function PopUpCreditos({ fClick, taAberto }) {
         </ConteudoMobile>
       </MediaQuery>
       <MediaQuery minWidth={800}>
-      <Content className="startRow">
+      <Content className="startRow" >
         {estado ? (
           <>
           <CaixaTexto className="startRow">
