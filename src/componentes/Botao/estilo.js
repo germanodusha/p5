@@ -6,7 +6,7 @@ export const EstiloBotao = styled.button`
     padding: 5px 10px;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 1.3em;
 
     color: var(--preto);

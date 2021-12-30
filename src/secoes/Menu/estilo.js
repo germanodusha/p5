@@ -64,7 +64,7 @@ export const Animacao = styled.div`
 
  p {
   display: inline-block;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 1.3em;
   z-index:11;
 }

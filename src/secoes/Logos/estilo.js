@@ -10,7 +10,7 @@ box-sizing: border-box;
 padding-bottom: 20vh;
 width: 100vw;
 font-size: .8em;
-font-family: 'Inter';
+font-family: 'Inter', sans-serif;
 color: var(--preto);
 
 overflow-x: hidden;

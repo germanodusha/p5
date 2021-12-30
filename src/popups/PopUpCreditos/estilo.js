@@ -109,7 +109,7 @@ justify-content:flex-start;
 align-items:flex-start;
 flex-flow:column nowrap;
 text-align:left;
-font-family: 'Inter';
+font-family: 'Inter', sans-serif;
 gap:0.2rem;
 span,p{
     font-size:0.9em;
@@ -125,7 +125,7 @@ background-color:transparent;
 border:transparent;
 font-size:1rem;
 font-weight:100;
-font-family: 'Interval';
+font-family: 'Interval', monospace;
 text-decoration:${(props) => props.ativo ? 'underline' :'none' };
 text-underline-position: under;
 &:hover,&:focus{
@@ -177,7 +177,7 @@ display: flex;
 `
 export const ConteudoMobile = styled.section`
 font-weight:100;
-font-family: 'Interval';
+font-family: 'Interval', monospace;
 display:flex;
 justify-content: center;
 `;
