@@ -72,6 +72,7 @@ function Menu() {
 
           <NavCentral>                   
             <Botao
+              id="info"
               className="info"
               fClick={(e) => {
                 e.preventDefault();
