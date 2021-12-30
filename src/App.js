@@ -25,7 +25,7 @@ function App() {
       const alturaLivro = livro.offsetHeight;
 
       /* 
-        se a roalagem passar da metade do conteiner do livro,
+        se a rolagem passar da metade do conteiner do livro,
         a variável global taBranco é verdadeira
       */
       if (window.scrollY > posLivro + (alturaLivro / 3)) {

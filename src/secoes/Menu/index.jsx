@@ -6,6 +6,7 @@ import {
   NavCentral,
   FraseBanner,
   Animacao,
+  Animacao2,
   FundoBanner
 } from "./estilo";
 import {
@@ -47,7 +48,7 @@ function Menu() {
             <Animacao>
               <p>{principal.fraseChamada}</p>
             </Animacao>
-          </FraseBanner>
+            </FraseBanner>
 
           <Botao mobile="sumir"
             pos={{ x: "esquerda", y: "superior" }}

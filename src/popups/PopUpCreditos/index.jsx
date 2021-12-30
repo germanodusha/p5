@@ -17,7 +17,7 @@ import MediaQuery from "react-responsive";
 import { useGlobal } from '../../AcessoGlobal';
 import { FundoTransparente } from "../PopUpDownload/estilo";
 
-function PopUpCreditos({ fClick }) {
+function PopUpCreditos({ fClick, taAberto }) {
 
   const [global] = useGlobal();
 
