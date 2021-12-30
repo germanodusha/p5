@@ -1,5 +1,5 @@
 import React from "react";
-import { Conteiner, Content, Download, Text, ConteudoMobile,DownloadMobile,TextoMobile, FecharMobile } from "../PopUpDownload/estilo.js";
+import { Conteiner, Content, Download, Text, ConteudoMobile,DownloadMobile,TextoMobile, FecharMobile, FundoTransparente } from "../PopUpDownload/estilo.js";
 import fecharCinza from "../../imagens/icones/x_transp.svg";
 import fechar from "../../imagens/icones/x_preto.svg";
 import MediaQuery from 'react-responsive';
@@ -13,6 +13,7 @@ function PopUpAudiodescricao({fClick}) {
   const { popups, botoes } = global.db; 
 
   return (
+    <FundoTransparente>
     <Conteiner
       style={{ position: "fixed", top: "40vh", left: "12vw", zIndex: 1000 }}
     >
@@ -46,6 +47,7 @@ function PopUpAudiodescricao({fClick}) {
       </Content>
       </MediaQuery>
     </Conteiner>
+    </FundoTransparente>
   );
 }
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const Conteiner = styled.section`
 width: 100%;
 background-color: var(--laranja);
@@ -25,7 +26,7 @@ color: var(--preto);
 } */
 
 @media (max-width: 800px) {
-    font-size: 4.75em;  
+    font-size: 3em;  
     padding:140vh 0 5vh 0;
     
 }

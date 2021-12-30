@@ -7,6 +7,7 @@ height: 100vh;
 position: relative;
 
 @media (max-width:799px){
+    height:100%;
     position:absolute;
     height:auto;
 }
@@ -67,8 +68,11 @@ ${(props) => props.temSpan
 }
 @media (max-width:799px){  
     position:relative;
-    font-size:5em;
+    font-size:4em;
     text-align:center;
+    .titulo-principal{
+        padding-bottom:20vh;
+    }
 }
 `;
 
