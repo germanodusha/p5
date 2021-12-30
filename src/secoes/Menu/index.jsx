@@ -42,13 +42,18 @@ function Menu() {
   return (
     <>
       <MediaQuery maxWidth={799}>
-      <Conteiner>
-          <FundoBanner />
+        <Conteiner >
+          <FundoBanner/>
           <FraseBanner>
             <Animacao>
               <p>{principal.fraseChamada}</p>
             </Animacao>
-            </FraseBanner>
+          </FraseBanner>
+          <FraseBanner>
+            <Animacao className="delay">
+              <p>{principal.fraseChamada}</p>
+            </Animacao>
+          </FraseBanner>
 
           <Botao mobile="sumir"
             pos={{ x: "esquerda", y: "superior" }}
@@ -136,6 +141,11 @@ function Menu() {
           <FundoBanner />
           <FraseBanner>
             <Animacao>
+              <p>{principal.fraseChamada}</p>
+            </Animacao>
+          </FraseBanner>
+          <FraseBanner>
+            <Animacao className="delay">
               <p>{principal.fraseChamada}</p>
             </Animacao>
           </FraseBanner>
