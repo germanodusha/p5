@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const FundoTransparente= styled.div`
+export const FundoTransparente = styled.div`
 width:100%;
 height:100%;
-z-index:1000;
+z-index:100;
 background:transparent;
 position:fixed;
 `

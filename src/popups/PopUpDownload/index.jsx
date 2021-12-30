@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FundoTransparente,Conteiner, Content, Download, Text, ConteudoMobile, FecharMobile, TextoMobile, DownloadMobile } from "./estilo";
+import { Conteiner, Content, Download, Text, ConteudoMobile, FecharMobile, TextoMobile, DownloadMobile } from "./estilo";
 import { BotaoFechar } from '../PopUpLivro/estilo';
 import fechar from "../../imagens/icones/x_preto.svg";
 import fecharCinza from "../../imagens/icones/x_transp.svg";
@@ -14,7 +14,6 @@ function PopUpDownload({fClick}) {
   const { popups, botoes } = global.db;
 
   return (
-    <FundoTransparente >
     <Conteiner style={{position: 'fixed', top: '40vh', left:'12vw',zIndex:800}}>
       <MediaQuery maxWidth={799}>
         <ConteudoMobile>
@@ -39,7 +38,6 @@ function PopUpDownload({fClick}) {
       </Content>
       </MediaQuery>
     </Conteiner>
-    </FundoTransparente>
 
   );
 }

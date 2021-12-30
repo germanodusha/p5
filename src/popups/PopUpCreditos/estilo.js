@@ -138,7 +138,7 @@ border:transparent;
 font-size:1rem;
 font-weight:100;
 font-family: 'Interval', monospace;
-text-decoration:${(props) => props.ativo ? 'underline' :'none' };
+text-decoration:${(props) => props.ativo ? 'underline' : 'none'};
 text-underline-position: under;
 &:hover,&:focus{
   text-decoration:underlaine;
