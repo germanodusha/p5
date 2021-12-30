@@ -46,7 +46,7 @@ const EstiloGlobal = createGlobalStyle`
 body {
   background-color: var(--laranja);
   box-sizing: border-box;
-  font-family: 'ES Build';
+  font-family: 'ES Build', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;

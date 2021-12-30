@@ -31,7 +31,7 @@ justify-content: right;
 `;
 
 export const TituloPrincipal = styled.h1`
-font-family: 'ES Build';
+font-family: 'ES Build', sans-serif;
 font-size: 10em;
 font-weight: normal;
 line-height: 1;
@@ -48,7 +48,7 @@ text-align: center;
 `;
 
 export const Titulo = styled.h2`
-font-family: 'ES Build';
+font-family: 'ES Build', sans-serif;
 font-size: 10em;
 font-weight: normal;
 line-height: 1;

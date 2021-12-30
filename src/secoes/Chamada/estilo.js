@@ -9,7 +9,7 @@ z-index: 8;
 `;
 
 export const Texto = styled.p`
-font-family: 'ES Build';
+font-family: 'ES Build', sans-serif;
 font-size: 10em;
 line-height: 1;
 padding: 30vh 5vw;

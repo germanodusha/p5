@@ -27,7 +27,7 @@ export const Conteiner = styled.article`
 width: 100%;
 background: var(--branco);
 padding: 20vh 27vw;
-font-family: 'Interval';
+font-family: 'Interval', monospace;
 font-size: 1em;
 line-height: 1.2;
 box-sizing:border-box;
