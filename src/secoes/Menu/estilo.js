@@ -71,10 +71,32 @@ export const Animacao = styled.div`
 
 @keyframes marquee {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(50%, 0);
   }
   100% {
     transform: translate(-100%, 0);
   }
 }
+`;
+
+export const Animacao2 = styled.div`
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+
+ p {
+  display: inline-block;
+  font-family: 'Inter';
+  font-size: 1.3em;
+  z-index:11;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(-150%, 0);
+  }
+}
+
 `;

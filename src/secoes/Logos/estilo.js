@@ -13,6 +13,8 @@ font-size: .8em;
 font-family: 'Inter';
 color: var(--preto);
 
+overflow-x: hidden;
+
 .logos{
     justify-content: space-between;
 }

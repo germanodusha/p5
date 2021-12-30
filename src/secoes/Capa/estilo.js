@@ -7,12 +7,9 @@ height: 100vh;
 position: relative;
 
 @media (max-width:799px){
-    height:100%;
+    height:100vh;
     position:absolute;
-    height:auto;
 }
-
-
 `;
 
 export const ConteinerLivro = styled.div`
@@ -28,7 +25,6 @@ justify-content: right;
     position:relative;
     width:60%;
     height:50vh;
-    margin-bottom:2rem;
 }
 `;
 
