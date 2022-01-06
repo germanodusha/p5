@@ -39,6 +39,11 @@ img {
         height: 6vh;
     }
 }
+.logo-lei{
+    width: 8vw;
+    height: auto;
+
+}
 `;
 
 export const Coluna = styled.div`
@@ -76,6 +81,7 @@ img{
 .logo-rona{
     height: 70%;
 }
+
 
 @media (max-width: 799px){
     height: 5vh;
