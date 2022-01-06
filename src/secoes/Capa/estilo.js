@@ -7,6 +7,14 @@ height: 100vh;
 position: relative;
 width: 100%;
 
+animation-name:fadein;
+animation: fadein 1s;
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 @media (max-width:799px){
     height:100vh;
     position:absolute;

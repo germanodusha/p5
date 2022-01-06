@@ -38,13 +38,13 @@ function Capa() {
           <span id="span2" className="cabecalho" >2015-2020</span>
           </Titulo>
         <div className="centerRow">
-          <TituloArquivo className="line typing-animation">{titulo}</TituloArquivo>
+          <TituloArquivo >{titulo}</TituloArquivo>
         </div>
         <ConteinerLivro>
           <Livro src={Livro3D} />
         </ConteinerLivro>
         <div className="centerRow">
-          <TituloPrincipal className="line typing-animation" >Periscópio</TituloPrincipal>
+          <TituloPrincipal >Periscópio</TituloPrincipal>
         </div>
         </ConteinerCapa>
     </MediaQuery>
