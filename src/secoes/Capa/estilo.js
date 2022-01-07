@@ -74,7 +74,7 @@ font-size: 10em;
 font-weight: normal;
 line-height: 1;
 position:absolute;
-top: 65vh;
+top: 75vh;
 width: max-content;
 margin:0 auto;
 
@@ -91,7 +91,7 @@ font-size: 10em;
 font-weight: normal;
 line-height: 1;
 position:absolute;
-top:30vh;
+top:25vh;
 width:max-content;
 `
 export const Titulo = styled.h2`
