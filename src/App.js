@@ -1,18 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import {
-  Menu,
-  Capa,
-  Chamada,
-  Livro,
-  Indice,
-  Artigos,
-  Logos
-} from './secoes';
-
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import EstiloGlobal from './EstiloGlobal';
 import { useGlobal } from './AcessoGlobal';
 import { AcessoPopUps } from './AcessoPopUps';
 import HashLinkObserver from 'react-hash-link';
+import { Menu, Capa } from './secoes'
+
+const Artigos = lazy(() => import('./secoes/Artigos'));
+const Logos = lazy(() => import('./secoes/Logos'));
+const Chamada = lazy(() => import('./secoes/Chamada'));
+const Livro = lazy(() => import('./secoes/Livro'));
+const Indice = lazy(() => import('./secoes/Indice'));
 
 function App() {
   const [global, mudarGlobal] = useGlobal();
@@ -51,11 +48,21 @@ function App() {
       <AcessoPopUps>
         <Menu />
         <Capa />
-        <Chamada />
-        <Livro rolagem={rolagemLivro} />
-        <Indice />
-        <Artigos />
-        <Logos />
+        <Suspense fallback={<></>}>
+          <Chamada />
+        </Suspense>
+        <Suspense fallback={<></>}>
+          <Livro rolagem={rolagemLivro} />
+        </Suspense>
+        <Suspense fallback={<></>}>
+          <Indice />
+        </Suspense>
+        <Suspense fallback={<></>}>
+          <Artigos />
+        </Suspense>
+        <Suspense fallback={<></>}>
+          <Logos />
+        </Suspense>
       </AcessoPopUps>
     </>
   );
