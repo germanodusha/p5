@@ -7,14 +7,6 @@ height: 100vh;
 position: relative;
 width: 100%;
 
-animation-name:fadein;
-animation: fadein 1s;
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
 @media (max-width:799px){
     height:100vh;
     position:absolute;
@@ -26,7 +18,18 @@ animation: fadein 1s;
 
 }
 
-.typing-animation{
+.fadein {
+opacity:0;
+
+animation: fadein 2s linear .5s 1 forwards;
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+}
+
+/* .typing-animation{
     animation:blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40, end)  1s normal both;
 }
 
@@ -45,7 +48,7 @@ animation: fadein 1s;
     to{
         border-right-color:transparent;
     }
-}
+} */
 
 `;
 
@@ -102,6 +105,7 @@ width:max-content;
 display: flex;
 width:100vw;
 justify-content:space-between;
+
 ${(props) => props.temSpan
         ? 'justify-content: space-between;'
         : 'justify-content: space-around;'
