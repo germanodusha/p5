@@ -60,6 +60,7 @@ width: 20vw;
 height: 30vh;
 display: flex;
 justify-content: right;
+-webkit-justify-content: right;
 @media (max-width:799px){
     top:7vh;
     position:relative;
