@@ -15,10 +15,10 @@ function Indice() {
         </EpigrafeMobile>
         <SecaoIndiceMobile>
           <div className="titulo">{index}</div>
-        <div className="titulo">
-          {titulo}
-        </div>
-        <div></div>
+          <div className="titulo">
+            {titulo}
+          </div>
+          <div></div>
         </SecaoIndiceMobile>
         <SecaoIndiceMobile>
         <div className="titulo">
@@ -55,9 +55,10 @@ function Indice() {
       <MediaQuery minWidth={800}>
       <Epigrafe dangerouslySetInnerHTML={{__html:principal.epigrafe}}>
       </Epigrafe>
-      <SecaoIndice>
-        <div>
-          {titulo}
+        <SecaoIndice>
+          <div className="titulos-index">
+            <p>{index}</p>
+          <p>{titulo}</p>
         </div>
         <div></div>
       </SecaoIndice>

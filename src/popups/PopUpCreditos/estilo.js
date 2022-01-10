@@ -60,10 +60,8 @@ background-color:var(--laranja);
     text-indent: 2.5rem;
   }
   span,p{
-    font-size:0.9em;
-    line-height: 20px;
     @media (min-width:1720px){
-      font-size:1em;
+      font-size: 1em;
       line-height: 32px;
     }
   }
@@ -111,6 +109,9 @@ display:flex;
 align-items:center;
 justify-content:center;
 justify-self:center;
+
+font-size: .9em;
+line-height: 1.2;
 `
 
 export const Info = styled.div`
@@ -124,7 +125,6 @@ text-align:left;
 font-family: 'Inter', sans-serif;
 gap:0.2rem;
 span,p{
-    font-size:0.9em;
     @media (min-width:1720px){
       font-size:1em;
       line-height:26px;
@@ -135,7 +135,7 @@ span,p{
 export const Ancora = styled.button`
 background-color:transparent;
 border:transparent;
-font-size:1rem;
+font-size: 1em;
 font-weight:100;
 font-family: 'Interval', monospace;
 text-decoration:${(props) => props.ativo ? 'underline' : 'none'};
@@ -151,9 +151,9 @@ border-radius:50%;
 background-color: var(--preto);
 `
 export const Fechar = styled.button`
-height:3rem;
-width:3.5rem;
-font-size: 1rem;
+height:3em;
+width:3.5em;
+font-size: 1em;
 background-color:transparent;
 border:none;
 position:fixed;

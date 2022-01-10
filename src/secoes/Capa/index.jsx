@@ -21,7 +21,7 @@ function Capa() {
         <ConteinerCapa className="centerColumn">
         <div className="centerColumn" style={{flexWrap:'nowrap'}}>
           <ConteinerLivro>
-            <Livro src={Livro3D} width="641.9" height="1038.9" />
+            <Livro src={Livro3D} />
           </ConteinerLivro>
           <Titulo className="centerColumn fadein" temSpan={true}>
             <span className="cabecalho">P5</span>

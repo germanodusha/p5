@@ -124,14 +124,9 @@ ${(props) => props.temSpan
 `;
 
 export const Livro = styled.img`
-// height: 70%;
-// position: absolute;
-// top: 20vh;
-// left: 30vw;
 width: auto;
+object-fit: contain;
 @media (max-width:799px){
     width:100%;
-    
 }
-// margin: auto !important;
 `;

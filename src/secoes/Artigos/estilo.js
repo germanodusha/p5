@@ -35,6 +35,7 @@ position:relative;
     display:${(props) => props.ativo ? 'flex' : 'none'};
     position: absolute;
     height: 100%;
+    width: 100%;
     top: 0;
     justify-content:center;
     align-items:center;

@@ -16,6 +16,11 @@ div {
     flex-direction: column;
     width: 50%;
 }
+.titulos-index{
+    p{
+        padding-top:5vh;
+    }
+}
 `;
 
 export const ItemIndice = styled.section`
