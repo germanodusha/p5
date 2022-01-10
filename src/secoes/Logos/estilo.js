@@ -19,6 +19,7 @@ overflow-x: hidden;
     justify-content: space-between;
 }
 
+
 @media (max-width:799px) {
     font-size: .5em;
 }
@@ -33,16 +34,16 @@ padding-bottom: 3vh;
 img {
     height: 10vh;
 }
+.logo-lei{
+    height: 12vh;
+    width: auto;
+}
+
 @media (max-width:799px) {
     width: 80vw;
     img {
         height: 6vh;
     }
-}
-.logo-lei{
-    width: 8vw;
-    height: auto;
-
 }
 `;
 
@@ -61,7 +62,7 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: left;
-height: 8vh;
+height: 7vh;
 gap: 2vw;
 max-width: 100%;
 
@@ -69,17 +70,14 @@ img{
     height: 100%;
 }
 .logo-secretaria {
-    height: 8vh;
+    height: 7vh;
     width: auto;
 }
 .agropeu {
     height: 150%;
 }
-.fora{
-    height: 130%;
-}
 .logo-rona{
-    height: 70%;
+    height: 60%;
 }
 
 

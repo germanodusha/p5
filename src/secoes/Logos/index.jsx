@@ -16,7 +16,7 @@ const Logos = () => {
     return (
         <Conteiner>
             <Linha className="lei">
-                <img className="logo-lei" src={Logo0} alt="" />
+                <img className="logo-lei" src={Logo0} alt="Lei de incentivo à cultura" />
             </Linha>
             <Linha className="logos">
                 <Coluna>
@@ -25,7 +25,7 @@ const Logos = () => {
                         <p>SUPPORT</p>
                     </Labels>
                     <Imagens>
-                        <img className="logo-rona" src={Logo1} alt="" />
+                        <img className="logo-rona" src={Logo1} alt="Rona Editora" />
                     </Imagens>
                 </Coluna>
                 <Coluna>
@@ -34,8 +34,8 @@ const Logos = () => {
                         <p>EDITORIAL COORDINATION</p>
                     </Labels>
                     <Imagens>
-                        <img className="fora" src={Logo2} alt="" />
-                        <img className="genesys" src={Logo3} alt="" />
+                        <img src={Logo2} alt="O Fora" />
+                        <img src={Logo3} alt="Genesys" />
                     </Imagens>
                 </Coluna>
                 <MediaQuery minWidth={800}>
@@ -45,9 +45,9 @@ const Logos = () => {
                             <p>SPONSOR</p>
                         </Labels>
                         <Imagens>
-                            <img className="agropeu" src={Logo4} alt="" />
-                            <img src={Logo5} alt="" />
-                            <img src={Logo6} alt="" />
+                            <img className="agropeu" src={Logo4} alt="Agropeu" />
+                            <img src={Logo5} alt="Nova Catalão - Volkswagen" />
+                            <img src={Logo6} alt="Tecar - Fiat" />
                         </Imagens>
                     </Coluna>
                 </MediaQuery>
@@ -60,9 +60,9 @@ const Logos = () => {
                             <p>SPONSOR</p>
                         </Labels>
                         <Imagens>
-                            <img className="agropeu" src={Logo4} alt="" />
-                            <img src={Logo5} alt="" />
-                            <img src={Logo6} alt="" />
+                            <img className="agropeu" src={Logo4} alt="Agropeu" />
+                            <img src={Logo5} alt="Nova Catalão - Volkswagen" />
+                            <img src={Logo6} alt="Tecar - Fiat" />
                         </Imagens>
                     </Coluna>
                 </Linha>
@@ -74,7 +74,7 @@ const Logos = () => {
                         <p>PRODUCTION</p>
                     </Labels>
                     <Imagens>
-                        <img className="logo-secretaria" src={Logo7} alt="" />
+                        <img className="logo-secretaria" src={Logo7} alt="Secretaria Especial da Cultura - Ministério do Turismo - Governo Federal" />
                     </Imagens>
                 </Coluna>
             </Linha>
