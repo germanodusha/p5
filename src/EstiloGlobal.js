@@ -32,7 +32,8 @@ const EstiloGlobal = createGlobalStyle`
 :root{
   --laranja: #ff6c00;
   --preto: #000;
-  --branco: #FFF;
+  --branco: rgba(255,255,255,1);
+  --transp: rgba(255,255,255,0); 
 }
 
 ::-moz-selection { /* Code for Firefox */

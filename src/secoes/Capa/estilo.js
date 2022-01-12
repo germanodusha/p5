@@ -56,16 +56,28 @@ export const ConteinerLivro = styled.div`
 position: absolute;
 top: 58vh;
 right: 2vw;
-width: 20vw;
+width: max-content;
 height: 30vh;
 display: flex;
+flex-direction: row;
+box-sizing: border-box;
 justify-content: right;
 -webkit-justify-content: right;
+
 @media (max-width:799px){
     top:7vh;
     position:relative;
     width:60%;
     height:50vh;
+}
+`;
+
+export const Livro = styled.img`
+height: 100%;
+object-fit: contain;
+@media (max-width:799px){
+    width:100%;
+    height: auto;
 }
 `;
 
@@ -124,10 +136,3 @@ ${(props) => props.temSpan
 }
 `;
 
-export const Livro = styled.img`
-width: auto;
-object-fit: contain;
-@media (max-width:799px){
-    width:100%;
-}
-`;

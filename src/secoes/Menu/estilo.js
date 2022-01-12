@@ -33,15 +33,15 @@ height: 13vh;
 /* Solid color or jpg fallback */
 background-color: var(--branco); 
 /* For Chrome (v 10-25) and Safari(v 5.1-6)  */
-background: -webkit-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(180deg, var(--branco) 70%, var(--transp) 100%);
 /* For Firefox(v 3.6-15)  */
-background: -moz-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+background: -moz-linear-gradient(180deg, var(--branco) 70%, var(--transp) 100%);
 /* For Opera(v 11.5) */
-background: -o-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(180deg, var(--branco) 70%, var(--transp) 100%);
 /* For IE 10+ */
-background: -ms-linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(180deg, var(--branco) 70%, var(--transp) 100%);
 /* For Modern browsers */
-background: linear-gradient(180deg, var(--branco) 70%, rgba(0,0,0,0) 100%);
+background: linear-gradient(180deg, var(--branco) 70%, var(--transp) 100%);
 `;
 
 export const FraseBanner = styled.div`
