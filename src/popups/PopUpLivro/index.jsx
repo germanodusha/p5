@@ -2,14 +2,23 @@ import React, { useState } from 'react';
 import { Foto, ConteinerFoto, BotaoFechar, ConteinerDireita, ConteinerEsquerda } from './estilo';
 import { SetaEsq, SetaDir, XPreto, SetaEsqTransp, SetaDirTransp, XTransp } from '../../imagens/icones';
 import { Foto1, Foto2,Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9, Foto10,Foto11,Foto12,Foto13,Foto14,Foto15,Foto16,Foto17,Foto18,Foto19,Foto20,Foto21,Foto22,Foto23,Foto0 } from '../../imagens/livro';
+import {
+  FotoBaixa1, FotoBaixa2, FotoBaixa3, FotoBaixa4, FotoBaixa5, FotoBaixa6, FotoBaixa7, FotoBaixa8, FotoBaixa9, FotoBaixa10, FotoBaixa11, FotoBaixa12, FotoBaixa13, FotoBaixa14, FotoBaixa15, FotoBaixa16, FotoBaixa17, FotoBaixa18, FotoBaixa19, FotoBaixa20, FotoBaixa21, FotoBaixa22, FotoBaixa23, FotoBaixa0
+} from '../../imagens/livro-baixa';
 import { useSwipeable } from 'react-swipeable';
 import { FundoTransparente } from '../PopUpDownload/estilo';
 
 function PopUpLivro({ fClick }) {
 
   const [indice, setIndice] = useState(0);
-  const fotos = [
-    Foto0, Foto1, Foto2,Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9, Foto10,Foto11,Foto12,Foto13,Foto14,Foto15,Foto16,Foto17,Foto18,Foto19,Foto20,Foto21,Foto22,Foto23,];
+
+  let fotos = [];
+  
+  if (window.innerWidth > 1920) {
+    fotos = [ Foto0, Foto1, Foto2,Foto3, Foto4, Foto5, Foto6, Foto7, Foto8, Foto9, Foto10,Foto11,Foto12,Foto13,Foto14,Foto15,Foto16,Foto17,Foto18,Foto19,Foto20,Foto21,Foto22,Foto23,];
+  } else {
+    fotos = [ FotoBaixa0, FotoBaixa1, FotoBaixa2,FotoBaixa3, FotoBaixa4, FotoBaixa5, FotoBaixa6, FotoBaixa7, FotoBaixa8, FotoBaixa9, FotoBaixa10,FotoBaixa11,FotoBaixa12,FotoBaixa13,FotoBaixa14,FotoBaixa15,FotoBaixa16,FotoBaixa17,FotoBaixa18,FotoBaixa19,FotoBaixa20,FotoBaixa21,FotoBaixa22,FotoBaixa23,];
+  }
 
   const mudarFoto = (dir) => {
     let novoIndice = indice + dir;
